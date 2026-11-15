@@ -3,6 +3,8 @@
   "items": [
     {
       "course": "Consumer Behaviour",
+      "courseId": "consumer-behaviour",
+      "kind": "textbook",
       "asset": "dist/assets/covers/consumer-behaviour.webp",
       "source": "Kho-tai-lieu-mon-hoc/Consumer Behavior - Building Marketing Strategy - David L. Mothersbaugh, Del I. Hawkins, Susan Bardi Kleiser.pdf",
       "source_sha256": "cd079cb9c064cac8f95989d3ceb2d1105220c6d5d041e956958208c8e1643103",
@@ -12,6 +14,8 @@
     },
     {
       "course": "Digital Marketing",
+      "courseId": "digital-marketing",
+      "kind": "textbook",
       "asset": "dist/assets/covers/digital-marketing.webp",
       "source": "Kho-tai-lieu-mon-hoc/Digital Marketing - Dave Chaffey, Fiona Ellis-Chadwick.pdf",
       "source_sha256": "f41c3c8ba1e4d97a82360c28e0316967e758ec605347fcd8ea4ad233f62de25a",
@@ -20,13 +24,92 @@
       "height": 882
     },
     {
+      "course": "E-Commerce",
+      "courseId": "e-commerce",
+      "kind": "textbook",
+      "asset": "dist/assets/covers/e-commerce.webp",
+      "source": "Kho-tai-lieu-mon-hoc/E-Commerce 2019 - Business, Technology, Society - Kenneth C. Laudon, Carol Guercio Traver.pdf",
+      "source_sha256": "d5fb8aae645f3a66069b8deec1190a3e34d90e035b08708f5269c876ba210c0f",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 812
+    },
+    {
+      "course": "Management Information System",
+      "courseId": "management-information-system",
+      "kind": "textbook",
+      "asset": "dist/assets/covers/management-information-system.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Integrated Business Processes with ERP Systems - Simha R. Magal, Jeffrey Word.pdf",
+      "source_sha256": "1d4c2c2333feb63e8250e27817aab603a7704feb57ed6402db7bbb602578c4dc",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 813
+    },
+    {
+      "course": "Principle of Marketing",
+      "courseId": "principle-of-marketing",
+      "kind": "textbook",
+      "asset": "dist/assets/covers/principle-of-marketing.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Principles of Marketing - Philip Kotler, Gary Armstrong, Sridhar Balasubramanian.pdf",
+      "source_sha256": "9083ff3f26ba3cb13cb45a64bd1d1d6713d4394b82ac393e36b18dae1c3e13da",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 832
+    },
+    {
       "course": "Introduction to Marketing Career",
+      "courseId": "introduction-to-marketing-career",
+      "kind": "textbook",
       "asset": "dist/assets/covers/introduction-to-marketing-career.webp",
       "source": "Kho-tai-lieu-mon-hoc/Marketing - An Introduction - Gary Armstrong, Philip Kotler, Marc Oliver Opresnik.pdf",
       "source_sha256": "4a28683a728a0a3055425f44a8a9050d5c50af958f4ef008c006d087f3f73eb0",
       "source_pdf_page": 1,
       "width": 650,
       "height": 831
+    },
+    {
+      "course": "Microeconomics",
+      "courseId": "microeconomics",
+      "kind": "textbook",
+      "asset": "dist/assets/covers/microeconomics.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Principles of Microeconomics - N. Gregory Mankiw.pdf",
+      "source_sha256": "642deac26eaf2d161e9b2d3b2e90a5a4eeccd4f8ac5fb39664433e68fa4107db",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 764
+    },
+    {
+      "course": "Macroeconomics",
+      "courseId": "macroeconomics",
+      "kind": "textbook",
+      "asset": "dist/assets/covers/macroeconomics.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Principles of Macroeconomics - N. Gregory Mankiw.pdf",
+      "source_sha256": "47991dad650a15d7a143b54732ea665cd9635dc9b996cd81b3eb3710f9409458",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 786
+    },
+    {
+      "course": "Business Management",
+      "courseId": "business-management",
+      "kind": "textbook",
+      "asset": "dist/assets/covers/business-management.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Modern Management - Concepts and Skills - Samuel C. Certo, S. Trevis Certo.pdf",
+      "source_sha256": "1ba5a6b4ace58e44a06faf99f888af7770e9f8e1f4b4f63486bcbd6c851bc32d",
+      "source_pdf_page": 1,
+      "width": 649,
+      "height": 831
+    },
+    {
+      "course": "Logistics Management",
+      "courseId": "logistics-management",
+      "kind": "slides",
+      "asset": "dist/assets/covers/logistics-management.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Supply Chain.ppt",
+      "source_sha256": "f397e4ab712450eb763a0a32a30b10fd5f8198b498713239ee45902ab33a23f0",
+      "source_slide": 1,
+      "width": 1000,
+      "height": 750
     }
   ]
 }

@@ -99,3 +99,7 @@ The news feed has no industry tabs or category grouping. Story cards use attribu
 ## Covers and pointer interaction
 
 Consumer Behaviour, Digital Marketing and Introduction to Marketing Career now show first-page covers rendered from the supplied textbooks. `COURSE-COVER-SOURCES.json` records each original file and hash. Two Google news cards have distinct related official Google illustrations; credits link to their documentation pages rather than presenting them as news photographs. Cards lift and gently zoom images on hover or keyboard focus, only with a fine pointer and no reduced-motion preference. Touch layouts remain stable.
+
+## Complete 3D bookshelf
+
+All ten course tiles now use original document artwork: nine PDF cover pages and the original Logistics title slide (explicitly labelled Course slides). Every book face uses its actual source aspect ratio, without cropping or a padded outer frame. CSS perspective, cover creases, page edges, rear boards and contact shadows form the 3D view; hover and keyboard focus adjust the angle. Touch and reduced-motion layouts remain usable. The generated `dist/course-covers.js` and `COURSE-COVER-SOURCES.json` record dimensions and provenance. New courses use a clearly labelled text placeholder until a cover is provided.
