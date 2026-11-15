@@ -1,4 +1,5 @@
 @import url('fonts.css');
+@import url('news.css');
 :root[data-theme=light]{--muted:#56667d}
 :root{color-scheme:light;--bg:#f4f6fa;--surface:#fff;--soft:#eef2f8;--nav:#fbfcfe;--ink:#17263f;--muted:#617087;--line:#e2e7ef;--blue:#245ed7;--blue-soft:#eaf0ff;--blue-text:#214fa6;--mint:#e6f3e9;--mint-ink:#326047;--pink:#f9e8ee;--pink-ink:#9c4565;--amber:#fff2dc;--amber-ink:#8a5a15;--shadow:0 8px 28px #1c345307;--radius:20px;--serif:Georgia,'Times New Roman',serif}
 :root[data-theme=dark]{color-scheme:dark;--bg:#101722;--surface:#182231;--soft:#202e41;--nav:#141e2b;--ink:#edf2fb;--muted:#a6b4c8;--line:#2b394e;--blue:#7fa9ff;--blue-soft:#233c62;--blue-text:#b5ceff;--mint:#223f35;--mint-ink:#a1dbb8;--pink:#432c3c;--pink-ink:#f4b8cc;--amber:#433724;--amber-ink:#f2ce8a;--shadow:0 8px 28px #00000012}

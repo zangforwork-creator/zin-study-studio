@@ -1,0 +1,25 @@
+{
+  "checked": "2026-11-16",
+  "usage": "Attributed article previews inside Zin's owner-private personal reading studio. Rights remain with original publishers; no open-license claim is made.",
+  "items": [
+    {
+      "asset": "dist/assets/news/tiktok-live.webp",
+      "article": "https://newsroom.tiktok.com/tiktokshoplivereport?lang=en-GB",
+      "original_url": "https://p16-ttark-sg.tiktokcdn.com/tos-alisg-i-0twjg7x6w4-sg/1cae905f8eae7cb60a7bb5c11cdbe183.jpeg~tplv-0twjg7x6w4-default:0:0:q75.image",
+      "kind": "Article photograph, LIVE.jpeg"
+    },
+    {
+      "asset": "dist/assets/news/google-preview.webp",
+      "articles": ["https://ads-developers.googleblog.com/2026/11/display-targeting-changes-in-demand-gen.html", "https://ads-developers.googleblog.com/2026/11/data-manager-api-now-supports-google.html"],
+      "original_url": "https://www.gstatic.com/devrel-devsite/prod/v579d635a54d6e1f40caad46ce407560c5106c8915e5ff7e6341f5b13eb245c5a/developers/images/opengraph/white.png",
+      "kind": "Shared publisher Open Graph preview, not an event photograph"
+    },
+    {
+      "asset": "dist/assets/news/un-energy.webp",
+      "article": "https://desapublications.un.org/publications/world-economic-situation-and-prospects-2026-september-update",
+      "original_url": "https://desapublications.un.org/sites/default/files/publications/cover-image/2026/WESP%202026_September_2026_Cover.jpg",
+      "kind": "Report cover from publication metadata"
+    }
+  ],
+  "fallback": "IMF story has no verified suitable preview; use a text card with publisher and source link. Failed image loads use the same readable text fallback."
+}

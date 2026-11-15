@@ -17,7 +17,7 @@ Open **http://127.0.0.1:4173**. On other shells, `npm` is equivalent to `npm.cmd
 
 ## What works
 
-- The Daily: a source-backed five-story reading edition, topic filters, saved stories, read activity, goals, weekly recall activity and course progress.
+- The Daily: a source-backed five-story reading edition, one reading stream, saved stories, read activity, goals, weekly recall activity and course progress.
 - Light and dark themes, responsive navigation, keyboard focus, a skip link and reduced-motion styles.
 - Ten real course collections from the checked catalog; create additional courses without altering the source catalog.
 - Seventeen transcript entries across three confirmed terms. Eleven recorded 10-point grades and six pending results. GPA remains blank until credits and official conversion rules are confirmed. A personal 4-point target can be saved.
@@ -69,7 +69,7 @@ npm.cmd test
 ```
 
 - 8 unit tests: scheduling, same-day repetition, assistance, idempotency, real-zero versus pending grades, source counts, backup validation/merge and failed text.
-- 14 browser checks: themes, saving/reloading, grade timeline, notes, recall, PDF upload/extraction/cards, errors, news controls and layout at 390/430/768/1024/1440 px. Seven routes were checked at each width.
+- 14 browser checks: themes, saving/reloading, grade timeline, notes, recall, PDF upload/extraction/cards, errors, source media, hide/restore controls and layout at 390/430/768/1024/1440 px. Seven routes were checked at each width.
 - 8 extended browser checks: DOCX, PPTX ordering, duplicate uploads, blank PDF, export/import, malformed backup, keyboard operation and learning with external news requests blocked.
 - Automated axe-core checks on seven routes in both themes: no reported violations for the selected WCAG 2 A/AA, 2.1 A/AA and 2.2 AA rules. This is not a complete accessibility certification.
 - Browser checks used installed Chrome through Playwright. No JavaScript runtime errors were observed in the main-flow checks.
@@ -91,3 +91,7 @@ QA screenshots and machine-readable reports are in `.preview/` locally, excluded
 ## Deliberate limits
 
 No live Notion sync, daily news automation, external AI synthesis, OCR, official GPA conversion, verified certificates or cross-device learning sync is claimed. The current release is an operational personal studio with two starter lessons, not a complete synthesis of every textbook. Individual review cards and notes are editable; generated full-chapter lessons are not available. Cross-account authorization is supplied by owner-private Sites hosting; local preview is loopback-only, not a multi-account server.
+
+## News presentation update
+
+The news feed has no industry tabs or category grouping. Story cards use attributed article photos, report covers or publisher previews, with bold headlines and a dark contrast layer in both themes. Source media mappings and provenance are in `dist/news-media.js` and `NEWS-MEDIA-SOURCES.json`. The IMF story uses a text fallback because no suitable source image was verified. Existing saved/read/hidden story IDs remain unchanged; old topic preferences no longer filter the feed.
