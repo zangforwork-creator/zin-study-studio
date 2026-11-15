@@ -1,0 +1,66 @@
+[
+  {
+    "asset": "hero.webp",
+    "source": "Image\\Database-cover--b8e81d725c16.png"
+  },
+  {
+    "asset": "library.webp",
+    "source": "Image\\📚 Library-cover-15--3827d2097518.png"
+  },
+  {
+    "asset": "avatar.webp",
+    "source": "Image\\Cat.png"
+  },
+  {
+    "asset": "consumer-behaviour.webp",
+    "source": "Image\\💡 Consumer Behaviour -cover--7d6b421db0d2.webp"
+  },
+  {
+    "asset": "digital-marketing.webp",
+    "source": "Image\\📊 Digital Marketing -cover--109b3244e14f.png"
+  },
+  {
+    "asset": "e-commerce.webp",
+    "source": "Image\\🔖 Tư tưởng Hồ Chí Minh-image-64--6b50a70e8e4e.png"
+  },
+  {
+    "asset": "management-information-system.webp",
+    "source": "Image\\📜 Management Information System-cover--b1d23366dcdb.webp"
+  },
+  {
+    "asset": "logistics-management.webp",
+    "source": "Image\\🛺 Supply Chain Management -cover--dbafa6d18d95.png"
+  },
+  {
+    "asset": "principle-of-marketing.webp",
+    "source": "Image\\📢 Principle of marketing -cover--99f3ba88b5e7.png"
+  },
+  {
+    "asset": "introduction-to-marketing-career.webp",
+    "source": "Image\\🪀 Introduction to Marketing Career-cover--33a257434c45.webp"
+  },
+  {
+    "asset": "microeconomics.webp",
+    "source": "Image\\💰 New page-cover--9e791fd54db3.jpg"
+  },
+  {
+    "asset": "macroeconomics.webp",
+    "source": "Image\\Macroeconomics-cover--204b276791dc.webp"
+  },
+  {
+    "asset": "business-management.webp",
+    "source": "Image\\Business Management-cover--b3284e5234cf.webp"
+  },
+  {
+    "asset": "certificates.webp",
+    "source": "Image\\🫧 Course Certificate-cover--da0e89860677.png"
+  },
+  {
+    "asset": "ielts.webp",
+    "source": "Image\\🫧 Ielts-cover--b940450a05b3.png"
+  },
+  {
+    "asset": "hsk.webp",
+    "source": "Image\\🫧 HSK-cover--ad767a6d78de.png"
+  }
+]

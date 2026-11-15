@@ -1,0 +1,15 @@
+import {mkdir,copyFile,cp,readFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+const root = resolve(import.meta.dirname,'..');
+const vendor=resolve(root,'dist/vendor');
+await mkdir(vendor,{recursive:true});
+for(const file of ['pdf.mjs','pdf.worker.mjs']) await copyFile(resolve(root,'node_modules/pdfjs-dist/build',file),resolve(vendor,file));
+await copyFile(resolve(root,'node_modules/fflate/esm/browser.js'),resolve(vendor,'fflate.mjs'));
+await cp(resolve(root,'node_modules/pdfjs-dist/cmaps'),resolve(vendor,'cmaps'),{recursive:true});
+await cp(resolve(root,'node_modules/pdfjs-dist/standard_fonts'),resolve(vendor,'standard_fonts'),{recursive:true});
+await cp(resolve(root,'node_modules/pdfjs-dist/wasm'),resolve(vendor,'wasm'),{recursive:true});
+await copyFile(resolve(root,'node_modules/pdfjs-dist/LICENSE'),resolve(vendor,'PDFJS-LICENSE.txt'));
+await copyFile(resolve(root,'node_modules/fflate/LICENSE'),resolve(vendor,'FFLATE-LICENSE.txt'));
+const ref=JSON.parse(await readFile(resolve(root,'dist/data/reference.json'),'utf8'));
+if(ref.courses.length!==10 || ref.gpa.pending_course_count!==6) throw Error('Reference counts changed: inspect sources.');
+console.log('Prepared self-hosted document libraries. Reference data verified.');
