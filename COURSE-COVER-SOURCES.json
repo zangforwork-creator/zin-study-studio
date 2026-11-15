@@ -1,0 +1,32 @@
+{
+  "rendered_locally": true,
+  "items": [
+    {
+      "course": "Consumer Behaviour",
+      "asset": "dist/assets/covers/consumer-behaviour.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Consumer Behavior - Building Marketing Strategy - David L. Mothersbaugh, Del I. Hawkins, Susan Bardi Kleiser.pdf",
+      "source_sha256": "cd079cb9c064cac8f95989d3ceb2d1105220c6d5d041e956958208c8e1643103",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 821
+    },
+    {
+      "course": "Digital Marketing",
+      "asset": "dist/assets/covers/digital-marketing.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Digital Marketing - Dave Chaffey, Fiona Ellis-Chadwick.pdf",
+      "source_sha256": "f41c3c8ba1e4d97a82360c28e0316967e758ec605347fcd8ea4ad233f62de25a",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 882
+    },
+    {
+      "course": "Introduction to Marketing Career",
+      "asset": "dist/assets/covers/introduction-to-marketing-career.webp",
+      "source": "Kho-tai-lieu-mon-hoc/Marketing - An Introduction - Gary Armstrong, Philip Kotler, Marc Oliver Opresnik.pdf",
+      "source_sha256": "4a28683a728a0a3055425f44a8a9050d5c50af958f4ef008c006d087f3f73eb0",
+      "source_pdf_page": 1,
+      "width": 650,
+      "height": 831
+    }
+  ]
+}

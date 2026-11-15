@@ -9,16 +9,24 @@
       "kind": "Article photograph, LIVE.jpeg"
     },
     {
-      "asset": "dist/assets/news/google-preview.webp",
-      "articles": ["https://ads-developers.googleblog.com/2026/11/display-targeting-changes-in-demand-gen.html", "https://ads-developers.googleblog.com/2026/11/data-manager-api-now-supports-google.html"],
-      "original_url": "https://www.gstatic.com/devrel-devsite/prod/v579d635a54d6e1f40caad46ce407560c5106c8915e5ff7e6341f5b13eb245c5a/developers/images/opengraph/white.png",
-      "kind": "Shared publisher Open Graph preview, not an event photograph"
-    },
-    {
       "asset": "dist/assets/news/un-energy.webp",
       "article": "https://desapublications.un.org/publications/world-economic-situation-and-prospects-2026-september-update",
       "original_url": "https://desapublications.un.org/sites/default/files/publications/cover-image/2026/WESP%202026_September_2026_Cover.jpg",
       "kind": "Report cover from publication metadata"
+    },
+    {
+      "asset": "dist/assets/news/google-demand-gen.svg",
+      "article": "https://ads-developers.googleblog.com/2026/11/display-targeting-changes-in-demand-gen.html",
+      "image_source_page": "https://support.google.com/google-ads/answer/13695777?hl=en",
+      "original_url": "https://storage.googleapis.com/support-kms-prod/mXLaalODXkls3njusRUuxOlb3stMaDvA80ln",
+      "kind": "Related Google Ads Help illustration; not an image from the news announcement"
+    },
+    {
+      "asset": "dist/assets/news/google-measurement.webp",
+      "article": "https://ads-developers.googleblog.com/2026/11/data-manager-api-now-supports-google.html",
+      "image_source_page": "https://developers.google.com/data-manager/api/devguides/diagnostics",
+      "original_url": "https://developers.google.com/static/data-manager/api/images/diagnostics-polling-timeline.png",
+      "kind": "Diagram from the Google Data Manager diagnostics documentation linked by the article"
     }
   ],
   "fallback": "IMF story has no verified suitable preview; use a text card with publisher and source link. Failed image loads use the same readable text fallback."

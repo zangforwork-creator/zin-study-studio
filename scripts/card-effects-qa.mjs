@@ -1,0 +1,27 @@
+import {chromium} from 'playwright-core';
+import {writeFile} from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const context=await browser.newContext({viewport:{width:1440,height:1100}});
+const page=await context.newPage();const checks=[];
+function check(name,value){checks.push({name,pass:!!value});if(!value)process.exitCode=1;}
+await page.goto('http://127.0.0.1:4173');await page.locator('.course-card').first().waitFor();
+await page.waitForFunction(()=>[...document.querySelectorAll('img')].every(x=>x.complete));
+check('three original textbook covers loaded',await page.locator('.textbook-art .course-cover').evaluateAll(xs=>xs.length===3&&xs.every(x=>x.naturalWidth>0&&x.src.includes('/covers/'))));
+check('desktop covers fit within the card artwork',await page.locator('.textbook-art .course-cover').evaluateAll(xs=>xs.every(x=>x.getBoundingClientRect().height<x.parentElement.getBoundingClientRect().height)));
+check('distinct Google images loaded',await page.locator('.news-card .story-image').evaluateAll(xs=>xs.length===2&&new Set(xs.map(x=>x.src)).size===2&&xs.every(x=>x.naturalWidth>0)));
+const card=page.locator('.course-card').first();await card.hover();await page.waitForTimeout(500);
+check('mouse hover lifts course card',await card.evaluate(x=>new DOMMatrix(getComputedStyle(x).transform).m42<0));
+check('mouse hover enlarges cover',await card.locator('img').evaluate(x=>new DOMMatrix(getComputedStyle(x).transform).m11>1));
+await page.mouse.move(1400,50);await page.waitForTimeout(500);await card.locator('button').focus();await page.waitForTimeout(300);
+check('keyboard focus lifts course card',await card.evaluate(x=>new DOMMatrix(getComputedStyle(x).transform).m42<0));
+await page.emulateMedia({reducedMotion:'reduce'});await card.hover();await page.waitForTimeout(100);
+check('reduced motion keeps cards still',await card.evaluate(x=>getComputedStyle(x).transform==='none'));
+check('reduced motion keeps images still',await card.locator('img').evaluate(x=>getComputedStyle(x).transform==='none'));
+await page.emulateMedia({reducedMotion:'no-preference'});await page.locator('.news-card').first().hover();await page.waitForTimeout(300);
+check('mouse hover lifts news card',await page.locator('.news-card').first().evaluate(x=>new DOMMatrix(getComputedStyle(x).transform).m42<0));
+await page.screenshot({path:'.preview/cards-hover-desktop.png',fullPage:true});
+const touch=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const tp=await touch.newPage();await tp.goto('http://127.0.0.1:4173');await tp.locator('.course-card').first().waitFor();
+check('touch layout has no horizontal overflow',await tp.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+check('touch card has no hover movement',await tp.locator('.course-card').first().evaluate(x=>getComputedStyle(x).transform==='none'));
+await tp.locator('.course-card button').first().click();await tp.waitForURL('**/#course/consumer-behaviour');check('touch course navigation works',tp.url().includes('course/consumer-behaviour'));
+console.log(JSON.stringify(checks,null,2));await writeFile('.preview/card-effects-qa.json',JSON.stringify(checks,null,2));await browser.close();

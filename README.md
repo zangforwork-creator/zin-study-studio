@@ -95,3 +95,7 @@ No live Notion sync, daily news automation, external AI synthesis, OCR, official
 ## News presentation update
 
 The news feed has no industry tabs or category grouping. Story cards use attributed article photos, report covers or publisher previews, with bold headlines and a dark contrast layer in both themes. Source media mappings and provenance are in `dist/news-media.js` and `NEWS-MEDIA-SOURCES.json`. The IMF story uses a text fallback because no suitable source image was verified. Existing saved/read/hidden story IDs remain unchanged; old topic preferences no longer filter the feed.
+
+## Covers and pointer interaction
+
+Consumer Behaviour, Digital Marketing and Introduction to Marketing Career now show first-page covers rendered from the supplied textbooks. `COURSE-COVER-SOURCES.json` records each original file and hash. Two Google news cards have distinct related official Google illustrations; credits link to their documentation pages rather than presenting them as news photographs. Cards lift and gently zoom images on hover or keyboard focus, only with a fine pointer and no reduced-motion preference. Touch layouts remain stable.

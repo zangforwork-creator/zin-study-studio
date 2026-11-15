@@ -1,0 +1,22 @@
+/* Full textbook covers remain legible; avoid cropping a portrait into a banner. */
+.course-card .course-art{height:210px;display:grid;place-items:center;background:var(--soft);overflow:hidden;border-bottom:1px solid var(--line)}
+.course-card .course-art .course-cover{height:100%;width:100%;object-fit:cover}
+.course-card .course-art.textbook-art{padding:17px;background:linear-gradient(135deg,var(--soft),var(--surface))}
+.course-card .course-art.textbook-art .course-cover{height:176px;width:auto;max-width:100%;object-fit:contain;border-radius:2px;box-shadow:5px 7px 14px #081a3433}
+.book-art.has-cover{background:var(--soft);padding:14px}
+.book-art.has-cover img{object-fit:contain;position:relative;z-index:1}
+.book-art.has-cover:after{box-shadow:none;background:none}
+.course-detail-cover{max-height:360px;object-fit:contain;padding:20px;background:var(--soft)}
+/* Apply movement only where a mouse/trackpad can actually hover. */
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .sourced-story.sourced-story,.course-card,.mini-goal,.focus-panel,.stat-card,.goal-large,.lesson-row{transition:transform 220ms ease,box-shadow 220ms ease,border-color 220ms ease}
+ .sourced-story.sourced-story:hover,.sourced-story.sourced-story:focus-within,.course-card:hover,.course-card:focus-within,.focus-panel:hover,.focus-panel:focus-within,.lesson-row:hover,.lesson-row:focus-within{transform:translateY(-5px);box-shadow:0 14px 30px #07162c30;border-color:var(--blue)}
+ .mini-goal:hover,.stat-card:hover,.goal-large:hover{transform:translateY(-3px);box-shadow:0 9px 22px #07162c20}
+ .sourced-story .story-image,.course-card .course-cover,.book-art img{transition:transform 420ms cubic-bezier(.2,.65,.3,1)}
+ .sourced-story:hover .story-image,.sourced-story:focus-within .story-image{transform:scale(1.045)}
+ .course-card:hover .course-cover,.course-card:focus-within .course-cover,.book-tile:hover .book-art img,.book-tile:focus-visible .book-art img{transform:scale(1.035)}
+ .course-footer svg,.sourced-story .text-btn svg{transition:transform 220ms ease}
+ .course-card:hover .course-footer svg,.course-card:focus-within .course-footer svg,.sourced-story:hover .text-btn svg{transform:translateX(4px)}
+}
+@media(max-width:760px){.course-card .course-art{height:190px}.course-card .course-art.textbook-art{padding:14px}.course-card .course-art.textbook-art .course-cover{height:162px}.course-grid>.course-card:last-child:nth-child(3) .course-art{height:100%;min-height:205px}.course-grid>.course-card:last-child:nth-child(3) .course-art .course-cover{min-height:0;height:175px;width:auto}}
+@media(prefers-reduced-motion:reduce){.sourced-story.sourced-story,.course-card,.mini-goal,.focus-panel,.stat-card,.goal-large,.lesson-row,.book-tile .book-art,.sourced-story .story-image,.course-card .course-cover,.book-art img{transform:none!important;transition:none!important}}
