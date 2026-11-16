@@ -1,6 +1,6 @@
 # Zin's Study Studio
 
-An English personal learning website for Zin, a Marketing student at VNUIS. A blue editorial dashboard, light/dark themes, and the cat illustrations from the supplied `Image` collection. The bookshelf is inspired by the supplied Khoaverse design notes.
+An English personal learning website for Zin, a Marketing student at VNUIS. The Night Sky palette combines indigo, blue, lavender and pink in light/dark themes, with the cat illustrations from the supplied `Image` collection. The bookshelf is inspired by the supplied Khoaverse design notes.
 
 ## Run locally
 
@@ -17,12 +17,10 @@ Open **http://127.0.0.1:4173**. On other shells, `npm` is equivalent to `npm.cmd
 
 ## What works
 
-- The Daily: a source-backed five-story reading edition, one reading stream, saved stories, read activity, goals, weekly recall activity and course progress.
-- One continuous page: sidebar items scroll to The Daily, My Bookshelf, Study Room, Goals & Growth, Market Pulse, Saved Stories and Settings. Course collections, lessons, reading and recall open inline. The sticky toolbar stays available, the active sidebar item follows scrolling, and navigation supports deep links and browser Back/Forward.
+- The Daily: a source-backed five-story reading edition, one reading stream, saved stories, read activity, weekly recall activity and course progress.
+- One continuous page: sidebar items scroll to The Daily, My Bookshelf, Study Room, Market Pulse, Saved Stories and Settings. Course collections, lessons, reading and recall open inline. The sticky toolbar stays available, the active sidebar item follows scrolling, and navigation supports deep links and browser Back/Forward.
 - Shared 3D books on The Daily and My Bookshelf: original cover proportions, page edges, rear boards and shadows. Light and dark themes, responsive navigation, keyboard focus, a skip link and reduced-motion styles.
 - Ten real course collections from the checked catalog; create additional courses without altering the source catalog.
-- Seventeen transcript entries across three confirmed terms. Eleven recorded 10-point grades and six pending results. GPA remains blank until credits and official conversion rules are confirmed. A personal 4-point target can be saved.
-- Six planned qualification courses with local completion checkboxes. IELTS 7.5 and HSK 5 are clearly labelled plans, not verified scores.
 - Two source-checked starter lessons and six recall questions from *Marketing: An Introduction*, with diagrams, objectives, key ideas, hypothetical examples, cautions and original source pages.
 - A document reader with local PDF, DOCX and PPTX intake; selected-section extraction, source highlights, bookmarks, notes and user-authored source-linked recall cards.
 - Optional warm-up, short-answer recall before feedback, hint tracking, self-assessment and saved concept-level review dates.
@@ -73,7 +71,7 @@ node scripts/accessibility-qa.mjs
 ```
 
 - 8 unit tests: scheduling, same-day repetition, assistance, idempotency, real-zero versus pending grades, source counts, backup validation/merge and failed text.
-- 16 browser checks for the continuous page: all seven sections stay mounted during navigation; original 3D covers; inline courses; search; draft preservation and saved notes; recall and deduplicated review persistence; saved stories; PDF upload/extraction/source-linked cards; deep links and Back/Forward; navigation without horizontal overflow at 390/430/768/1024/1440 px; keyboard, both themes and reduced motion; unique DOM IDs and no observed JavaScript runtime errors.
+- 16 browser checks for the continuous page: all six sections stay mounted during navigation; Goals & Growth and its home panel are absent; old goals links return to The Daily; original 3D covers; inline courses; search; draft preservation and saved notes; recall and deduplicated review persistence; saved stories; PDF upload/extraction/source-linked cards; deep links and Back/Forward; navigation without horizontal overflow at 390/430/768/1024/1440 px; keyboard, both themes and reduced motion; unique DOM IDs and no observed JavaScript runtime errors.
 - The older browser, extended, bookshelf and card-effects scripts describe the previous separate-screen layout. Use `single-page-qa.mjs` for current navigation and cover checks.
 - Automated axe-core checks on seven routes in both themes: no reported violations for the selected WCAG 2 A/AA, 2.1 A/AA and 2.2 AA rules. This is not a complete accessibility certification.
 - Browser checks used installed Chrome through Playwright. No JavaScript runtime errors were observed in the main-flow checks.
@@ -85,6 +83,7 @@ QA screenshots and machine-readable reports are in `.preview/` locally, excluded
 
 - `dist/app.js`: navigation, screens and interactions.
 - `dist/bookshelf.css`, `dist/single-page.css`: shared 3D books, responsive continuous sections and sticky navigation.
+- `dist/palette.css`: the supplied Night Sky colors and accessible foreground/background combinations for both themes.
 - `dist/core.js`: state validation, backup merge, recall scheduling and metric calculations.
 - `dist/documents.js`, `office-worker.js`: local document storage and processing.
 - `dist/content.js`: source-checked lessons and the dated news edition.
@@ -112,3 +111,7 @@ All ten course tiles now use original document artwork: nine PDF cover pages and
 ## Continuous-page update
 
 The three suggested courses in “Keep your curiosity going” reuse the same 3D book renderer as My Bookshelf and retain their existing progress data. Main navigation scrolls to sections instead of replacing the page. Opening a course, lesson, document or review session inserts its content beside the relevant section and scrolls to it. Notes and recall drafts stay available while moving between sections; document uploads and small editing forms still use dialogs. Existing browser storage keys, course IDs, document versions and review history are preserved.
+
+## Night Sky update
+
+The supplied palette is `#1E0F75`, `#1C1DAB`, `#3785D8`, `#ADC6E5`, `#BF8CE1`, `#E893C5`, `#EBB2D3`, `#CBD8E8`. Deep indigo anchors text and actions; blue, lavender and pink provide accents. Both themes retain readable text and visible focus. Goals & Growth, its sidebar link, the academic timeline and the home goals panel have been removed. Existing goal values in browser storage and backup files are retained without a schema migration. The homepage prioritizes study sessions and review activity; old `#goals` links return to The Daily.

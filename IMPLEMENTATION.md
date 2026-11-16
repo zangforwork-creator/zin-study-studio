@@ -1,5 +1,7 @@
 # Initial release
 
+Latest requested update (16 November 2026): apply Zin's Night Sky palette to both themes and remove Goals & Growth, its navigation item and the home goal summary. Six main sections retain continuous scroll navigation and 3D books. Existing goals, grades, notes and review records remain in storage and backups; old goals links return to The Daily. The initial release description below records the original scope.
+
 User request (16 November 2026): English website, light and dark themes, a news-first home with goals and learning progress. Blue, cats, an editorial feel for a marketing student, and an approachable bookshelf inspired by the supplied Khoaverse reference.
 
 This release includes a source-backed news edition (not a live feed), ten real courses, the confirmed 17-course transcript, configurable goals, a local document reader and extraction, editable source-linked study cards, retrieval practice and a saved review queue. Device-only storage has export and import. No external AI service receives documents. No automatic AI synthesis, OCR, account sync or automatic news update is claimed.

@@ -1,0 +1,49 @@
+/* Night Sky — the eight colors supplied by Zin. */
+:root{
+ --night-violet:#1e0f75;--night-indigo:#1c1dab;--night-blue:#3785d8;
+ --night-mist:#adc6e5;--night-lavender:#bf8ce1;--night-pink:#e893c5;
+ --night-blush:#ebb2d3;--night-cloud:#cbd8e8;
+ --bg:#edf1f7;--surface:#fafbfe;--soft:#e3eaf5;--nav:#e6edf6;
+ --ink:var(--night-violet);--muted:#595879;--line:#bdc9e0;
+ --blue:var(--night-indigo);--blue-text:var(--night-indigo);--blue-soft:#e0e6fa;
+ --mint:#e6d6f2;--mint-ink:var(--night-violet);
+ --pink:var(--night-blush);--pink-ink:var(--night-violet);
+ --amber:#f3dcec;--amber-ink:var(--night-violet);
+ --primary-ink:#fff;--focus:var(--night-indigo);--shadow:0 8px 28px #1e0f750a;
+}
+:root[data-theme=light]{--muted:#595879}
+:root[data-theme=dark]{
+ --bg:#100d2b;--surface:#1c173e;--soft:#2c2454;--nav:#171232;
+ --ink:#f1eef9;--muted:var(--night-cloud);--line:#51466e;
+ --blue:var(--night-mist);--blue-text:var(--night-mist);--blue-soft:#302866;
+ --mint:#3d2a59;--mint-ink:#e5c9f5;--pink:#4c2947;--pink-ink:var(--night-blush);
+ --amber:#453050;--amber-ink:var(--night-blush);
+ --primary-ink:var(--night-violet);--focus:var(--night-lavender);--shadow:0 8px 28px #05031326;
+}
+body{background:radial-gradient(ellipse at top right,#bf8ce114,transparent 40%),var(--bg)}
+.brand-mark{background:var(--night-mist);color:var(--night-violet)}
+.nav-item.active{background:var(--night-mist);color:var(--night-violet)}
+.nav-item:hover{background:var(--blue-soft);color:var(--blue-text)}
+.nav-item.active:hover{background:var(--night-mist);color:var(--night-violet)}
+.nav-count{background:var(--soft);color:var(--ink)}
+.btn.primary,:root[data-theme=dark] .btn.primary,.duration button.active,:root[data-theme=dark] .duration button.active{background:var(--blue);color:var(--primary-ink)}
+.btn.white{color:var(--night-indigo)}
+.focus-panel{background:linear-gradient(135deg,var(--blue-soft),var(--mint));margin-top:0}
+.focus-decoration{color:var(--night-lavender);opacity:.9}
+.week-bar{background:var(--night-blue);opacity:1}
+.cat-note{background:linear-gradient(150deg,var(--blue-soft),var(--pink))}
+.date-chip{background:var(--surface);color:var(--muted)}
+.progress-track>span{background:linear-gradient(90deg,var(--night-indigo),var(--night-blue))}
+:root[data-theme=dark] .progress-track>span{background:linear-gradient(90deg,var(--night-lavender),var(--night-mist))}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline-color:var(--focus)}
+.sourced-story.sourced-story{background:var(--night-violet)}
+.sourced-story.sourced-story:after{background:linear-gradient(180deg,#1e0f7599,#100b36d9 55%,#100b36f5)}
+.sourced-story.feature-story:after{background:linear-gradient(90deg,#160d57ed,#1e0f75ad 60%,#1e0f7552),linear-gradient(0deg,#100b36e0,transparent 90%)}
+.sourced-story.news-card{border-color:#8074a8}
+.sourced-story.text-story,.sourced-story.media-failed{background:#211651}
+.sourced-story .icon-btn{background:#1e0f7570}
+.sourced-story .icon-btn:hover{background:var(--night-indigo)}
+.sourced-story .news-meta{color:#f1eef9}
+.sourced-story :focus-visible{outline-color:#fff}
+dialog::backdrop{background:#1e0f757a}
+.sidebar.open+.shell:before{background:#1e0f7555}

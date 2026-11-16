@@ -23,10 +23,11 @@ async function navigate(key){
  await page.waitForTimeout(80);
 }
 await open();
-await check('all seven destinations coexist in one page',async()=>{
- assert(await page.locator('main > .studio-section').count()===7,'Sections missing');
+await check('all six destinations coexist in one page',async()=>{
+ assert(await page.locator('main > .studio-section').count()===6,'Sections missing');
+ assert(await page.locator('#goals,a[href="#goals"],.goal-panel,.mini-goal').count()===0,'Removed goals UI remains');
  await page.evaluate(()=>window.originalHome=document.getElementById('home'));
- for(const key of ['library','study','goals','news','saved','settings','home'])await navigate(key);
+ for(const key of ['library','study','news','saved','settings','home'])await navigate(key);
  assert(await page.evaluate(()=>window.originalHome===document.getElementById('home')),'Navigation replaced the page');
 });
 await check('home uses three shared 3D books and original cover ratios',async()=>{
@@ -103,15 +104,16 @@ await check('PDF upload, extraction, source-linked card and reader stay inline',
  await navigate('news');assert(await page.locator('#reader').count()===1,'Reader removed on navigation');
 });
 await check('back, forward, same-link activation and deep links scroll correctly',async()=>{
- await navigate('library');await navigate('goals');await page.goBack();await page.waitForURL('**/#library');
+ await navigate('library');await navigate('news');await page.goBack();await page.waitForURL('**/#library');
  await page.waitForFunction(()=>Math.abs(document.getElementById('library').getBoundingClientRect().top-100)<5);
- await page.goForward();await page.waitForURL('**/#goals');await navigate('goals');
- assert(await page.locator('.nav-item[href="#goals"]').getAttribute('aria-current')==='location','Navigation current indicator wrong');
+ await page.goForward();await page.waitForURL('**/#news');await navigate('news');
+ assert(await page.locator('.nav-item[href="#news"]').getAttribute('aria-current')==='location','Navigation current indicator wrong');
  await open('saved');assert(await page.locator('#saved').evaluate(el=>el.getBoundingClientRect().top>=64),'Deep link hidden behind topbar');
+ await open('goals');assert(page.url().endsWith('#home'),'Old goals link did not return to The Daily');
 });
 for(const width of [390,430,768,1024,1440])await check('responsive navigation and covers at '+width+'px',async()=>{
  await page.setViewportSize({width,height:900});await open();
- for(const key of ['library','study','goals','news','saved','settings','home']){
+ for(const key of ['library','study','news','saved','settings','home']){
   await navigate(key);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Horizontal overflow at '+key);
   if(width<=760)assert(!await page.locator('.sidebar').evaluate(el=>el.classList.contains('open')),'Mobile menu did not close');
