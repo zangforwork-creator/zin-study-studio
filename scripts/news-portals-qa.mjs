@@ -34,8 +34,8 @@ await check('course URL create/edit/delete persists after reload, rejects unsafe
  await page.context().route('https://course.example/**',route=>route.fulfill({contentType:'text/html',body:'<h1>Course learning website</h1>'}));
  const popupPromise=page.waitForEvent('popup');await link.click();const popup=await popupPromise;await popup.waitForURL('https://course.example/consumer/chapter-1');await popup.close();
  const after=await page.evaluate(()=>JSON.parse(localStorage.getItem('zin-studio-v1')));assert(after.attempts.length===before.attempts.length&&after.completed.length===before.completed.length,'Opening a link changed learning evidence');
- await page.locator('#course [data-action="course-link"]').click();await page.locator('#course-site-url').fill('');await page.locator('#course-link-form button[type="submit"]').click();assert(await page.locator('#course .course-portal a').count()===0,'Removed link remains');
- await page.reload();await page.locator('#course .course-portal').waitFor();assert(await page.locator('#course .course-portal a').count()===0,'Removed link returned after reload');
+ await page.locator('#course [data-action="course-link"]').click();await page.locator('#course-site-url').fill('');await page.locator('#course-link-form button[type="submit"]').click();assert(await page.locator('#course .course-portal a').getAttribute('href')==='https://zin-consumer-behaviour-lab.taupeperiwinkle4.chatgpt.site','Default subject website not restored');
+ await page.reload();await page.locator('#course .course-portal').waitFor();assert(await page.locator('#course .course-portal a').getAttribute('href')==='https://zin-consumer-behaviour-lab.taupeperiwinkle4.chatgpt.site','Default website lost after reload');
 });
 for(const width of [390,768,1024,1440,1920])await check('complete headlines, attachments and portal fit '+width+'px',async()=>{
  await page.setViewportSize({width,height:1080});await page.goto('http://127.0.0.1:4173/#course/management-information-system');await page.locator('#course .source-material a').first().waitFor();

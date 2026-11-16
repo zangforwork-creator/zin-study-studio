@@ -42,7 +42,7 @@ await check('home has no duplicate shelf; My Bookshelf retains original 3D cover
 await check('course opens inline and home is retained',async()=>{
  await page.locator('#library [data-action="course"]').first().click();
  await page.locator('#course').waitFor();
- assert(await page.locator('#course h1').innerText()==='Consumer Behaviour','Wrong course');
+ assert(await page.locator('#course h1').innerText()==='Digital Marketing','Wrong local course');
  assert(await page.evaluate(()=>window.originalHome!==null&&document.getElementById('home')!==null),'Home removed');
 });
 await check('search filters bookshelf and scrolls to it',async()=>{
@@ -122,7 +122,7 @@ for(const width of [390,430,768,1024,1440])await check('responsive navigation an
 await check('keyboard focus, reduced motion and both themes',async()=>{
  await page.setViewportSize({width:1440,height:1000});await open();
  await page.emulateMedia({reducedMotion:'reduce'});await navigate('library');
- const book=page.locator('#library .book-tile').first();await book.focus();await page.keyboard.press('Enter');
+ const book=page.locator('#library button.book-tile').first();await book.focus();await page.keyboard.press('Enter');
  await page.locator('#course').waitFor();
  assert(await page.locator('#library .book-volume').first().evaluate(el=>getComputedStyle(el).transitionDuration)==='0s','Reduced motion ignored');
  for(const theme of ['dark','light']){

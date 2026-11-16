@@ -1,6 +1,8 @@
 # Website học riêng cho từng môn — phạm vi đã thống nhất
 
-Zin xác nhận chưa có URL. Studio hiện cung cấp tài liệu gốc cho 10 môn và ô gắn/sửa/xoá liên kết HTTPS ở từng môn. Website môn, chương học và chatbot sẽ xây trong bước sau. Không có nút hay hội thoại giả vờ là chatbot đã hoạt động.
+Consumer Behaviour hiện có website học thử riêng: https://zin-consumer-behaviour-lab.taupeperiwinkle4.chatgpt.site. Bìa 3D mở website này trong tab riêng; ô liên kết của môn có URL mặc định và cho phép ghi đè trên trình duyệt. Để trống khôi phục URL mặc định. Chín môn khác giữ nguyên bộ sưu tập môn hiện tại và chờ xây website riêng. Studio vẫn cung cấp 11 tài liệu gốc cho 10 môn.
+
+Bản thử Consumer Behaviour: 20 chương thực tế, 60 khái niệm trọng tâm, sơ đồ, tình huống sách/web, trò chơi, tự nhớ và lịch ôn có sao lưu. Website môn có tiến độ riêng. Tìm văn bản sách hoạt động từ corpus riêng tư; GPT có endpoint tích hợp nguồn và kiểm tra trích dẫn nhưng chờ kết nối OpenAI Developers/khoá API được duyệt. Không có GPT giả hoặc tự kích hoạt chi phí. Mã nguồn và chi tiết kiểm thử nằm ở `../consumer-behaviour-lab/README.md`.
 
 ## Dữ liệu hiện tại
 
