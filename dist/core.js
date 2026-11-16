@@ -2,7 +2,7 @@ export const DAY=86400000;
 export const STORAGE_KEY='zin-studio-v1';
 export const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const uid=()=>crypto.randomUUID();
-export const initialState=()=>({version:1,saved:[],hidden:[],read:[],completed:[],attempts:[],reviews:{},notes:{},documents:[],cards:[],courses:[],goals:{gpa:null,certificates:{},ielts:{},hsk:{}},bookmarks:{},duration:15,newsTopics:[],lastBackup:null});
+export const initialState=()=>({version:1,saved:[],hidden:[],read:[],caseRead:[],completed:[],attempts:[],reviews:{},notes:{},documents:[],cards:[],courses:[],goals:{gpa:null,certificates:{},ielts:{},hsk:{}},bookmarks:{},duration:15,newsTopics:[],lastBackup:null});
 export function loadState(storage=globalThis.localStorage){
  const raw=storage.getItem(STORAGE_KEY);if(!raw)return initialState();
  return validateState(JSON.parse(raw));
@@ -11,6 +11,7 @@ export function saveState(state,storage=globalThis.localStorage){storage.setItem
 export function validateState(value){
  if(!value||typeof value!=='object'||value.version!==1)throw Error('This is not a supported Studio backup. Your existing data has not changed.');
  const base=initialState();
+ base.caseRead=Array.isArray(value.caseRead)?[...new Set(value.caseRead.filter(x=>typeof x==='string'&&x.length<=250))].slice(0,20000):[];
  for(const key of ['saved','hidden','read','completed','newsTopics']){
   if(!Array.isArray(value[key])||value[key].length>20000||value[key].some(x=>typeof x!=='string'||x.length>250))throw Error('Invalid '+key+' data.');
   base[key]=[...new Set(value[key])];
@@ -90,7 +91,7 @@ export function extractHighlights(sections){
 }
 export function mergeState(current,incoming){
  const merged=structuredClone(current);
- for(const key of ['saved','hidden','read','completed','newsTopics'])merged[key]=[...new Set([...current[key],...incoming[key]])];
+ for(const key of ['saved','hidden','read','caseRead','completed','newsTopics'])merged[key]=[...new Set([...(current[key]||[]),...(incoming[key]||[])])];
  for(const key of ['documents','cards','courses']){
   const map=new Map(incoming[key].map(x=>[x.id,x]));current[key].forEach(x=>map.set(x.id,x));merged[key]=[...map.values()];
  }

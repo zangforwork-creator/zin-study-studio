@@ -3,3 +3,6 @@ node_modules/
 .preview/
 *.tar.gz
 *.log
+dist/client/
+dist/server/
+dist/.openai/

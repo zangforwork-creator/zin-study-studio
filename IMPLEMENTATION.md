@@ -1,5 +1,7 @@
 # Initial release
 
+Current scope: remove the duplicate home shelf, show unoccluded source images in fitted frames, replace the fixed news snapshot with validated official RSS/Atom plus R2 caching, and add daily web/document case reading in the right column. Verify source traceability, failure fallback, document privacy, reading/recall separation, mobile layouts and unattended writer access before treating scheduling as operational. `READING-UPDATES.md` defines recurring update behavior.
+
 Latest requested update (16 November 2026): apply Zin's navy, blue and gold palette to both themes and remove Goals & Growth, its navigation item and the home goal summary. Six main sections retain continuous scroll navigation and 3D books. Existing goals, grades, notes and review records remain in storage and backups; old goals links return to The Daily. The initial release description below records the original scope.
 
 User request (16 November 2026): English website, light and dark themes, a news-first home with goals and learning progress. Blue, cats, an editorial feel for a marketing student, and an approachable bookshelf inspired by the supplied Khoaverse reference.

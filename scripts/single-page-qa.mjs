@@ -12,14 +12,15 @@ async function check(name,fn){try{await fn();results.push({name,pass:true});cons
 async function open(path='home'){
  await page.goto('http://127.0.0.1:4173/#'+path);
  await page.locator('#settings').waitFor();
+ await page.locator('#home .feature-story').waitFor({timeout:22000});
 }
 async function navigate(key){
  if(await page.locator('.mobile-menu').isVisible()&&!await page.locator('.sidebar').evaluate(el=>el.classList.contains('open')))await page.locator('.mobile-menu').click();
  await page.locator(`.nav-item[href="#${key}"]`).click();
- await page.waitForFunction(id=>{
+ try{await page.waitForFunction(id=>{
   const el=document.getElementById(id),box=el.getBoundingClientRect(),margin=parseFloat(getComputedStyle(el).scrollMarginTop);
   return Math.abs(box.top-margin)<3||(scrollY+innerHeight>=document.documentElement.scrollHeight-2&&box.top>=0&&box.top<innerHeight-40);
- },key);
+ },key);}catch(error){console.log('NAV DIAGNOSTIC '+JSON.stringify(await page.evaluate(id=>({key:id,top:document.getElementById(id)?.getBoundingClientRect().top,margin:getComputedStyle(document.getElementById(id)).scrollMarginTop,scrollY,height:document.documentElement.scrollHeight,focus:document.activeElement?.id,images:[...document.querySelectorAll('#home .story-image')].map(i=>({complete:i.complete,h:i.getBoundingClientRect().height})),sections:[...document.querySelectorAll('[data-section]')].map(e=>[e.id,e.getBoundingClientRect().top])}),key)));throw error;}
  await page.waitForTimeout(80);
 }
 await open();
@@ -30,17 +31,16 @@ await check('all six destinations coexist in one page',async()=>{
  for(const key of ['library','study','news','saved','settings','home'])await navigate(key);
  assert(await page.evaluate(()=>window.originalHome===document.getElementById('home')),'Navigation replaced the page');
 });
-await check('home uses three shared 3D books and original cover ratios',async()=>{
- assert(await page.locator('#home .book-volume').count()===3,'Home books missing');
- for(const cover of await page.locator('#home .book-cover-image').all()){
-  await cover.scrollIntoViewIfNeeded();
-  await cover.evaluate(img=>img.decode());
+await check('home has no duplicate shelf; My Bookshelf retains original 3D covers',async()=>{
+ assert(await page.locator('#home .courses-section,#home .book-volume').count()===0,'Duplicate home bookshelf remains');
+ assert(await page.locator('#library .book-volume').count()===10,'Bookshelf volumes missing');
+ for(const cover of await page.locator('#library .book-cover-image').all()){
+  await cover.scrollIntoViewIfNeeded();await cover.evaluate(img=>img.decode());
   assert(await cover.evaluate(img=>Math.abs(img.clientWidth/img.clientHeight-img.naturalWidth/img.naturalHeight)<.015),'Cover distorted');
  }
- assert(await page.locator('#home .course-art').count()===0,'Old cover frames remain');
 });
 await check('course opens inline and home is retained',async()=>{
- await page.locator('#home [data-action="course"]').first().click();
+ await page.locator('#library [data-action="course"]').first().click();
  await page.locator('#course').waitFor();
  assert(await page.locator('#course h1').innerText()==='Consumer Behaviour','Wrong course');
  assert(await page.evaluate(()=>window.originalHome!==null&&document.getElementById('home')!==null),'Home removed');
@@ -124,15 +124,15 @@ await check('keyboard focus, reduced motion and both themes',async()=>{
  await page.emulateMedia({reducedMotion:'reduce'});await navigate('library');
  const book=page.locator('#library .book-tile').first();await book.focus();await page.keyboard.press('Enter');
  await page.locator('#course').waitFor();
- assert(await page.locator('#home .book-volume').first().evaluate(el=>getComputedStyle(el).transitionDuration)==='0s','Reduced motion ignored');
+ assert(await page.locator('#library .book-volume').first().evaluate(el=>getComputedStyle(el).transitionDuration)==='0s','Reduced motion ignored');
  for(const theme of ['dark','light']){
   await page.evaluate(t=>document.documentElement.dataset.theme=t,theme);await navigate('home');
-  await page.locator('#home .courses-section').scrollIntoViewIfNeeded();
+  await page.locator('#library').scrollIntoViewIfNeeded();
   await page.screenshot({path:'.preview/single-page-desktop-'+theme+'.png'});
  }
- await page.setViewportSize({width:390,height:900});await page.locator('#home .courses-section').scrollIntoViewIfNeeded();
+ await page.setViewportSize({width:390,height:900});await page.locator('#library').scrollIntoViewIfNeeded();
  await page.waitForTimeout(300);
- await page.locator('#home .book-cover-image').evaluateAll(xs=>Promise.all(xs.map(img=>img.decode())));
+ await page.locator('#library .book-cover-image').evaluateAll(xs=>Promise.all(xs.map(img=>img.decode())));
  await page.screenshot({path:'.preview/single-page-mobile.png'});
 });
 await check('no duplicate DOM IDs or browser errors',async()=>{
