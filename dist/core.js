@@ -2,7 +2,14 @@ export const DAY=86400000;
 export const STORAGE_KEY='zin-studio-v1';
 export const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const uid=()=>crypto.randomUUID();
-export const initialState=()=>({version:1,saved:[],hidden:[],read:[],caseRead:[],completed:[],attempts:[],reviews:{},notes:{},documents:[],cards:[],courses:[],goals:{gpa:null,certificates:{},ielts:{},hsk:{}},bookmarks:{},duration:15,newsTopics:[],lastBackup:null});
+export const initialState=()=>({version:1,saved:[],hidden:[],read:[],caseRead:[],completed:[],attempts:[],reviews:{},notes:{},documents:[],cards:[],courses:[],courseLinks:{},goals:{gpa:null,certificates:{},ielts:{},hsk:{}},bookmarks:{},duration:15,newsTopics:[],lastBackup:null});
+export function courseSiteUrl(value){
+ if(typeof value!=='string'||value.length>2000)throw Error('Nhập địa chỉ HTTPS hợp lệ.');
+ if(!value.trim())return '';
+ let url;try{url=new URL(value.trim());}catch{throw Error('Nhập địa chỉ đầy đủ, bắt đầu bằng https://.');}
+ if(url.protocol!=='https:'||url.username||url.password||!url.hostname.includes('.'))throw Error('Dùng địa chỉ HTTPS, không kèm thông tin đăng nhập.');
+ return url.href;
+}
 export function loadState(storage=globalThis.localStorage){
  const raw=storage.getItem(STORAGE_KEY);if(!raw)return initialState();
  return validateState(JSON.parse(raw));
@@ -11,6 +18,13 @@ export function saveState(state,storage=globalThis.localStorage){storage.setItem
 export function validateState(value){
  if(!value||typeof value!=='object'||value.version!==1)throw Error('This is not a supported Studio backup. Your existing data has not changed.');
  const base=initialState();
+ if(value.courseLinks!==undefined){
+  if(!value.courseLinks||typeof value.courseLinks!=='object'||Array.isArray(value.courseLinks)||Object.keys(value.courseLinks).length>500)throw Error('Invalid course links.');
+  for(const [id,url] of Object.entries(value.courseLinks)){
+   if(!/^[-a-zA-Z0-9_]{1,250}$/.test(id)||['__proto__','constructor','prototype'].includes(id))throw Error('Invalid course link.');
+   base.courseLinks[id]=courseSiteUrl(url);
+  }
+ }
  base.caseRead=Array.isArray(value.caseRead)?[...new Set(value.caseRead.filter(x=>typeof x==='string'&&x.length<=250))].slice(0,20000):[];
  for(const key of ['saved','hidden','read','completed','newsTopics']){
   if(!Array.isArray(value[key])||value[key].length>20000||value[key].some(x=>typeof x!=='string'||x.length>250))throw Error('Invalid '+key+' data.');
@@ -96,6 +110,7 @@ export function mergeState(current,incoming){
   const map=new Map(incoming[key].map(x=>[x.id,x]));current[key].forEach(x=>map.set(x.id,x));merged[key]=[...map.values()];
  }
  merged.notes={...incoming.notes,...current.notes};merged.bookmarks={...incoming.bookmarks,...current.bookmarks};
+ merged.courseLinks={...incoming.courseLinks,...current.courseLinks};
  merged.attempts=[...new Map([...incoming.attempts,...current.attempts].map(x=>[x.id,x])).values()];
  // Keep current local goal preferences when merging a backup.
  return validateState(merged);

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/prepare.mjs && node scripts/build-worker.mjs",
-    "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/documents.js && node --check worker/feeds.js && node --check worker/index.js",
+    "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/documents.js && node --check worker/feeds.js && node --check worker/materials.js && node --check worker/index.js && node --check scripts/upload-materials.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {

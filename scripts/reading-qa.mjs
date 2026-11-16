@@ -10,13 +10,14 @@ await page.goto('http://127.0.0.1:4173');await page.locator('#home .feature-stor
 await check('removed home shelf; real sourced news and dated case panel appear',async()=>{
  assert(await page.locator('#home .courses-section,#home .book-volume').count()===0,'Duplicate shelf remains');
  assert(await page.locator('#library .book-volume').count()===10,'Main bookshelf missing');
- assert(await page.locator('#home .sourced-story').count()===5,'Home needs five briefs');
+ assert(await page.locator('#home .sourced-story').count()===1,'Home must show exactly one article');
  assert(await page.locator('#case-study-panel [data-action="case-open"]').count()===1,'Daily case missing');
  assert((await page.locator('#home .reading-status').innerText()).includes('Cập nhật thành công'),'No update timestamp');
 });
-await check('images are unobscured and preserve proportions inside their frame',async()=>{
+await check('the complete headline sits inside the cover and its image fills the frame proportionally',async()=>{
  assert(await page.locator('#home .story-image').count()>0,'No feed images');
- assert(await page.locator('#home .story-image').evaluateAll(xs=>xs.every(x=>getComputedStyle(x).objectFit==='contain'&&getComputedStyle(x).position==='static')),'Images are cropped or covered');
+ assert(await page.locator('#home .story-image').evaluateAll(xs=>xs.every(x=>getComputedStyle(x).objectFit==='cover'&&getComputedStyle(x).position==='absolute')),'Image does not fill its cover');
+ assert(await page.locator('#home .news-cover h3').evaluate(h=>{const a=h.getBoundingClientRect(),b=h.closest('.news-cover').getBoundingClientRect();return a.top>=b.top&&a.bottom<=b.bottom&&a.left>=b.left&&a.right<=b.right;}),'Headline escapes photo frame');
  assert(await page.locator('#home .sourced-story').evaluateAll(xs=>xs.every(x=>getComputedStyle(x,'::after').display==='none')),'Opaque overlay remains');
 });
 await check('case navigation changes the source and saving reading is idempotent',async()=>{

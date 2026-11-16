@@ -1,4 +1,5 @@
 import {FEED_TTL,refreshEdition,allowedUrl,rasterMime} from './feeds.js';
+import {materialRequest} from './materials.js';
 const EDITION_KEY='reading/edition-v1.json';
 let inFlight=null;
 const json=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
@@ -16,6 +17,7 @@ export default {
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(!url.pathname.startsWith('/api/'))return env.ASSETS.fetch(request);
+  if(url.pathname.startsWith('/api/materials')){try{return await materialRequest(request,env);}catch{return json({error:'Không mở được tài liệu lúc này. Hãy thử lại; bản gốc vẫn được giữ.'},503);}}
   if(['/api/reading/image','/api/reading/case-image'].includes(url.pathname)&&request.method==='GET'){
    const edition=await readEdition(env),isCase=url.pathname==='/api/reading/case-image';
    const story=(isCase?edition.caseStudies:edition.items).find(n=>n.id===url.searchParams.get('id'));

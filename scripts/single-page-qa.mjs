@@ -81,10 +81,10 @@ await check('practice stays inline, retains response, and saves exactly one revi
  assert(await page.evaluate(()=>JSON.parse(localStorage.getItem('zin-studio-v1')).attempts.length)===1,'Reload lost review');
 });
 await check('saved stories persist and remain separate from course progress',async()=>{
- await navigate('saved');assert(await page.locator('#saved .news-card').count()===1,'Saved story lost');
+ await navigate('saved');assert(await page.locator('#saved .feature-story').count()===1,'Saved story lost');
  const before=await page.evaluate(()=>JSON.parse(localStorage.getItem('zin-studio-v1')).attempts.length);
  await page.locator('#saved [data-action="save-story"]').click();
- assert(await page.locator('#saved .news-card').count()===0,'Unsave failed');
+ assert(await page.locator('#saved .feature-story').count()===0,'Unsave failed');
  assert(await page.evaluate(()=>JSON.parse(localStorage.getItem('zin-studio-v1')).attempts.length)===before,'News changed review history');
 });
 await check('PDF upload, extraction, source-linked card and reader stay inline',async()=>{

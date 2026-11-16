@@ -16,7 +16,8 @@ await check('desktop rail displays icons, exposes meaningful names and supports 
 await check('Google article displays its original locally captured image even when source proxy fails',async()=>{
  await page.route('**/api/reading/image*',route=>route.abort());
  await page.goto('http://127.0.0.1:4173/#home');await page.locator('#home .feature-story').waitFor();
- const story=page.locator('#home .news-card').filter({has:page.locator('[data-id="live-195ffc81"]')});
+ for(let i=0;i<20&&!await page.locator('#home .feature-story [data-id="live-195ffc81"]').count();i++)await page.locator('#home [data-action="news-next"]').click();
+ const story=page.locator('#home .feature-story').filter({has:page.locator('[data-id="live-195ffc81"]')});
  const image=story.locator('.story-image');await image.scrollIntoViewIfNeeded();await image.evaluate(i=>i.decode());
  assert((await image.getAttribute('src')).includes('/reading-snapshots/'),'Source screenshot is not used');
  assert(await image.evaluate(i=>i.naturalWidth>1000),'Capture is missing or too small');
