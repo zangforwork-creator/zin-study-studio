@@ -1,6 +1,6 @@
 # Updating the private reading edition
 
-This Site is owner-private. News and web case metadata are shared public-source reading data; personal documents, notes, answers and learning progress stay in the browser. Never upload those records to this service. Keep the Site audience unchanged.
+This Site is owner-private. News and web case metadata are shared public-source reading data; browser-uploaded personal documents, notes, answers and learning progress stay in the browser. Never upload those records to the reading service. The separate private `/api/materials` library contains the 11 checked course originals explicitly requested by Zin; the scheduled news updater must not read, modify or upload course materials. Keep the Site audience unchanged.
 
 The Worker reads official RSS/Atom from VnExpress Business, VnExpress World and Google Ads & Commerce (`https://blog.google/products/ads-commerce/rss/`). It validates source URLs, dates and images, deduplicates and saves the result in R2. `GET /api/reading` refreshes an edition older than 15 minutes. The browser checks every 15 minutes while visible. Source failures preserve the last successful edition and expose per-source errors. Do not claim a failed source is current.
 
