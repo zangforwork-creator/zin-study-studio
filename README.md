@@ -24,6 +24,7 @@ Open **http://127.0.0.1:4173**. On other shells, `npm` is equivalent to `npm.cmd
 - Two source-checked starter lessons and six recall questions from *Marketing: An Introduction*, with diagrams, objectives, key ideas, hypothetical examples, cautions and original source pages.
 - A document reader with local PDF, DOCX and PPTX intake; selected-section extraction, source highlights, bookmarks, notes and user-authored source-linked recall cards.
 - Optional warm-up, short-answer recall before feedback, hint tracking, self-assessment and saved concept-level review dates.
+- The Daily's **Start study session** opens an optional 15/30/45/60-minute countdown with pause, resume, end and a compact floating clock. The old **Your next small step** panel is removed. A deadline preserves time across navigation, background tabs and reloads; the timer is stored separately in `zin-study-timer-v1` on this browser, without changing lesson completion, recall history or mastery. Reopening the button resumes the existing timer instead of creating another session. Existing recall activities remain available in Study Room.
 - Progress backups and validated merge imports; repeat imports and result submissions are deduplicated.
 
 ## Storage and privacy
@@ -72,10 +73,11 @@ node scripts/single-page-qa.mjs
 node scripts/reading-qa.mjs
 node scripts/layout-qa.mjs
 node scripts/news-portals-qa.mjs
+node scripts/study-timer-qa.mjs
 node scripts/accessibility-qa.mjs
 ```
 
-- 25 unit tests cover scheduling, assistance, idempotency, grades, backup merge, failed text, RSS/Atom safety, source images, cached fallback, provenance, case-reading persistence, safe course URLs and old backups, the exact 10-course material mapping, byte ranges, private file headers, cross-origin rejection, corrupt upload rejection and incomplete multipart rejection.
+- 32 unit tests cover scheduling, assistance, idempotency, grades, backup merge, failed text, RSS/Atom safety, source images, cached fallback, provenance, case-reading persistence, safe course URLs and old backups, the exact 10-course material mapping, byte ranges, private file headers, cross-origin rejection, corrupt upload rejection and incomplete multipart rejection. Seven timer tests verify durations, deadlines, pause/resume, reload, expiry, repeat starts, storage validation and display rounding.
 - Nine course/news browser checks cover one article per panel, headline containment, all 11 original file links/range responses, URL create/edit/delete and new-tab behavior, local persistence without changing mastery, and layouts at 390/768/1024/1440/1920 px. Sixteen layout checks and thirteen reading checks also pass.
 - 16 browser checks for the continuous page: all six sections stay mounted during navigation; Goals & Growth and its home panel are absent; old goals links return to The Daily; original 3D covers; inline courses; search; draft preservation and saved notes; recall and deduplicated review persistence; saved stories; PDF upload/extraction/source-linked cards; deep links and Back/Forward; navigation without horizontal overflow at 390/430/768/1024/1440 px; keyboard, both themes and reduced motion; unique DOM IDs and no observed JavaScript runtime errors.
 - The older browser, extended, bookshelf and card-effects scripts describe the previous separate-screen layout. Use `single-page-qa.mjs` for current navigation and cover checks.
