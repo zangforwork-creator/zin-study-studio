@@ -59,7 +59,7 @@ export function validateCases(value,now=new Date().toISOString()){
 export async function refreshEdition(previous,fetcher=fetch,now=new Date().toISOString(),caseInput=null){
  const checked=await Promise.all(SOURCES.map(async source=>{
   try{
-   const response=await fetcher(source.url,{signal:AbortSignal.timeout(10000),redirect:'error',headers:{Accept:'application/rss+xml, application/atom+xml, application/xml, text/xml','User-Agent':'ZinStudyStudio/1.0 RSS reader'}});
+   const response=await fetcher(source.url,{signal:AbortSignal.timeout(10000),redirect:'manual',headers:{Accept:'application/rss+xml, application/atom+xml, application/xml, text/xml','User-Agent':'ZinStudyStudio/1.0 RSS reader'}});
    if(!response.ok)throw Error('HTTP '+response.status);
    const length=Number(response.headers.get('content-length'));if(length>2000000)throw Error('Nguồn vượt giới hạn kích thước.');
    const items=parseFeed(await response.text(),source,Date.parse(now));

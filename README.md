@@ -73,7 +73,7 @@ node scripts/reading-qa.mjs
 node scripts/accessibility-qa.mjs
 ```
 
-- 16 unit tests: scheduling, assistance, idempotency, real-zero versus pending grades, backup merge, failed text, RSS/Atom parsing, matching source images, URL restrictions, future dates, cached fallback, provenance validation, case-reading persistence and writer origin restrictions.
+- 17 unit tests: scheduling, assistance, idempotency, real-zero versus pending grades, backup merge, failed text, RSS/Atom parsing, matching source images, URL and redirect restrictions, future dates, cached fallback, provenance validation, case-reading persistence and writer origin restrictions.
 - 16 browser checks for the continuous page: all six sections stay mounted during navigation; Goals & Growth and its home panel are absent; old goals links return to The Daily; original 3D covers; inline courses; search; draft preservation and saved notes; recall and deduplicated review persistence; saved stories; PDF upload/extraction/source-linked cards; deep links and Back/Forward; navigation without horizontal overflow at 390/430/768/1024/1440 px; keyboard, both themes and reduced motion; unique DOM IDs and no observed JavaScript runtime errors.
 - The older browser, extended, bookshelf and card-effects scripts describe the previous separate-screen layout. Use `single-page-qa.mjs` for current navigation and cover checks.
 - Automated axe-core checks on seven routes in both themes: no reported violations for the selected WCAG 2 A/AA, 2.1 A/AA and 2.2 AA rules. This is not a complete accessibility certification.

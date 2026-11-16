@@ -23,6 +23,11 @@ test('failed upstream refresh retains old news and last successful time',async()
 test('headlines retain topic diversity and deduplicate canonical URLs',()=>{
  const stories=SOURCES.map((s,i)=>({sourceId:s.id,url:s.url,date:'2026-11-16',id:String(i)}));assert.equal(selectHeadlines([...stories,...stories]).length,3);
 });
+test('the hosted fetch mode blocks upstream redirects and retains prior content',async()=>{
+ const old={items:parseFeed(rss(),SOURCES[0]),sources:[],updatedAt:'2026-11-15T08:00:00Z',caseStudies:[]};
+ const edition=await refreshEdition(old,async(url,options)=>{assert.equal(options.redirect,'manual');return new Response(null,{status:302,headers:{Location:'https://unapproved.test/feed'}});},now);
+ assert.equal(edition.items.length,1);assert.equal(edition.updatedAt,old.updatedAt);assert(edition.sources.every(s=>s.error==='HTTP 302'));
+});
 test('case writer validates provenance, deduplicates and keeps unknown publication dates unknown',()=>{
  const c={title:'Case',summary:'A source-linked overview.',url:'https://www.brandsvietnam.com/campaign/example',publisher:'Brands Vietnam'};
  const result=validateCases([c,c],now);assert.equal(result.length,1);assert.equal(result[0].date,null);assert.equal(result[0].checkedAt,now);assert.throws(()=>validateCases([{...c,url:'https://evil.test/case'}],now));

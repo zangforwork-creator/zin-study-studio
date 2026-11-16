@@ -21,7 +21,7 @@ export default {
    const image=allowedUrl(story?.image?.src,['vnecdn.net','googleusercontent.com','blogger.com','gstatic.com','googleblog.com','storage.googleapis.com']);
    if(!image)return new Response('Image not available',{status:404});
    try{
-    const upstream=await fetch(image,{redirect:'error',signal:AbortSignal.timeout(12000),headers:{Accept:'image/avif,image/webp,image/jpeg,image/png',Referer:story.url}});
+    const upstream=await fetch(image,{redirect:'manual',signal:AbortSignal.timeout(12000),headers:{Accept:'image/avif,image/webp,image/jpeg,image/png',Referer:story.url}});
     const type=(upstream.headers.get('content-type')||'').split(';')[0];
     if(!upstream.ok||!['image/jpeg','image/png','image/webp','image/avif','image/gif'].includes(type))return new Response('Source image unavailable',{status:502});
     if(Number(upstream.headers.get('content-length'))>4000000)return new Response('Image too large',{status:413});
