@@ -4,9 +4,9 @@ import {SOURCES,parseFeed,refreshEdition,allowedUrl,validateCases,selectHeadline
 import {initialState,validateState,mergeState,metrics} from '../dist/core.js';
 import worker from '../worker/index.js';
 const now='2026-11-16T10:00:00.000Z';
-const rss=(title='Một bản tin',link='https://vnexpress.net/business-123.html')=>`<rss><channel><item><title>${title}</title><description><![CDATA[<a><img src="https://i1-kinhdoanh.vnecdn.net/photo.jpg"></a> Nội dung &amp; điều kiện từ nguồn.]]></description><pubDate>Mon, 16 Nov 2026 15:00:00 +0700</pubDate><link>${link}</link></item></channel></rss>`;
+const rss=(title='A sourced story',link='https://e.vnexpress.net/business-123.html')=>`<rss><channel><item><title>${title}</title><description><![CDATA[<a><img src="https://i1-kinhdoanh.vnecdn.net/photo.jpg"></a> Source content and conditions.]]></description><pubDate>Mon, 16 Nov 2026 15:00:00 +0700</pubDate><link>${link}</link></item></channel></rss>`;
 test('RSS preserves source, date and matching image while removing HTML',()=>{
- const [n]=parseFeed(rss(),SOURCES[0],Date.parse(now));assert.equal(n.publisher,'VnExpress');assert.equal(n.date,'2026-11-16T08:00:00.000Z');assert.match(n.image.src,/photo.jpg$/);assert.equal(n.subtitle,'Nội dung & điều kiện từ nguồn.');assert.equal(n.id,parseFeed(rss(),SOURCES[0])[0].id);
+ const [n]=parseFeed(rss(),SOURCES[0],Date.parse(now));assert.equal(n.publisher,'VnExpress International');assert.equal(n.date,'2026-11-16T08:00:00.000Z');assert.match(n.image.src,/photo.jpg$/);assert.equal(n.subtitle,'Source content and conditions.');assert.equal(n.id,parseFeed(rss(),SOURCES[0])[0].id);
 });
 test('real raster signatures are accepted when a trusted CDN declares octet-stream; HTML is rejected',()=>{
  assert.equal(rasterMime(new Uint8Array([82,73,70,70,0,0,0,0,87,69,66,80])),'image/webp');

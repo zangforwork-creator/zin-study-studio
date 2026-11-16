@@ -12,7 +12,7 @@ await check('removed home shelf; real sourced news and dated case panel appear',
  assert(await page.locator('#library .book-volume').count()===10,'Main bookshelf missing');
  assert(await page.locator('#home .sourced-story').count()===1,'Home must show exactly one article');
  assert(await page.locator('#case-study-panel [data-action="case-open"]').count()===1,'Daily case missing');
- assert((await page.locator('#home .reading-status').innerText()).includes('Cập nhật thành công'),'No update timestamp');
+ assert((await page.locator('#home .reading-status').innerText()).includes('Last successful update'),'No update timestamp');
 });
 await check('the complete headline sits inside the cover and its image fills the frame proportionally',async()=>{
  assert(await page.locator('#home .story-image').count()>0,'No feed images');
@@ -57,7 +57,7 @@ await check('refresh preserves lesson drafts and existing learning controls',asy
 });
 await check('news outages preserve cached reading and do not break lessons',async()=>{
  await page.route('**/api/reading',route=>route.abort());await page.reload();await page.locator('#lesson-note').waitFor();
- await page.waitForFunction(()=>document.querySelector('#home .reading-status').textContent.includes('Không tải được'),null,{timeout:22000});
+ await page.waitForFunction(()=>document.querySelector('#home .reading-status').textContent.includes('Could not load'),null,{timeout:22000});
  assert(await page.locator('#home .feature-story').count()===1,'Cached news disappeared');
  assert(await page.locator('#lesson [data-action="practice-lesson"]').count()===1,'Learning is blocked by news failure');
  await page.unroute('**/api/reading');

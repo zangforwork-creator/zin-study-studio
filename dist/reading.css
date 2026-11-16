@@ -20,7 +20,7 @@
 .sourced-story.text-story,.sourced-story.media-failed{background:var(--surface)}
 .sourced-story.media-failed .story-media{display:flex}
 .sourced-story.media-failed .media-credit{display:inline}
-.sourced-story.media-failed .story-media:before{content:'Ảnh từ nguồn tạm không tải được';display:grid;place-items:center;aspect-ratio:16/9;width:100%;font-size:12px;color:var(--muted);background:var(--soft)}
+.sourced-story.media-failed .story-media:before{content:'The source image is temporarily unavailable';display:grid;place-items:center;aspect-ratio:16/9;width:100%;font-size:12px;color:var(--muted);background:var(--soft)}
 .sourced-story :focus-visible{outline-color:var(--focus)}
 .feature-story.sourced-story{margin-top:16px}
 .news-list{align-items:stretch}

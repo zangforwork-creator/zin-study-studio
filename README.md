@@ -15,6 +15,10 @@ npm.cmd run dev
 
 Open **http://127.0.0.1:4173**. On other shells, `npm` is equivalent to `npm.cmd`. The preview binds only to localhost. There are no API keys or external AI-service requirements. The build produces a Worker at `dist/server/index.js` and assets at `dist/client`; source client files remain under `dist`. Local reading data is stored under the ignored `.preview/reading` directory.
 
+## Permanent English language
+
+English is fixed for the website, timer, errors, course portals, and authored reading summaries. Browser locale and old cached reading editions do not change the interface language. Business/world RSS now comes from the publisher’s English VnExpress International feeds. Known case previews are translated faithfully; older non-English saved stories retain their ID, date, and original link, with an English source notice when no verified English summary is available. Original personal notes and documents are preserved. See `READING-UPDATES.md` for the English-only curation rule.
+
 ## What works
 
 - The Daily: one RSS article at a time, with its full headline inside the source image, Previous/Next controls, source dates and update status, saved stories, reading activity and a daily case-study panel. Market Pulse and Saved Stories also show one article at a time.
@@ -58,7 +62,7 @@ The 5/15/25 minute choices select up to 3/7/12 cards. They are planning budgets,
 
 The Worker fetches official RSS/Atom, validates publisher links and dates, deduplicates stories and saves an edition in R2. The browser checks every 15 minutes while visible; requests refresh an edition older than 15 minutes. Source failures preserve the last successful news and timestamp, with per-source error status. A deployed cloud update task refreshes content while the page is closed; see `READING-UPDATES.md` and the publication receipt for the saved schedule state.
 
-- [VnExpress Business RSS](https://vnexpress.net/rss/kinh-doanh.rss) and [World RSS](https://vnexpress.net/rss/the-gioi.rss), offered by the [publisher RSS directory](https://vnexpress.net/rss).
+- [VnExpress Business RSS](https://e.vnexpress.net/rss/business.rss) and [World RSS](https://e.vnexpress.net/rss/world.rss), offered by the [publisher RSS directory](https://e.vnexpress.net/rss).
 - [Google Ads & Commerce RSS](https://blog.google/products/ads-commerce/rss/). Quiet or older sources retain their publication dates; no new event is invented.
 - [Brands Vietnam Campaigns](https://www.brandsvietnam.com/campaign/): short original case summaries and direct source links. The first five cases were checked on 16 November 2026. Direct automated access may be blocked; the scheduled curator can use supported browsing and retains the checked catalogue when access fails. A daily reading choice rotates from the catalogue independently of whether a new campaign was published that day. Unknown publication dates remain unknown; campaign periods are labelled separately.
 - Document cases use only extracted original text with a direct page/section link. No full case analysis or AI synthesis is claimed. Reading cases never raises course mastery.

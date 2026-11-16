@@ -1,856 +1,568 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T10:30:23.602Z",
-  "checkedAt": "2026-11-16T10:30:23.602Z",
+  "language": "en",
+  "checkedAt": "2026-11-16T16:43:11.924Z",
+  "updatedAt": "2026-11-16T16:43:11.924Z",
   "caseUpdatedAt": "2026-11-16T10:30:23.785Z",
   "items": [
     {
-      "id": "live-f0ef8997",
+      "id": "live-61dbee6e",
+      "sourceId": "google-ads",
+      "publisher": "Google Ads & Commerce",
+      "topic": "Marketing",
+      "title": "How to find the best Black Friday deals and shop smarter",
+      "url": "https://blog.google/products-and-platforms/products/shopping/black-friday-cyber-monday-shopping-tips-2026/",
+      "date": "2026-11-16T14:00:00.000Z",
+      "subtitle": "Track price drops, organize your cart, and find thoughtful gifts faster this Black Friday and Cyber Monday with these Google tools.",
+      "image": {
+        "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Black_Friday_herosocial_alt.max-600x600.format-webp.webp",
+        "alt": "How to find the best Black Friday deals and shop smarter",
+        "credit": "Image from Google Ads & Commerce",
+        "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/black-friday-cyber-monday-shopping-tips-2026/"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-337ef37c",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Tiền vào chứng khoán thấp nhất một tháng",
-      "url": "https://vnexpress.net/tien-vao-chung-khoan-thap-nhat-mot-thang-5145326.html",
-      "date": "2026-11-16T09:07:51.000Z",
-      "subtitle": "Tâm lý thận trọng bao trùm thị trường chứng khoán khiến thanh khoản phiên đầu tuần chưa đến 12.000 tỷ đồng, thấp nhất một tháng qua.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Hong Kong tycoon Henry Cheng's New World Development's shares fall to all-time low on discounted rights issue plan",
+      "url": "https://e.vnexpress.net/news/business/companies/hong-kong-tycoon-henry-cheng-s-new-world-development-s-shares-fall-to-all-time-low-on-discounted-rights-issue-plan-5145370.html",
+      "date": "2026-11-16T12:29:07.000Z",
+      "subtitle": "Shares in New World Development, the Hong Kong property developer controlled by billionaire Henry Cheng and his family, tumbled to a record low after the firm proposed a heavily discounted rights issue to raise cash.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/233A8046-8347-1794819553.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=f6l97ERIEeZPMyKN2IPqdA",
-        "alt": "Tiền vào chứng khoán thấp nhất một tháng",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/tien-vao-chung-khoan-thap-nhat-mot-thang-5145326.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/afp-v1-1794824999-8032-1794825862.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=Oyk0UJy9gz-DWTv1630Aog",
+        "alt": "Hong Kong tycoon Henry Cheng's New World Development's shares fall to all-time low on discounted rights issue plan",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/hong-kong-tycoon-henry-cheng-s-new-world-development-s-shares-fall-to-all-time-low-on-discounted-rights-issue-plan-5145370.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-3237b1bb",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Mỹ, Nga, Trung sẽ bàn cách ổn định quan hệ giữa 3 cường quốc",
-      "url": "https://vnexpress.net/my-nga-trung-se-ban-cach-on-dinh-quan-he-giua-3-cuong-quoc-5145288.html",
-      "date": "2026-11-16T08:57:15.000Z",
-      "subtitle": "Lãnh đạo Mỹ, Nga, Trung Quốc sẽ thảo luận về \"hòa bình thế giới\" và cách ổn định quan hệ chiến lược khi gặp mặt tại Thâm Quyến tuần này.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/AP25354257930524-horz-17948180-1995-5072-1794818657.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=7Oj1pe8NLVwWppXbPTFoXA",
-        "alt": "Mỹ, Nga, Trung sẽ bàn cách ổn định quan hệ giữa 3 cường quốc",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/my-nga-trung-se-ban-cach-on-dinh-quan-he-giua-3-cuong-quoc-5145288.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-b43b60e7",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Tổng Bí thư, Chủ tịch nước gặp Tổng thống Pháp",
-      "url": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-gap-tong-thong-phap-5145261.html",
-      "date": "2026-11-16T08:48:35.000Z",
-      "subtitle": "Tổng Bí thư, Chủ tịch nước Tô Lâm và Tổng thống Macron nhất trí triển khai tốt các dự án hợp tác chiến lược khi gặp song phương tại Hội nghị cấp cao Pháp ngữ.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/wm30-wm30-tbt-ctn-to-lam-1794820461-1234-1794820495.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=hXQf6zk86XYRbsxFaVROiw",
-        "alt": "Tổng Bí thư, Chủ tịch nước gặp Tổng thống Pháp",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-gap-tong-thong-phap-5145261.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-9f99ec2a",
+      "id": "live-b98f87b6",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Giá USD ngân hàng bật tăng, lên sát 26.000 đồng",
-      "url": "https://vnexpress.net/gia-usd-ngan-hang-bat-tang-len-sat-26-000-dong-5145260.html",
-      "date": "2026-11-16T08:45:37.000Z",
-      "subtitle": "Giá đôla Mỹ trên thị trường chính thức tăng gần 1% trong tuần qua, USD tự do chiều nay cũng giao dịch trên 26.000 đồng.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore developers' home sales hit year-high in October, with 60% from one project",
+      "url": "https://e.vnexpress.net/news/business/property/singapore-developers-home-sales-hit-year-high-in-october-with-60-from-one-project-5145295.html",
+      "date": "2026-11-16T09:40:31.000Z",
+      "subtitle": "Singapore property developers sold 1,716 new private homes in October, the highest figure since the same month last year, with a single project, Thomson Reserve, accounting for 60% of sales.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/wm1-wm1-dsc-1794814278-6630-1794814776.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=mfEWJtr_78ZKp4dBqR8P7w",
-        "alt": "Giá USD ngân hàng bật tăng, lên sát 26.000 đồng",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/gia-usd-ngan-hang-bat-tang-len-sat-26-000-dong-5145260.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/1-whatsapp-image-at-pmx576-jpe-1819-8817-1794821407.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=02LJ5s2jYWBDUiyiSWKtcg",
+        "alt": "Singapore developers' home sales hit year-high in October, with 60% from one project",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/property/singapore-developers-home-sales-hit-year-high-in-october-with-60-from-one-project-5145295.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-690986a8",
+      "id": "live-831c791f",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Novaland xóa gần 4 triệu USD nợ bằng cổ phiếu",
-      "url": "https://vnexpress.net/novaland-xoa-gan-4-trieu-usd-no-bang-co-phieu-5145264.html",
-      "date": "2026-11-16T08:05:29.000Z",
-      "subtitle": "Quỹ đầu tư nước ngoài đồng ý chuyển đổi trái phiếu trị giá gần 3,8 triệu USD thành 2,8 triệu cổ phiếu Novaland với giá gấp 3 lần thị trường.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Dollar gains over dong",
+      "url": "https://e.vnexpress.net/news/business/markets/dollar-gains-over-dong-5145186.html",
+      "date": "2026-11-16T07:32:12.000Z",
+      "subtitle": "The U.S. dollar strengthened against the Vietnamese dong on Monday morning.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/nova320240910182653-1794814495-9988-1794814508.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=DCHvHzFSabTAu-dPqCvlkQ",
-        "alt": "Novaland xóa gần 4 triệu USD nợ bằng cổ phiếu",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/novaland-xoa-gan-4-trieu-usd-no-bang-co-phieu-5145264.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/wm1wm1dsc179179180113701791791-6933-5143-1794803484.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=yw5JzufkxDcU-Dm5KhAR3Q",
+        "alt": "Dollar gains over dong",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/markets/dollar-gains-over-dong-5145186.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-f4a95081",
+      "id": "live-47621141",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Bill Gates kiếm hàng chục tỷ USD từ ngành rác thải",
-      "url": "https://vnexpress.net/bill-gates-kiem-hang-chuc-ty-usd-tu-nganh-rac-thai-5145200.html",
-      "date": "2026-11-16T08:03:46.000Z",
-      "subtitle": "Từ khoản đầu tư 114 triệu USD gần ba thập kỷ trước, cổ phần của Bill Gates tại doanh nghiệp xử lý rác lớn thứ hai nước Mỹ hiện đạt giá trị khoảng 29 tỷ USD.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Vietnamese billionaire Pham Nhat Vuong among world’s 3 biggest wealth gainers",
+      "url": "https://e.vnexpress.net/news/business/billionaires/vietnamese-billionaire-pham-nhat-vuong-among-world-s-3-biggest-wealth-gainers-5145250.html",
+      "date": "2026-11-16T07:21:47.000Z",
+      "subtitle": "Vietnamese billionaire Pham Nhat Vuong was among the world’s three biggest wealth gainers on Monday as shares of his company Vingroup continued their recovery.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/2018t153314z-rc1c659d4c70-rtrm-1340-8666-1794803607.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=xfGRmkL3OEwBJ4Oq5aPKuw",
-        "alt": "Bill Gates kiếm hàng chục tỷ USD từ ngành rác thải",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/bill-gates-kiem-hang-chuc-ty-usd-tu-nganh-rac-thai-5145200.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/ad8d6afdce057d5b2414-179481335-3080-4043-1794813404.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=fXBGwuseF-bBAEFlrLB3ag",
+        "alt": "Vietnamese billionaire Pham Nhat Vuong among world’s 3 biggest wealth gainers",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/billionaires/vietnamese-billionaire-pham-nhat-vuong-among-world-s-3-biggest-wealth-gainers-5145250.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-7cda73e9",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Sĩ quan Mỹ thoát chết ở Kuwait gửi đơn khiếu nại Lầu Năm Góc",
-      "url": "https://vnexpress.net/si-quan-my-thoat-chet-o-kuwait-gui-don-khieu-nai-lau-nam-goc-5145256.html",
-      "date": "2026-11-16T08:03:33.000Z",
-      "subtitle": "Sống sót sau vụ tập kích UAV của Iran, thiếu tá Stephen Ramsbottom gửi đơn cáo buộc lãnh đạo quân đội Mỹ phớt lờ củng cố phòng thủ.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/thie-u-ta-my-1794814100-4890-1794814338.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=vkTGf9-wB2IwX7Rq-bX32g",
-        "alt": "Sĩ quan Mỹ thoát chết ở Kuwait gửi đơn khiếu nại Lầu Năm Góc",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/si-quan-my-thoat-chet-o-kuwait-gui-don-khieu-nai-lau-nam-goc-5145256.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-7a3e5c11",
+      "id": "live-a9b510a4",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Phó thống đốc Ngân hàng Nhà nước giữ chức Bí thư Đảng ủy VCCI",
-      "url": "https://vnexpress.net/pho-thong-doc-ngan-hang-nha-nuoc-giu-chuc-bi-thu-dang-uy-vcci-5145278.html",
-      "date": "2026-11-16T08:03:11.000Z",
-      "subtitle": "Ông Phạm Quang Dũng, Phó thống đốc Ngân hàng Nhà nước được chỉ định giữ chức Bí thư Đảng ủy VCCI nhiệm kỳ 2025-2030.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Debt collectors seek up to $1.5M in unpaid invoices from Singapore's Lao Huo Tang restaurant chain",
+      "url": "https://e.vnexpress.net/news/business/companies/debt-collectors-seek-up-to-1-5m-in-unpaid-invoices-from-singapore-s-lao-huo-tang-restaurant-chain-5145157.html",
+      "date": "2026-11-16T04:16:40.000Z",
+      "subtitle": "Debt collectors have been visiting food businesses in Singapore to pursue unpaid invoices of up to SGD2 million (US$1.55 million) linked to the Lao Huo Tang restaurant chain.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/pham-quangdung1-sang-179482011-2207-6612-1794820129.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Bn4qYa3YFVMyIXaYgQQiwA",
-        "alt": "Phó thống đốc Ngân hàng Nhà nước giữ chức Bí thư Đảng ủy VCCI",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/pho-thong-doc-ngan-hang-nha-nuoc-giu-chuc-bi-thu-dang-uy-vcci-5145278.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/anwiy9soopvoefwpivktu4doo9upt-5851-4039-1794801523.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=c7MXmAhj2BK23TgpaUdGTg",
+        "alt": "Debt collectors seek up to $1.5M in unpaid invoices from Singapore's Lao Huo Tang restaurant chain",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/debt-collectors-seek-up-to-1-5m-in-unpaid-invoices-from-singapore-s-lao-huo-tang-restaurant-chain-5145157.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-60a5795f",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Lữ đoàn Hamas liên tiếp mất chỉ huy do Israel hạ sát",
-      "url": "https://vnexpress.net/lu-doan-hamas-lien-tiep-mat-chi-huy-do-israel-ha-sat-5145202.html",
-      "date": "2026-11-16T07:54:24.000Z",
-      "subtitle": "Israel hạ sát chỉ huy Lữ đoàn Rafah của Hamas, chỉ hai tháng sau khi tập kích khiến chỉ huy tiền nhiệm thiệt mạng.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/AbuYounis-1794811887-1615-1794812240.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=lxSNnIQaagj_PyqeEo3Kkg",
-        "alt": "Lữ đoàn Hamas liên tiếp mất chỉ huy do Israel hạ sát",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/lu-doan-hamas-lien-tiep-mat-chi-huy-do-israel-ha-sat-5145202.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-1df47ffd",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Chiếc router khiến không phận Mỹ tê liệt",
-      "url": "https://vnexpress.net/chiec-router-khien-khong-phan-my-te-liet-5145033.html",
-      "date": "2026-11-16T07:35:02.000Z",
-      "subtitle": "Bộ router mới lắp đặt tại Arkansas bỗng nhiên phát lượng dữ liệu khổng lồ, gây quá tải mạng lưới kiểm soát không lưu, buộc Mỹ đình chỉ bay toàn quốc.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/ap26317818708518-1794807683-8159-1794807975.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=KtqXDkMAzzzkc2b3prkJwQ",
-        "alt": "Chiếc router khiến không phận Mỹ tê liệt",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/chiec-router-khien-khong-phan-my-te-liet-5145033.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-bf52d8aa",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Iran hé lộ phương án sử dụng loạt vũ khí tịch thu của Mỹ",
-      "url": "https://vnexpress.net/iran-he-lo-phuong-an-su-dung-loat-vu-khi-tich-thu-cua-my-5144949.html",
-      "date": "2026-11-16T07:27:31.000Z",
-      "subtitle": "Vệ binh Iran tuyên bố đang dùng vũ khí Mỹ để phát triển và cải tiến khí tài nội địa, không đơn thuần là sao chép sản phẩm nguyên bản.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/uav-my-1794806157-4093-1794806170.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=h6Kj6dcHyPyPtTfP8mjdKw",
-        "alt": "Iran hé lộ phương án sử dụng loạt vũ khí tịch thu của Mỹ",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/iran-he-lo-phuong-an-su-dung-loat-vu-khi-tich-thu-cua-my-5144949.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-7de6aa0e",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Ông Zelensky: Phi đội F-16 Ukraine chỉ 'mạnh trên giấy'",
-      "url": "https://vnexpress.net/ong-zelensky-phi-doi-f-16-ukraine-chi-manh-tren-giay-5145206.html",
-      "date": "2026-11-16T06:57:15.000Z",
-      "subtitle": "Tổng thống Zelensky cho biết Ukraine cần lượng tiêm kích F-16 nhiều gấp vài lần biên chế hiện nay, do phần lớn máy bay đang phải bảo dưỡng.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/55631871781372687522a-ukraine-4029-9908-1794804757.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=E-NgHpvxoMZUm81SoeW5-Q",
-        "alt": "Ông Zelensky: Phi đội F-16 Ukraine chỉ 'mạnh trên giấy'",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/ong-zelensky-phi-doi-f-16-ukraine-chi-manh-tren-giay-5145206.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-ac609caf",
+      "id": "live-994f0a58",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "SCB sẽ không trả lãi suất cho người gửi tiền online",
-      "url": "https://vnexpress.net/scb-se-khong-tra-lai-suat-cho-nguoi-gui-tien-online-5145221.html",
-      "date": "2026-11-16T05:59:16.000Z",
-      "subtitle": "Từ hôm nay, SCB áp dụng biểu lãi suất tiết kiệm mới với mức 0% cho tất cả kỳ hạn gửi tiết kiệm trực tuyến.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "LNG plant backed by Indonesian billionaire Sukanto Tanoto receives $140M grant from Canada",
+      "url": "https://e.vnexpress.net/news/business/companies/lng-plant-backed-by-indonesian-billionaire-sukanto-tanoto-receives-140m-grant-from-canada-5145167.html",
+      "date": "2026-11-16T04:16:22.000Z",
+      "subtitle": "Canada has announced a C$200 million (US$140 million) grant for Woodfibre LNG, a liquefied natural gas project on the country's west coast backed by Indonesian billionaire Sukanto Tanoto.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/SCB-1794807014-5960-1794807053.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=xzR43_4GGnXHUHaOrdkcXg",
-        "alt": "SCB sẽ không trả lãi suất cho người gửi tiền online",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/scb-se-khong-tra-lai-suat-cho-nguoi-gui-tien-online-5145221.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/853006531-n-1794801661-4483-1794802025.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=PEOnIf-CwD8mcYKWTsuI7A",
+        "alt": "LNG plant backed by Indonesian billionaire Sukanto Tanoto receives $140M grant from Canada",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/lng-plant-backed-by-indonesian-billionaire-sukanto-tanoto-receives-140m-grant-from-canada-5145167.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-27fd32e9",
+      "id": "live-6141021f",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Các quỹ lớn gom cổ phiếu bất động sản sau nhịp giảm sâu",
-      "url": "https://vnexpress.net/cac-quy-lon-gom-co-phieu-bat-dong-san-sau-nhip-giam-sau-5145180.html",
-      "date": "2026-11-16T05:53:13.000Z",
-      "subtitle": "VinaCapital, Dragon Capital cùng nhiều quỹ mở, ETF gia tăng nắm giữ cổ phiếu bất động sản trong bối cảnh nhiều mã đã mất nửa giá trị sau một năm.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Hong Kong billionaire Cheng family's New World Development offers shares at 81% discount in $3.2B rights issue",
+      "url": "https://e.vnexpress.net/news/business/companies/hong-kong-billionaire-cheng-family-s-new-world-development-offers-shares-at-81-discount-in-3-2b-rights-issue-5145062.html",
+      "date": "2026-11-16T03:38:50.000Z",
+      "subtitle": "Hong Kong property developer New World ​Development, controlled by the billionaire Cheng family, has proposed a rights issue offering shares at a discount to raise ‌about HK$24.9 billion (US$3.17 billion).",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/233a8010-1794802238-2759-1794802525.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=l8q08K1ckds4gZkxEZNpng",
-        "alt": "Các quỹ lớn gom cổ phiếu bất động sản sau nhịp giảm sâu",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/cac-quy-lon-gom-co-phieu-bat-dong-san-sau-nhip-giam-sau-5145180.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/afp-yuen-hongkong240103-npnht-8911-7795-1794794144.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=mjVp71VduxsX6TXF7PaUOg",
+        "alt": "Hong Kong billionaire Cheng family's New World Development offers shares at 81% discount in $3.2B rights issue",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/hong-kong-billionaire-cheng-family-s-new-world-development-offers-shares-at-81-discount-in-3-2b-rights-issue-5145062.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-e06ee94e",
+      "id": "live-2b9fc728",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Kinh tế Nhật Bản bất ngờ tăng trưởng âm",
-      "url": "https://vnexpress.net/kinh-te-nhat-ban-bat-ngo-tang-truong-am-5145198.html",
-      "date": "2026-11-16T05:30:00.000Z",
-      "subtitle": "Giá năng lượng cao gây sức ép lên tiêu dùng và xuất khẩu ròng của Nhật Bản, khiến nền kinh tế co lại trong quý III.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singtel group CEO sells $6.3M in shares of Southeast Asia’s largest telecom operator",
+      "url": "https://e.vnexpress.net/news/business/companies/singtel-group-ceo-sells-6-3m-in-shares-of-southeast-asia-s-largest-telecom-operator-5145118.html",
+      "date": "2026-11-16T03:15:24.000Z",
+      "subtitle": "Yuen Kuan Moon, CEO of Singtel Group, Southeast Asia’s largest telecommunications company, has sold two million shares in the company for SGD8.1 million (US$6.3 million).",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/2023t082320z-rc2600adkmja-rtrm-9577-4353-1794803501.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=J4MiRE1zdfU1UTN4nkBoTQ",
-        "alt": "Kinh tế Nhật Bản bất ngờ tăng trưởng âm",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/kinh-te-nhat-ban-bat-ngo-tang-truong-am-5145198.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/a-afp-doc7exp3hxf-1794797303-4275-1794797356.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=5HHjvVrSWi1hF7bWH8jsag",
+        "alt": "Singtel group CEO sells $6.3M in shares of Southeast Asia’s largest telecom operator",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/singtel-group-ceo-sells-6-3m-in-shares-of-southeast-asia-s-largest-telecom-operator-5145118.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-a9516e0",
+      "id": "live-5a06f702",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Chiến dịch vận động phục chức cho Jensen Huang",
-      "url": "https://vnexpress.net/chien-dich-van-dong-phuc-chuc-cho-jensen-huang-5145169.html",
-      "date": "2026-11-16T05:01:56.000Z",
-      "subtitle": "Những người ủng hộ Jensen Huang phát động chiến dịch trực tuyến nhằm đưa ông trở lại ghế CEO Nvidia, cho rằng tập đoàn không nên vội vàng loại bỏ ông.",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Rocket fails mid-flight, destroys payload of Amazon satellites",
+      "url": "https://e.vnexpress.net/news/world/rocket-fails-mid-flight-destroys-payload-of-amazon-satellites-5145103.html",
+      "date": "2026-11-16T02:52:30.000Z",
+      "subtitle": "A Vulcan rocket owned failed on Sunday shortly after liftoff from Florida, destroying its payload of 40 satellites from Amazon's Leo internet network in the launch company's first mission failure.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/afp-dpa-pa-dpai-v1-highres-nvi-4565-5352-1794803939.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=kDf6fkoqIvng9CSXigfPLw",
-        "alt": "Chiến dịch vận động phục chức cho Jensen Huang",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/chien-dich-van-dong-phuc-chuc-cho-jensen-huang-5145169.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/hxlm97exaaex6hu-1794796340-1573-1794796352.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=cj1b5lL7nKKb_uN-i1FtVQ",
+        "alt": "Rocket fails mid-flight, destroys payload of Amazon satellites",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/rocket-fails-mid-flight-destroys-payload-of-amazon-satellites-5145103.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-a745291e",
+      "id": "live-bb7cd9dc",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "'Tàu sân bay thứ ba của Mỹ đến Trung Đông' giữa căng thẳng với Iran",
-      "url": "https://vnexpress.net/tau-san-bay-thu-ba-cua-my-den-trung-dong-giua-cang-thang-voi-iran-5145174.html",
-      "date": "2026-11-16T04:47:20.000Z",
-      "subtitle": "USS Theodore Roosevelt đến Trung Đông và dự kiến hoạt động cùng hai tàu sân bay tại khu vực, theo quan chức Mỹ.",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Thousands of US flights canceled, delayed for third day in a row",
+      "url": "https://e.vnexpress.net/news/world/thousands-of-us-flights-canceled-delayed-for-third-day-in-a-row-5145086.html",
+      "date": "2026-11-16T02:36:40.000Z",
+      "subtitle": "U.S. air travel disruptions continued for a third day on Sunday with more than 10,000 flights affected, but Transportation Secretary Sean Duffy predicted a return to normalcy by Monday.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/5563187178137269315c-179480198-9127-1464-1794802300.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=dTJU00y2GbpfaJOSXiKwAg",
-        "alt": "'Tàu sân bay thứ ba của Mỹ đến Trung Đông' giữa căng thẳng với Iran",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/tau-san-bay-thu-ba-cua-my-den-trung-dong-giua-cang-thang-voi-iran-5145174.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/16/afp-v1-highres-usairportsstrug-8202-6864-1794795830.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=Isclg-_0NS1IrsuOWe2TBg",
+        "alt": "Thousands of US flights canceled, delayed for third day in a row",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/thousands-of-us-flights-canceled-delayed-for-third-day-in-a-row-5145086.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-6547b42c",
+      "id": "live-56b54fe0",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Jensen Huang reportedly discusses comeback as Nvidia CEO with allies",
+      "url": "https://e.vnexpress.net/news/business/companies/jensen-huang-reportedly-discusses-comeback-as-nvidia-ceo-with-allies-5145049.html",
+      "date": "2026-11-16T01:56:17.000Z",
+      "subtitle": "Jensen Huang is considering ​a comeback as Nvidia's CEO, and ‌has discussed with confidants the possibility of returning, the Financial Times reported on Sunday, citing people familiar ​with the matter.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/16/afp-d7ad3we-v2-highres-nvidiac-1599-5313-1794792233.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=PP-SVJo-snl8qf9ZZe4qjQ",
+        "alt": "Jensen Huang reportedly discusses comeback as Nvidia CEO with allies",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/jensen-huang-reportedly-discusses-comeback-as-nvidia-ceo-with-allies-5145049.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-8281e3b2",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Philippine tycoon Federico Lopez-controlled company sells property developer to cousin’s firm",
+      "url": "https://e.vnexpress.net/news/business/companies/philippine-tycoon-federico-lopez-controlled-company-sells-property-developer-to-cousin-s-firm-5144621.html",
+      "date": "2026-11-15T23:16:25.000Z",
+      "subtitle": "First Philippine Holdings (FPH), the conglomerate led by tycoon Federico Lopez, is selling its entire stake in property developer Rockwell Land to another branch of the family for 15.9 billion pesos (US$249 million).",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/14/0x0-1794628396-2157-1794628415.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=2_FyX9j4zMKDdxhNiyLXeg",
+        "alt": "Philippine tycoon Federico Lopez-controlled company sells property developer to cousin’s firm",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/philippine-tycoon-federico-lopez-controlled-company-sells-property-developer-to-cousin-s-firm-5144621.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-f3a5014b",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Late Malaysian billionaire Lim Goh Tong's grandson loses bid to remove administrators in Genting family will dispute",
+      "url": "https://e.vnexpress.net/news/business/billionaires/late-malaysian-billionaire-lim-goh-tong-s-grandson-loses-bid-to-remove-administrators-in-genting-family-will-dispute-5144632.html",
+      "date": "2026-11-15T23:10:18.000Z",
+      "subtitle": "Marcus Chan, a grandson of late Malaysian billionaire Lim Goh Tong, has failed in his attempt to remove the court-appointed administrators managing his late mother’s disputed RM1.6 billion (US$400 million) estate.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/14/aep-marcus-chan-jau-chwenx1377-9780-3786-1794638918.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=9ASKnnZKRPg1e89SP6EVQw",
+        "alt": "Late Malaysian billionaire Lim Goh Tong's grandson loses bid to remove administrators in Genting family will dispute",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/billionaires/late-malaysian-billionaire-lim-goh-tong-s-grandson-loses-bid-to-remove-administrators-in-genting-family-will-dispute-5144632.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-5e9d3319",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Cháy cửa hàng xe máy ở Thái Lan, 11 người chết",
-      "url": "https://vnexpress.net/chay-cua-hang-xe-may-o-thai-lan-11-nguoi-chet-5145137.html",
-      "date": "2026-11-16T04:20:10.000Z",
-      "subtitle": "11 người thiệt mạng và 36 người bị thương trong vụ hỏa hoạn tại một cửa hàng xe máy ở Thái Lan, có thể là do chập điện.",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Top scorer on South Korean tax exam confesses to cheating with AI",
+      "url": "https://e.vnexpress.net/news/world/top-scorer-on-south-korean-tax-exam-confesses-to-cheating-with-ai-5144936.html",
+      "date": "2026-11-15T16:18:54.000Z",
+      "subtitle": "The marks attained by the top scorer on South Korea's national exam for aspiring tax accountants this ​year seemed too good to be true and on Sunday, sceptics were proven ‌right when he confessed to using generative AI to cheat.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/Phuket-1794801999-2454-1794802286.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=XmaVAypLRCJspHmHlGDDCw",
-        "alt": "Cháy cửa hàng xe máy ở Thái Lan, 11 người chết",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/chay-cua-hang-xe-may-o-thai-lan-11-nguoi-chet-5145137.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/15/artu-1794742266-6148-1794742332.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=qOOF-0rKiUeraRU2N56hJQ",
+        "alt": "Top scorer on South Korean tax exam confesses to cheating with AI",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/top-scorer-on-south-korean-tax-exam-confesses-to-cheating-with-ai-5144936.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-2b441aa0",
+      "id": "live-e95e8a2a",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore Airlines Group’s profit nearly halves as fuel costs bite",
+      "url": "https://e.vnexpress.net/news/business/companies/singapore-airlines-group-s-profit-nearly-halves-as-fuel-costs-bite-5143891.html",
+      "date": "2026-11-14T23:46:42.000Z",
+      "subtitle": "Singapore Airlines Group’s net profit dropped 43.9% to SGD134 million (US$104 million) in the first half of fiscal 2027 as elevated fuel costs squeezed earnings.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/12/peaky-vg7owpzgmoi-unsplash-179-2796-5946-1794470034.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=9-v2I0ddtwc1J4aiwsI8hQ",
+        "alt": "Singapore Airlines Group’s profit nearly halves as fuel costs bite",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/singapore-airlines-group-s-profit-nearly-halves-as-fuel-costs-bite-5143891.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-9f7d3ae1",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Russian buyers’ condo purchase ranks second in Thailand",
+      "url": "https://e.vnexpress.net/news/business/property/russian-buyers-condo-purchase-ranks-second-in-thailand-5144590.html",
+      "date": "2026-11-14T23:40:09.000Z",
+      "subtitle": "Russian buyers were the second-largest group of foreign condo buyers in Thailand in the third quarter, behind Chinese customers.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/14/afp-bkp151215b4r-v1-highres-th-6521-1675-1794624702.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=kPMwSbbfwrdCy37FEjwDsw",
+        "alt": "Russian buyers’ condo purchase ranks second in Thailand",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/property/russian-buyers-condo-purchase-ranks-second-in-thailand-5144590.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-6cf30930",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Atlas Air could double Vietnam operations if infrastructure improves: CEO",
+      "url": "https://e.vnexpress.net/news/business/companies/atlas-air-could-double-vietnam-operations-if-infrastructure-improves-ceo-vnepre-5144384.html",
+      "date": "2026-11-14T09:27:52.000Z",
+      "subtitle": "Atlas Air Worldwide, the operator of the world’s largest Boeing 747 freighter fleet, could double its Vietnam operations over the next several years if infrastructure improves to accommodate growing air cargo demand, CEO Michael Steen said.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/13/michael-steen-headshot-march-1-9539-4983-1794560749.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=-6spOYG6p92LpXZp7PGv_w",
+        "alt": "Atlas Air could double Vietnam operations if infrastructure improves: CEO",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/atlas-air-could-double-vietnam-operations-if-infrastructure-improves-ceo-vnepre-5144384.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-fff96e8a",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Gold prices slip",
+      "url": "https://e.vnexpress.net/news/business/markets/gold-prices-slip-5144617.html",
+      "date": "2026-11-14T04:26:57.000Z",
+      "subtitle": "Vietnam gold prices fell Saturday morning as the precious metal closed the week lower on global markets.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/14/ADSC6297Apersonholdsgoldbarsin-3008-3016-1794627845.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=C37rVdswd3UDZwwfKq5kWw",
+        "alt": "Gold prices slip",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/markets/gold-prices-slip-5144617.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-c38bb47b",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Dollar spikes against dong on black market",
+      "url": "https://e.vnexpress.net/news/business/markets/dollar-spikes-against-dong-on-black-market-5144610.html",
+      "date": "2026-11-14T04:26:37.000Z",
+      "subtitle": "The U.S. dollar rose against the Vietnamese dong on the black market Saturday morning.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/14/u-s-dollar-and-euro-banknotes-6800-2682-1794627299.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=suB8WmOsK21vGxXNVXYhZQ",
+        "alt": "Dollar spikes against dong on black market",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/markets/dollar-spikes-against-dong-on-black-market-5144610.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-fa5cb91b",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Hơn một năm Jensen Huang che giấu mối quan hệ ngoại tình",
-      "url": "https://vnexpress.net/hon-mot-nam-jensen-huang-che-giau-moi-quan-he-ngoai-tinh-5145018.html",
-      "date": "2026-11-16T04:15:20.000Z",
-      "subtitle": "Khi báo Mỹ liên hệ để hỏi về mối quan hệ với Alice Huang hơn một năm trước, Jensen Huang đã chỉ đạo con gái mình và đội truyền thông Nvidia \"đáp trả mạnh mẽ\".",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Microsoft rules out malicious cyber or AI activity as outage triggers global chaos",
+      "url": "https://e.vnexpress.net/news/world/microsoft-rules-out-malicious-cyber-or-ai-activity-as-outage-triggers-global-chaos-5144583.html",
+      "date": "2026-11-14T02:38:51.000Z",
+      "subtitle": "Microsoft on Friday apologized for a global outage that disrupted public services and businesses around the world, as it reported a \"broad recovery\" for Outlook email and other services.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/AFP-20261021-dpa-pa-261021-99-3627-2648-1794796816.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uqImhFUe-bK_CaeuAFqZbw",
-        "alt": "Hơn một năm Jensen Huang che giấu mối quan hệ ngoại tình",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/hon-mot-nam-jensen-huang-che-giau-moi-quan-he-ngoai-tinh-5145018.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/14/r43bvrnq6znfzc6korxc2haiki-179-8522-4041-1794623553.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=2tA1TNGwSC1yv1QDEvMsrQ",
+        "alt": "Microsoft rules out malicious cyber or AI activity as outage triggers global chaos",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/microsoft-rules-out-malicious-cyber-or-ai-activity-as-outage-triggers-global-chaos-5144583.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-27f71a5c",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Rào cản ngăn Jensen Huang quay lại lãnh đạo Nvidia",
-      "url": "https://vnexpress.net/rao-can-ngan-jensen-huang-quay-lai-lanh-dao-nvidia-5145134.html",
-      "date": "2026-11-16T04:08:46.000Z",
-      "subtitle": "Dù rất nhiều người muốn Jensen Huang quay về làm CEO, khả năng này hiện được đánh giá rất thấp và có thể gây thêm hỗn loạn cho công ty.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/afp-widak-nvidiasc250106-npkqi-5863-6610-1794799642.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yC5kfGecodzOyb-Y1Dh7UA",
-        "alt": "Rào cản ngăn Jensen Huang quay lại lãnh đạo Nvidia",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/rao-can-ngan-jensen-huang-quay-lai-lanh-dao-nvidia-5145134.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-3e3d4851",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Gần 25.000 khách hàng Vietcombank hưởng ưu đãi giảm lãi suất",
-      "url": "https://vnexpress.net/gan-25-000-khach-hang-vietcombank-huong-uu-dai-giam-lai-suat-5145172.html",
-      "date": "2026-11-16T04:00:00.000Z",
-      "subtitle": "Vietcombank đã giải ngân khoảng 150.000 tỷ đồng cho gần 25.000 khách hàng trong chương trình ưu đãi giảm lãi suất, tính đến đầu tháng 11, theo Phó tổng giám đốc Bạch Thành Long.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/16/vcbbb-1794801659-4246-1794801716.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=xxgJtBFU-pdb563MUBUylQ",
-        "alt": "Gần 25.000 khách hàng Vietcombank hưởng ưu đãi giảm lãi suất",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/gan-25-000-khach-hang-vietcombank-huong-uu-dai-giam-lai-suat-5145172.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-1a3a2597",
+      "id": "live-917f7b86",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Mỹ 'không thể hủy hợp đồng' với nhà thầu gây đình chỉ bay toàn quốc",
-      "url": "https://vnexpress.net/my-khong-the-huy-hop-dong-voi-nha-thau-gay-dinh-chi-bay-toan-quoc-5145105.html",
-      "date": "2026-11-16T03:42:14.000Z",
-      "subtitle": "Bộ trưởng Giao thông Duffy tuyên bố \"không thể hủy hợp đồng\" với L3Harris, công ty liên quan sự cố gây đình chỉ bay trên toàn nước Mỹ.",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Trump, Xi, Putin to hold historic meeting in China: White House",
+      "url": "https://e.vnexpress.net/news/world/trump-xi-putin-to-hold-historic-meeting-in-china-white-house-5144576.html",
+      "date": "2026-11-14T02:38:16.000Z",
+      "subtitle": "Donald Trump, Vladimir Putin and Xi Jinping will hold the first ever three-way meeting between the leaders of the United States, Russia and China at a summit in Shenzhen next week, the White House said Friday.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/ap26318063730215-1794798769-8110-1794799713.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=85N2M_w0WZlzdeykdic_2A",
-        "alt": "Mỹ 'không thể hủy hợp đồng' với nhà thầu gây đình chỉ bay toàn quốc",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/my-khong-the-huy-hop-dong-voi-nha-thau-gay-dinh-chi-bay-toan-quoc-5145105.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/14/afp-dpa-pa-jpeg-1794622861-7382-1794623641.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=Yn-6GLVR64R8vUJMHgvkQQ",
+        "alt": "Trump, Xi, Putin to hold historic meeting in China: White House",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/trump-xi-putin-to-hold-historic-meeting-in-china-white-house-5144576.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-f33b534c",
+      "id": "live-4702720a",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore-based billionaire investor Leo KoGuan says no further investment in Nvidia after Jensen Huang's resignation",
+      "url": "https://e.vnexpress.net/news/business/billionaires/singapore-based-billionaire-investor-leo-koguan-says-no-further-investment-in-nvidia-after-jensen-huang-s-resignation-5144354.html",
+      "date": "2026-11-13T09:37:50.000Z",
+      "subtitle": "Leo KoGuan, a billionaire investor based in Singapore, has said he will not raise his stake in Nvidia after Jensen Huang resigned as the chipmaker's CEO.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/13/koguan-leo-headshot-1794561070-9136-1794561274.png?w=900&h=0&q=100&dpr=1&fit=crop&s=qxbcfGAfnr7U71c68D7JKQ",
+        "alt": "Singapore-based billionaire investor Leo KoGuan says no further investment in Nvidia after Jensen Huang's resignation",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/billionaires/singapore-based-billionaire-investor-leo-koguan-says-no-further-investment-in-nvidia-after-jensen-huang-s-resignation-5144354.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-340b60ae",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Fast food chain Long John Silver's to shut another Singapore outlet, extending this year's string of closures",
+      "url": "https://e.vnexpress.net/news/business/companies/fast-food-chain-long-john-silver-s-to-shut-another-singapore-outlet-extending-this-year-s-string-of-closures-5144326.html",
+      "date": "2026-11-13T08:11:04.000Z",
+      "subtitle": "Long John Silver's, a chain known for its fried seafood, is set to close its outlet at Singapore's White Sands shopping mall, following several closures earlier this year.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/13/unnamed-1794556719-9954-1794556880.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=RjSS0klGIf78_FTOhQCT9g",
+        "alt": "Fast food chain Long John Silver's to shut another Singapore outlet, extending this year's string of closures",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/fast-food-chain-long-john-silver-s-to-shut-another-singapore-outlet-extending-this-year-s-string-of-closures-5144326.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-7b92ad38",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore billionaire Kwek Leng Beng-controlled firm to buy Marriott hotel for $366M",
+      "url": "https://e.vnexpress.net/news/business/property/singapore-billionaire-kwek-leng-beng-controlled-firm-to-buy-marriott-hotel-for-366m-5143681.html",
+      "date": "2026-11-13T04:48:55.000Z",
+      "subtitle": "CDL Hospitality Trusts, a Singapore-listed property trust indirectly controlled by billionaire Kwek Leng Beng and his family, plans to acquire a Marriott-managed hotel in Singapore for SGD469 million (US$366 million).",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/12/ox-sinox-reception-barclas-179-8635-2764-1794450087.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=JUOFgrf6QVEtd9RXigHE3w",
+        "alt": "Singapore billionaire Kwek Leng Beng-controlled firm to buy Marriott hotel for $366M",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/property/singapore-billionaire-kwek-leng-beng-controlled-firm-to-buy-marriott-hotel-for-366m-5143681.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-46f9c084",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore's 21-story building on Orchard Road gets new name after 30 years",
+      "url": "https://e.vnexpress.net/news/business/property/singapore-s-21-story-building-on-orchard-road-gets-new-name-after-30-years-5144168.html",
+      "date": "2026-11-13T04:48:29.000Z",
+      "subtitle": "Wheelock Place, a fixture in Singapore’s premier Orchard Road shopping belt, has been renamed to LANDMARK Orchard after three decades under its former name.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/13/1-1794541401-5295-1794541591.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=PzZAfXSSBW9mAR8Mf27Kag",
+        "alt": "Singapore's 21-story building on Orchard Road gets new name after 30 years",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/property/singapore-s-21-story-building-on-orchard-road-gets-new-name-after-30-years-5144168.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-7d071c96",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Estonia cáo buộc tình báo Nga phá hoại nhà máy UAV",
-      "url": "https://vnexpress.net/estonia-cao-buoc-tinh-bao-nga-pha-hoai-nha-may-uav-5145100.html",
-      "date": "2026-11-16T03:08:59.000Z",
-      "subtitle": "Giới chức Estonia tuyên bố sẽ đóng cửa biên giới sau khi cáo buộc tình báo quân đội Nga đứng sau vụ phá hoại nhà máy UAV.",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "US Justice Department has not concluded Alice Huang was Chinese spy",
+      "url": "https://e.vnexpress.net/news/world/us-justice-department-has-not-concluded-alice-huang-was-chinese-spy-5144231.html",
+      "date": "2026-11-13T04:26:33.000Z",
+      "subtitle": "U.S. Attorney General Todd Blanche said ​on Thursday that the Justice Department has not yet reached a ‌conclusion on whether Alice Huang, the Chinese businesswoman who had an affair with former Nvidia CEO Jensen Huang, was a Chinese spy.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/5563187178137269315a-179479635-3873-1148-1794796519.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aQLyOSsvgpXBCu_5VGj9pQ",
-        "alt": "Estonia cáo buộc tình báo Nga phá hoại nhà máy UAV",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/estonia-cao-buoc-tinh-bao-nga-pha-hoai-nha-may-uav-5145100.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/13/ap26316456393208-1794543273-9047-1794543291.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=X22sfvo2Gf6fN9AOSHbwXw",
+        "alt": "US Justice Department has not concluded Alice Huang was Chinese spy",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/us-justice-department-has-not-concluded-alice-huang-was-chinese-spy-5144231.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-f8144b22",
+      "id": "live-ba0b57c6",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Dollar weakens against dong",
+      "url": "https://e.vnexpress.net/news/business/markets/dollar-weakens-against-dong-5144228.html",
+      "date": "2026-11-13T04:07:04.000Z",
+      "subtitle": "The U.S. dollar slipped against the Vietnamese dong on Friday morning.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/13/wm1wm1huy179196204578331791962-5577-7582-1794542413.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=OOsrFg3hSvYG1P8lhlSiGw",
+        "alt": "Dollar weakens against dong",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/markets/dollar-weakens-against-dong-5144228.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-fa919a8a",
+      "sourceId": "vne-business",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Gold prices drop to 13-month low",
+      "url": "https://e.vnexpress.net/news/business/markets/gold-prices-drop-to-13-month-low-5144189.html",
+      "date": "2026-11-13T03:50:53.000Z",
+      "subtitle": "Vietnam's gold prices hit the lowest level in more than 13 months on Friday morning as bullion rebounded on global markets.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/13/233a0939-1794540905-4992-1794541243.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=a6EljaCvSVV_mXijFx4TUQ",
+        "alt": "Gold prices drop to 13-month low",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/markets/gold-prices-drop-to-13-month-low-5144189.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-5916b23f",
       "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Sóng cao hơn 15 m ập vào bờ, California phát cảnh báo",
-      "url": "https://vnexpress.net/song-cao-hon-15-m-ap-vao-bo-california-phat-canh-bao-5145061.html",
-      "date": "2026-11-16T02:53:55.000Z",
-      "subtitle": "Những đợt sóng lớn cao tới hơn 15 m ập vào vùng Vịnh San Francisco, gây ngập nhiều nơi, buộc giới chức phát cảnh báo cao nhất.",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "China says US using spy claims to justify technology 'blockade'",
+      "url": "https://e.vnexpress.net/news/world/china-says-us-using-spy-claims-to-justify-technology-blockade-5144125.html",
+      "date": "2026-11-13T01:53:42.000Z",
+      "subtitle": "Beijing accused the United States on Thursday of using spurious spying claims as a pretext to impose a technological \"blockade\" on China, following claims that Nvidia boss Jensen Huang was the victim of a Chinese espionage plot.",
       "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/Sng-1794795124-2903-1794795806.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=HrwdV6xLWdS4qJxypOInAg",
-        "alt": "Sóng cao hơn 15 m ập vào bờ, California phát cảnh báo",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/song-cao-hon-15-m-ap-vao-bo-california-phat-canh-bao-5145061.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/13/afp-ar-kinq1dsc09559-v1-highre-6183-4054-1794533303.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=0dXMQi4_PbvqAj2W9_1gFQ",
+        "alt": "China says US using spy claims to justify technology 'blockade'",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/china-says-us-using-spy-claims-to-justify-technology-blockade-5144125.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-aa08c27e",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Jensen Huang 'nói dối Nvidia về chuyện ngoại tình'",
-      "url": "https://vnexpress.net/jensen-huang-noi-doi-nvidia-ve-chuyen-ngoai-tinh-5145035.html",
-      "date": "2026-11-16T02:41:29.000Z",
-      "subtitle": "Jensen Huang được cho là đã cung cấp thông tin sai lệch khi các lãnh đạo cấp cao Nvidia hỏi về mối quan hệ giữa ông với nữ doanh nhân Alice Huang.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/afp-d7ad3we-v2-highres-nvidiac-4120-5673-1794794715.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=2PAuhMqI3aildN5sKS0pJg",
-        "alt": "Jensen Huang 'nói dối Nvidia về chuyện ngoại tình'",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/jensen-huang-noi-doi-nvidia-ve-chuyen-ngoai-tinh-5145035.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-e063d7cd",
+      "id": "live-432f0ea9",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Vietjet được vinh danh về phát triển dịch vụ số giao thông",
-      "url": "https://vnexpress.net/vietjet-duoc-vinh-danh-ve-phat-trien-dich-vu-so-giao-thong-5144979.html",
-      "date": "2026-11-16T02:00:00.000Z",
-      "subtitle": "Vietjet được Bộ Công an vinh danh là tập thể tiêu biểu trong phát triển dịch vụ số lĩnh vực giao thông, với các giải pháp công nghệ hỗ trợ hành khách, nâng cao hiệu quả vận hành.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Jensen Huang loses $6.4B in world’s biggest daily wealth decline after Nvidia resignation",
+      "url": "https://e.vnexpress.net/news/business/billionaires/jensen-huang-loses-6-4b-in-world-s-biggest-daily-wealth-decline-after-nvidia-resignation-5144109.html",
+      "date": "2026-11-13T01:08:42.000Z",
+      "subtitle": "Jensen Huang recorded the world’s largest wealth decline Thursday, losing US$6.4 billion following his resignation from Nvidia as allegations of extramarital affairs mounted.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/a1-1794759132-5664-1794759283.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=-5WKCpYeasavvF_hCo9wqw",
-        "alt": "Vietjet được vinh danh về phát triển dịch vụ số giao thông",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/vietjet-duoc-vinh-danh-ve-phat-trien-dich-vu-so-giao-thong-5144979.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/13/afp-switlgnstc-v1-highres-jens-9284-1214-1794531315.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=LfYY4f8smX1-v9Ymv-yI6w",
+        "alt": "Jensen Huang loses $6.4B in world’s biggest daily wealth decline after Nvidia resignation",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/billionaires/jensen-huang-loses-6-4b-in-world-s-biggest-daily-wealth-decline-after-nvidia-resignation-5144109.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-366168ba",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Mỹ công bố nguyên nhân tàu dầu đâm lật du thuyền chở 129 người",
-      "url": "https://vnexpress.net/my-cong-bo-nguyen-nhan-tau-dau-dam-lat-du-thuyen-cho-129-nguoi-5145017.html",
-      "date": "2026-11-16T01:28:30.000Z",
-      "subtitle": "Bánh lái tàu chở dầu Atlantic Asphalt kẹt ở vị trí hướng sang phải, làm tàu đổi hướng và đâm vào du thuyền chở 130 người trên sông Mississippi.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/ta-u-la-t-nghie-ng-1794789164-4064-1794789289.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=pDuCi7pyLI8rcXL6k7fkDA",
-        "alt": "Mỹ công bố nguyên nhân tàu dầu đâm lật du thuyền chở 129 người",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/my-cong-bo-nguyen-nhan-tau-dau-dam-lat-du-thuyen-cho-129-nguoi-5145017.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-39339214",
+      "id": "live-801c0afb",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "T&T Group đầu tư trung tâm logistics kết nối đa phương thức",
-      "url": "https://vnexpress.net/t-t-group-dau-tu-trung-tam-logistics-ket-noi-da-phuong-thuc-5144964.html",
-      "date": "2026-11-16T01:00:00.000Z",
-      "subtitle": "Vietnam SuperPort rộng 83 ha, do T&T Group và YCH Group phát triển, kết nối đường bộ, đường sắt, hàng không, đường biển trong chuỗi cung ứng phía Bắc.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore bars Jensen Huang's alleged mistress Alice Huang from re-entry after investigation",
+      "url": "https://e.vnexpress.net/news/business/billionaires/singapore-bars-jensen-huang-s-alleged-mistress-alice-huang-from-re-entry-after-investigation-5144087.html",
+      "date": "2026-11-13T00:18:01.000Z",
+      "subtitle": "Alice Huang, the alleged Chinese mistress of former Nvidia ​CEO Jensen Huang, left Singapore in February and was barred from re-entering after an ‌investigation into possible offences, the country's home affairs ministry said on Thursday.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/a-nh-1794753290-5658-1794753371.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=JLOg1UmYc3_nRfHHGegveA",
-        "alt": "T&T Group đầu tư trung tâm logistics kết nối đa phương thức",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/t-t-group-dau-tu-trung-tam-logistics-ket-noi-da-phuong-thuc-5144964.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/13/1-1794529904-2504-1794529930.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=29H7H303KshCOVzAQc1naQ",
+        "alt": "Singapore bars Jensen Huang's alleged mistress Alice Huang from re-entry after investigation",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/billionaires/singapore-bars-jensen-huang-s-alleged-mistress-alice-huang-from-re-entry-after-investigation-5144087.html"
       },
       "kind": "rss"
     },
     {
-      "id": "live-6ecf45e6",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Bộ trưởng Mỹ đặt thời hạn 10 ngày với cuộc điều tra tại Nvidia",
-      "url": "https://vnexpress.net/bo-truong-my-dat-thoi-han-10-ngay-voi-cuoc-dieu-tra-tai-nvidia-5145003.html",
-      "date": "2026-11-16T00:21:36.000Z",
-      "subtitle": "Bộ trưởng Tài chính Mỹ yêu cầu Nvidia giải trình về lỗ hổng xuất khẩu chip AI, cho rằng không nên tập trung vào chuyện cá nhân của Jensen Huang.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/ap26236625156119-1794786720-9332-1794786962.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=biJGsBPnAtphsj042D5_xA",
-        "alt": "Bộ trưởng Mỹ đặt thời hạn 10 ngày với cuộc điều tra tại Nvidia",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/bo-truong-my-dat-thoi-han-10-ngay-voi-cuoc-dieu-tra-tai-nvidia-5145003.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-3abd4f14",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Ông Trump lần đầu lên tiếng về lệnh đình chỉ bay toàn nước Mỹ",
-      "url": "https://vnexpress.net/ong-trump-lan-dau-len-tieng-ve-lenh-dinh-chi-bay-toan-nuoc-my-5145005.html",
-      "date": "2026-11-16T00:04:39.000Z",
-      "subtitle": "Tổng thống Trump nói rằng chính quyền người tiền nhiệm Biden phải chịu trách nhiệm về hệ thống kiểm soát không lưu ngày càng tồi tệ ở Mỹ.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/afp-d6yh7ft-v1-highres-uspresi-6033-7290-1794786897.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZwFxR3tftMVCpbs_kfQzfA",
-        "alt": "Ông Trump lần đầu lên tiếng về lệnh đình chỉ bay toàn nước Mỹ",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/ong-trump-lan-dau-len-tieng-ve-lenh-dinh-chi-bay-toan-nuoc-my-5145005.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-d739e724",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Iran nói siêu tàu chở 2 triệu thùng dầu chìm ở Hormuz",
-      "url": "https://vnexpress.net/iran-noi-sieu-tau-cho-2-trieu-thung-dau-chim-o-hormuz-5145000.html",
-      "date": "2026-11-15T23:45:08.000Z",
-      "subtitle": "Vệ binh Hồi giáo Iran tuyên bố siêu tàu chở hơn 2 triệu thùng dầu đã trúng thủy lôi, bốc cháy và chìm tại eo biển Hormuz.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/16/screen-shot-at-1794784406-9073-1794784962.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=CiV24jn5LEncd8-qnLGf-g",
-        "alt": "Iran nói siêu tàu chở 2 triệu thùng dầu chìm ở Hormuz",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/iran-noi-sieu-tau-cho-2-trieu-thung-dau-chim-o-hormuz-5145000.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-6de0206e",
+      "id": "live-12bd48b7",
       "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Lãi suất trái phiếu ngân hàng neo cao dù tiết kiệm hạ nhiệt",
-      "url": "https://vnexpress.net/lai-suat-trai-phieu-ngan-hang-neo-cao-du-tiet-kiem-ha-nhiet-5144973.html",
-      "date": "2026-11-15T23:00:00.000Z",
-      "subtitle": "Các ngân hàng trả lãi bình quân gần 9% một năm cho trái phiếu mới phát hành từ cuối tháng 10 đến nay, chưa có dấu hiệu giảm như lãi suất tiết kiệm.",
+      "publisher": "VnExpress International",
+      "topic": "Business",
+      "title": "Singapore’s Kwek family-controlled CDL warns of ‘significantly weaker’ H2 performance",
+      "url": "https://e.vnexpress.net/news/business/companies/singapore-s-kwek-family-controlled-cdl-warns-of-significantly-weaker-h2-performance-5143927.html",
+      "date": "2026-11-13T00:14:04.000Z",
+      "subtitle": "City Developments Ltd (CDL), controlled by Singapore’s second-richest family, the Kweks, expects “significantly weaker” financial results in the second half of 2026 as some planned asset sales are delayed and its property portfolio may incur impairment losses.",
       "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/HUY-6982-3623-1794754883.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ifESbxdzDWilJyRUG4M9_Q",
-        "alt": "Lãi suất trái phiếu ngân hàng neo cao dù tiết kiệm hạ nhiệt",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/lai-suat-trai-phieu-ngan-hang-neo-cao-du-tiet-kiem-ha-nhiet-5144973.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-c4d938b1",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Mối quan hệ với Jensen Huang khiến Bộ trưởng Thương mại Mỹ gặp rắc rối",
-      "url": "https://vnexpress.net/moi-quan-he-voi-jensen-huang-khien-bo-truong-thuong-mai-my-gap-rac-roi-5144096.html",
-      "date": "2026-11-15T22:00:00.000Z",
-      "subtitle": "Bộ trưởng Lutnick đang trở thành tâm điểm chỉ trích trong chính quyền vì mối quan hệ thân thiết với Jensen Huang cũng như việc ông trì hoãn siết xuất khẩu chip.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/13/afp-c76f297-v1-highres-ushosts-7012-3536-1794539575.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uk93jNLEeuuQqpf31bGfpA",
-        "alt": "Mối quan hệ với Jensen Huang khiến Bộ trưởng Thương mại Mỹ gặp rắc rối",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/moi-quan-he-voi-jensen-huang-khien-bo-truong-thuong-mai-my-gap-rac-roi-5144096.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-36c7316",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Houthi siết vây, buộc quân chính phủ Yemen rút khỏi 'yết hầu biển Đỏ'",
-      "url": "https://vnexpress.net/houthi-siet-vay-buoc-quan-chinh-phu-yemen-rut-khoi-yet-hau-bien-do-5144980.html",
-      "date": "2026-11-15T17:14:17.000Z",
-      "subtitle": "Quân chính phủ Yemen, được Arab Saudi hậu thuẫn, tuyên bố rút khỏi khu vực ven eo biển Bab al-Mandeb, chấm dứt chiến dịch phản công nhằm đối phó Houthi.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/15/afp-c84h89f-v2-highres-yemenir-7003-6314-1794759510.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=MjtZoPwLR6OZd7NmKqqQJg",
-        "alt": "Houthi siết vây, buộc quân chính phủ Yemen rút khỏi 'yết hầu biển Đỏ'",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/houthi-siet-vay-buoc-quan-chinh-phu-yemen-rut-khoi-yet-hau-bien-do-5144980.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-d7e1f26d",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Nhiều nhà bán lẻ đầu tư vào phim ảnh, âm nhạc để hút khách",
-      "url": "https://vnexpress.net/nhieu-nha-ban-le-dau-tu-vao-phim-anh-am-nhac-de-hut-khach-5144933.html",
-      "date": "2026-11-15T17:05:00.000Z",
-      "subtitle": "Công ty đồ chơi Mattel đầu tư vào làm phim Barbie, hãng thời trang Gap bổ nhiệm vị trí giám đốc giải trí, trong bối cảnh thói quen mua sắm của người trẻ thay đổi.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/1j2a8622-1794740637-6968-1794740699.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=l9rs9aeIFOYe1yA9PGqAMg",
-        "alt": "Nhiều nhà bán lẻ đầu tư vào phim ảnh, âm nhạc để hút khách",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/nhieu-nha-ban-le-dau-tu-vao-phim-anh-am-nhac-de-hut-khach-5144933.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-b013d3fb",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Giá vàng thế giới có thể giảm tiếp tuần này",
-      "url": "https://vnexpress.net/gia-vang-the-gioi-co-the-giam-tiep-tuan-nay-5144856.html",
-      "date": "2026-11-15T17:00:00.000Z",
-      "subtitle": "Sau khi xuống mức thấp nhất hơn một năm, giới phân tích cho rằng giá vàng có thể mất thêm 400-500 USD mỗi ounce nếu USD tiếp tục đi lên.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/Anhmanhinh20261115luc113101-17-7434-3779-1794717209.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=wFYS2AMDKlIAqVVVb1h4rw",
-        "alt": "Giá vàng thế giới có thể giảm tiếp tuần này",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/gia-vang-the-gioi-co-the-giam-tiep-tuan-nay-5144856.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-69f988bc",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Alice Huang nghỉ việc tại Megaspeed từ cuối tháng 8/2025",
-      "url": "https://vnexpress.net/alice-huang-nghi-viec-tai-megaspeed-tu-cuoi-thang-8-2025-5144975.html",
-      "date": "2026-11-15T15:35:05.000Z",
-      "subtitle": "Megaspeed cho biết Alice Huang, nữ doanh nhân liên quan đến bê bối ngoại tình với cựu CEO Nvidia Jensen Huang, đã rời công ty này từ 30/8/2025.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/alice-huang-1794757281-3313-1794757290.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=M0-Mm56-CqomoVWzFYoHXg",
-        "alt": "Alice Huang nghỉ việc tại Megaspeed từ cuối tháng 8/2025",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/alice-huang-nghi-viec-tai-megaspeed-tu-cuoi-thang-8-2025-5144975.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-55f6b5ff",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Thủ tướng nêu 3 đề xuất để ASEAN tiên phong định hình môi trường chiến lược",
-      "url": "https://vnexpress.net/thu-tuong-neu-3-de-xuat-de-asean-tien-phong-dinh-hinh-moi-truong-chien-luoc-5144971.html",
-      "date": "2026-11-15T15:19:45.000Z",
-      "subtitle": "Thủ tướng Lê Minh Hưng tham dự Phiên họp hẹp của Hội nghị Cấp cao ASEAN, đưa ra những đề xuất nhằm định hình môi trường chiến lược khu vực.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/15/wm30-wm30-thu-tu-o-ng-1794755367-1483-1794755927.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SqVRQ_u_FWc_7p-ArZXj-A",
-        "alt": "Thủ tướng nêu 3 đề xuất để ASEAN tiên phong định hình môi trường chiến lược",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/thu-tuong-neu-3-de-xuat-de-asean-tien-phong-dinh-hinh-moi-truong-chien-luoc-5144971.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-47edc3fc",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Tổng Bí thư, Chủ tịch nước Tô Lâm đề xuất tăng hợp tác kinh tế số trong cộng đồng Pháp ngữ",
-      "url": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-to-lam-de-xuat-tang-hop-tac-kinh-te-so-trong-cong-dong-phap-ngu-5144968.html",
-      "date": "2026-11-15T14:44:16.000Z",
-      "subtitle": "Tổng Bí thư, Chủ tịch nước Tô Lâm đề xuất mô hình hợp tác \"ba nhà\", kết nối Nhà nước, giới nghiên cứu và doanh nghiệp để tăng hợp tác kinh tế số, công nghệ trong không gian Pháp ngữ.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/vna-potal-tong-bi-thu-chu-tich-4855-4303-1794753656.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=eeTVMBX6V05OuEEbSSGHYw",
-        "alt": "Tổng Bí thư, Chủ tịch nước Tô Lâm đề xuất tăng hợp tác kinh tế số trong cộng đồng Pháp ngữ",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-to-lam-de-xuat-tang-hop-tac-kinh-te-so-trong-cong-dong-phap-ngu-5144968.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-83ef6fb6",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Ông Zelensky: Ukraine liên tục để lọt UAV Nga vì hạn chế Starshield",
-      "url": "https://vnexpress.net/ong-zelensky-ukraine-lien-tuc-de-lot-uav-nga-vi-han-che-starshield-5144951.html",
-      "date": "2026-11-15T14:09:02.000Z",
-      "subtitle": "Tổng thống Zelensky cho rằng giới hạn tốc độ tái áp đặt với Starshield/Starlink đang khiến Ukraine liên tiếp để lọt UAV Nga.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/15/5563187178137269555b-179475185-7544-3352-1794751880.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=P5YU8GhReSjy6s82IspTHQ",
-        "alt": "Ông Zelensky: Ukraine liên tục để lọt UAV Nga vì hạn chế Starshield",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/ong-zelensky-ukraine-lien-tuc-de-lot-uav-nga-vi-han-che-starshield-5144951.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-eb7b0466",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Loạt vụ nổ vang lên ở Bahrain khi Iran 'tập kích radar Mỹ'",
-      "url": "https://vnexpress.net/loat-vu-no-vang-len-o-bahrain-khi-iran-tap-kich-radar-my-5144935.html",
-      "date": "2026-11-15T12:18:11.000Z",
-      "subtitle": "Iran thông báo triển khai UAV tự sát nhằm vào radar phòng không Mỹ bố trí tại căn cứ ở Bahrain để trả đũa đối phương.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/15/bahrain-1794743162-6048-1794744971.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=YzYjLsNM6XIOhdVrjuvVyA&t=image",
-        "alt": "Loạt vụ nổ vang lên ở Bahrain khi Iran 'tập kích radar Mỹ'",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/loat-vu-no-vang-len-o-bahrain-khi-iran-tap-kich-radar-my-5144935.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-2c190c6a",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Nhà ở xã hội dự kiến vẫn được bán lại theo giá thị trường sau 5 năm",
-      "url": "https://vnexpress.net/nha-o-xa-hoi-du-kien-van-duoc-ban-lai-theo-gia-thi-truong-sau-5-nam-5144920.html",
-      "date": "2026-11-15T11:06:00.000Z",
-      "subtitle": "Nhà ở xã hội sau 5 năm dự kiến chỉ được chuyển nhượng cho đúng nhóm thụ hưởng, nhưng có thể vẫn được bán lại theo giá thị trường.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/15/img8915-1794743025-9671-1794743104.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=lC-FyJgCdT7Nbaid85BulQ",
-        "alt": "Nhà ở xã hội dự kiến vẫn được bán lại theo giá thị trường sau 5 năm",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/nha-o-xa-hoi-du-kien-van-duoc-ban-lai-theo-gia-thi-truong-sau-5-nam-5144920.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-c8c673bd",
-      "sourceId": "vne-world",
-      "publisher": "VnExpress",
-      "topic": "Thế giới",
-      "title": "Tổng Bí thư, Chủ tịch nước gặp lãnh đạo các nước tại Hội nghị cấp cao Pháp ngữ",
-      "url": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-gap-lanh-dao-cac-nuoc-tai-hoi-nghi-cap-cao-phap-ngu-5144909.html",
-      "date": "2026-11-15T10:17:03.000Z",
-      "subtitle": "Tổng Bí thư, Chủ tịch nước Tô Lâm gặp lãnh đạo nhiều quốc gia và trao đổi các vấn đề khi dự Hội nghị cấp cao Pháp ngữ lần thứ 20 ở Phnom Penh.",
-      "image": {
-        "src": "https://i1-vnexpress.vnecdn.net/2026/11/15/wm30-wm30-vna-potal-tong-bi-thu-chu-9008-6900-1794735899.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=xxey-NMs4I_F5UWFtqwpQQ",
-        "alt": "Tổng Bí thư, Chủ tịch nước gặp lãnh đạo các nước tại Hội nghị cấp cao Pháp ngữ",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/tong-bi-thu-chu-tich-nuoc-gap-lanh-dao-cac-nuoc-tai-hoi-nghi-cap-cao-phap-ngu-5144909.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-81811bc4",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Con gái Chủ tịch Thép Nam Kim muốn mua 5 triệu cổ phiếu",
-      "url": "https://vnexpress.net/con-gai-chu-tich-thep-nam-kim-muon-mua-5-trieu-co-phieu-5144864.html",
-      "date": "2026-11-15T06:30:00.000Z",
-      "subtitle": "Bà Hồ Uyển Nhi, con gái Chủ tịch HĐQT Thép Nam Kim Hồ Minh Quang đăng ký mua 5 triệu cổ phiếu NKG từ 18/11- 16/12.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/namkim-1794718302-4618-1794718439.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=csSh8MrqL5FbR7Wsfuh8kA",
-        "alt": "Con gái Chủ tịch Thép Nam Kim muốn mua 5 triệu cổ phiếu",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/con-gai-chu-tich-thep-nam-kim-muon-mua-5-trieu-co-phieu-5144864.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-2362d2a5",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Trung Quốc phát triển xe điện thần tốc nhờ công nghệ đổi pin",
-      "url": "https://vnexpress.net/trung-quoc-phat-trien-xe-dien-than-toc-nho-cong-nghe-doi-pin-5144843.html",
-      "date": "2026-11-15T04:21:06.000Z",
-      "subtitle": "Từng hai thập kỷ chạy xe dầu, ông Wang giờ tiết kiệm hàng chục nghìn nhân dân tệ mỗi tháng nhờ chuyển sang chiếc xe tải điện áp dụng công nghệ đổi pin.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/6a470845a310986e1018d338-17947-6714-6308-1794713821.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=JI5a8TO_cGvIwUy4c0n7cg",
-        "alt": "Trung Quốc phát triển xe điện thần tốc nhờ công nghệ đổi pin",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/trung-quoc-phat-trien-xe-dien-than-toc-nho-cong-nghe-doi-pin-5144843.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-c8bc8d5e",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Vì sao mô hình chuỗi gym cao cấp khủng hoảng?",
-      "url": "https://vnexpress.net/vi-sao-mo-hinh-chuoi-gym-cao-cap-khung-hoang-5144707.html",
-      "date": "2026-11-15T00:00:00.000Z",
-      "subtitle": "Từng thu hàng chục triệu đồng từ mỗi thẻ dài hạn, các chuỗi gym cao cấp nay chật vật vì khách mới giảm, mặt bằng đắt và đối thủ giá rẻ.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/14/gymciti-1794651123-8676-1794652886.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=a2HkYHisAjr_krXsNJMVRg",
-        "alt": "Vì sao mô hình chuỗi gym cao cấp khủng hoảng?",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/vi-sao-mo-hinh-chuoi-gym-cao-cap-khung-hoang-5144707.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-e62abb75",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Làm gì để tránh bị ngộp nợ khi vay tiêu dùng?",
-      "url": "https://vnexpress.net/lam-gi-de-tranh-bi-ngop-no-khi-vay-tieu-dung-5143384.html",
-      "date": "2026-11-14T20:27:15.000Z",
-      "subtitle": "Vay tiêu dùng giúp giải quyết nhu cầu tài chính trước mắt, nhưng nếu không tính kỹ khả năng thanh toán, người vay dễ rơi vào vòng xoáy nợ nần.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/11/wm1-wm1-huy-1794378998-4113-1794379012.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=X8YcSMlwCKoxEBgfrlnMxg",
-        "alt": "Làm gì để tránh bị ngộp nợ khi vay tiêu dùng?",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/lam-gi-de-tranh-bi-ngop-no-khi-vay-tieu-dung-5143384.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-f5ff5f0c",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Bitcoin rơi xuống mức thấp nhất 3 tháng",
-      "url": "https://vnexpress.net/bitcoin-roi-xuong-muc-thap-nhat-3-thang-5144783.html",
-      "date": "2026-11-14T20:14:07.000Z",
-      "subtitle": "Bitcoin có thời điểm chạm 65.000 USD, mức thấp nhất trong 3 tháng, sau khi dòng tiền lớn rút khỏi các quỹ ETF và áp lực đòn bẩy lan rộng.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/15/vao7zgytbnjolkiaqbdogpclua-179-2172-5345-1794678225.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=V8Dz0Kc_OtGQoSoOfc44fw",
-        "alt": "Bitcoin rơi xuống mức thấp nhất 3 tháng",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/bitcoin-roi-xuong-muc-thap-nhat-3-thang-5144783.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-bd7af5c2",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Thủ tướng đề xuất lập danh mục dự án hạ tầng ưu tiên của ASEAN đến 2040",
-      "url": "https://vnexpress.net/thu-tuong-de-xuat-lap-danh-muc-du-an-ha-tang-uu-tien-cua-asean-den-2040-5144751.html",
-      "date": "2026-11-14T14:22:11.000Z",
-      "subtitle": "Thủ tướng Lê Minh Hưng đề xuất ASEAN chọn các dự án hạ tầng ưu tiên đến năm 2040, tập trung vào giao thông xuyên biên giới, logistics, lưới điện, hạ tầng số và đô thị thông minh.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/14/wm30-wm30-vnapotalthutuongleminhhun-4281-5827-1794666364.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=RNB4hS_8Key1DZxc4DeCYQ",
-        "alt": "Thủ tướng đề xuất lập danh mục dự án hạ tầng ưu tiên của ASEAN đến 2040",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/thu-tuong-de-xuat-lap-danh-muc-du-an-ha-tang-uu-tien-cua-asean-den-2040-5144751.html"
-      },
-      "kind": "rss"
-    },
-    {
-      "id": "live-2ab5170c",
-      "sourceId": "vne-business",
-      "publisher": "VnExpress",
-      "topic": "Kinh doanh",
-      "title": "Hòa Phát thành lập công ty năng lượng tái tạo",
-      "url": "https://vnexpress.net/hoa-phat-thanh-lap-cong-ty-nang-luong-tai-tao-5144728.html",
-      "date": "2026-11-14T13:20:21.000Z",
-      "subtitle": "Hòa Phát chi gần 650 tỷ đồng để thành lập Công ty cổ phần Năng lượng tái tạo Hòa Phát, doanh nghiệp hoạt động trong lĩnh vực sản xuất điện.",
-      "image": {
-        "src": "https://i1-kinhdoanh.vnecdn.net/2026/11/14/z5686058331871b463a6b9a-179465-8143-5961-1794652674.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=bE4q05Ti4HbI0yOOut7lYg",
-        "alt": "Hòa Phát thành lập công ty năng lượng tái tạo",
-        "credit": "Ảnh từ VnExpress",
-        "sourceUrl": "https://vnexpress.net/hoa-phat-thanh-lap-cong-ty-nang-luong-tai-tao-5144728.html"
+        "src": "https://i1-english.vnecdn.net/2026/11/12/afp-v1-highres-kweklengbeng-17-2722-7837-1794473719.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=fZ2JwD-ZI73dMRkbnfP2gA",
+        "alt": "Singapore’s Kwek family-controlled CDL warns of ‘significantly weaker’ H2 performance",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/business/companies/singapore-s-kwek-family-controlled-cdl-warns-of-significantly-weaker-h2-performance-5143927.html"
       },
       "kind": "rss"
     },
@@ -866,8 +578,144 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_05_Laptop_Overview_Unbl.max-600x600.format-webp.webp",
         "alt": "We’re introducing a new transparency tool for invalid traffic in Google Ads.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/invalid-traffic-overview-google-ads/"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-da9bd603",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Grand Theft Auto Online: top video game's roleplay cash cow",
+      "url": "https://e.vnexpress.net/news/world/grand-theft-auto-online-top-video-game-s-roleplay-cash-cow-5143886.html",
+      "date": "2026-11-12T08:34:48.000Z",
+      "subtitle": "One of the world's best-selling video games, \"Grand Theft Auto V\" owes much of its staying power to its online multiplayer version.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/12/grandthe-1794469011-1781-1794469075.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=E7DrBOibCQ_VEARWZOoEQA",
+        "alt": "Grand Theft Auto Online: top video game's roleplay cash cow",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/grand-theft-auto-online-top-video-game-s-roleplay-cash-cow-5143886.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-8f1ed2e1",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Two dead, several injured after New York building collapses",
+      "url": "https://e.vnexpress.net/news/world/two-dead-several-injured-after-new-york-building-collapses-5143877.html",
+      "date": "2026-11-12T07:29:20.000Z",
+      "subtitle": "Two people were killed Wednesday and at least 17 others injured, including children, after a three-story building collapsed near a construction site in New York, city authorities said.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/12/afp20261112aa121120263039949v1-7442-4487-1794468209.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=PY4ktXYRM31OtzyibYfuEQ",
+        "alt": "Two dead, several injured after New York building collapses",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/two-dead-several-injured-after-new-york-building-collapses-5143877.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-31a07258",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Uni-President in advanced talks to buy Jardine's KFC, Pizza Hut business in Asia",
+      "url": "https://e.vnexpress.net/news/world/uni-president-in-advanced-talks-to-buy-jardine-s-kfc-pizza-hut-business-in-asia-5143187.html",
+      "date": "2026-11-11T02:33:53.000Z",
+      "subtitle": "Food group Uni-President Enterprises is in advanced talks ‌to buy Jardine Matheson's restaurant business that runs KFC and Pizza Hut chains in several Asian markets, two people with knowledge of the matter said.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/11/2026t105503z-mt1sopasnkfc7918-1187-2230-1794361002.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=sm65aWEL_EMoVngVe8dhxg",
+        "alt": "Uni-President in advanced talks to buy Jardine's KFC, Pizza Hut business in Asia",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/uni-president-in-advanced-talks-to-buy-jardine-s-kfc-pizza-hut-business-in-asia-5143187.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-ec61f91d",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Thailand sets noise, water use limits for data centers",
+      "url": "https://e.vnexpress.net/news/world/thailand-sets-noise-water-use-limits-for-data-centers-5143195.html",
+      "date": "2026-11-11T02:33:30.000Z",
+      "subtitle": "Thailand's cabinet agreed new rules on noise and water use for data centers on Tuesday, after a review sparked by public concern over an AI-driven construction boom.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/11/afp-c7dh3rd-v1-highres-thailan-6603-8517-1794361835.webp?w=900&h=0&q=100&dpr=1&fit=crop&s=EEQsiWxAHdtV2Xs7GZntkA",
+        "alt": "Thailand sets noise, water use limits for data centers",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/thailand-sets-noise-water-use-limits-for-data-centers-5143195.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-137a212a",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "China's trade surplus soars past $1 trillion as AI boom powers exports",
+      "url": "https://e.vnexpress.net/news/world/china-s-trade-surplus-soars-past-1-trillion-as-ai-boom-powers-exports-5142857.html",
+      "date": "2026-11-10T05:50:45.000Z",
+      "subtitle": "China's trade surplus surged past US$1 trillion in the first 10 months as a global race to build artificial intelligence (AI) infrastructure buoyed sales of high-tech products and helped offset weak domestic demand, a dynamic likely to sharpen tensions with major trading partners.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/10/HAWCDOC7CJLEXIKXCOABSCD5ZE-179-2356-8177-1794283311.png?w=900&h=0&q=100&dpr=1&fit=crop&s=wARjH6Q6BjIuvaeLInRXDA",
+        "alt": "China's trade surplus soars past $1 trillion as AI boom powers exports",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/china-s-trade-surplus-soars-past-1-trillion-as-ai-boom-powers-exports-5142857.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-c81ca9c1",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Singapore to launch 500-tonne gold vault service for foreign central banks",
+      "url": "https://e.vnexpress.net/news/world/singapore-to-launch-500-tonne-gold-vault-service-for-foreign-central-banks-5142825.html",
+      "date": "2026-11-10T03:40:09.000Z",
+      "subtitle": "The Monetary Authority of Singapore said on Tuesday it would launch a vaulting service to hold bullion for foreign central banks and ​lower taxes on some companies in the gold market as it competes ‌for a bigger slice of the precious metals trade.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/10/7cocwnojhflbti5zupdfxl3qam-179-9279-7592-1794281409.png?w=900&h=0&q=100&dpr=1&fit=crop&s=j1BwzshnoXvaOz7YhG8tqA",
+        "alt": "Singapore to launch 500-tonne gold vault service for foreign central banks",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/singapore-to-launch-500-tonne-gold-vault-service-for-foreign-central-banks-5142825.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-91a0cfa5",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Trump calls Nvidia's Huang 'honorable,' says he has not discussed allegations with him",
+      "url": "https://e.vnexpress.net/news/world/trump-calls-nvidia-s-huang-honorable-says-he-has-not-discussed-allegations-with-him-5142356.html",
+      "date": "2026-11-09T15:29:20.000Z",
+      "subtitle": "U.S. President Donald Trump on Sunday called Nvidia CEO Jensen Huang an honorable person ‌and praised his contributions to the U.S., but said he had not spoken to him about allegations of a relationship with a Chinese businesswoman who passed information to ⁠Beijing.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/09/afp-v5-highres-presidenttrumpd-9339-9316-1794194450.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=vrTeL4pNYv5vEOMwoj0lCw",
+        "alt": "Trump calls Nvidia's Huang 'honorable,' says he has not discussed allegations with him",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/trump-calls-nvidia-s-huang-honorable-says-he-has-not-discussed-allegations-with-him-5142356.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-8c67b7b5",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Cryptocurrencies slide to two-month lows after US midterms",
+      "url": "https://e.vnexpress.net/news/world/cryptocurrencies-slide-to-two-month-lows-after-us-midterms-5142355.html",
+      "date": "2026-11-09T15:29:00.000Z",
+      "subtitle": "Cryptocurrencies fell sharply in late Sunday trade, with bitcoin and ‌ether touching their lowest levels for more than two months, as investors fretted a Democratic Party-controlled ⁠U.S. Congress will toughen regulation on the asset class.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/09/michael-fortsch-aa5sf7wtv10-un-1893-9356-1794194099.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=i_O83DIDJwbrf0lZv1PaGQ",
+        "alt": "Cryptocurrencies slide to two-month lows after US midterms",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/cryptocurrencies-slide-to-two-month-lows-after-us-midterms-5142355.html"
       },
       "kind": "rss"
     },
@@ -883,8 +731,178 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog-cover_Holiday100_2026.max-600x600.format-webp.webp",
         "alt": "Holiday 100: Your guide to this year’s top trending gifts",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/holiday-100-gift-guide-2026/"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-729b02ea",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Panda fans flock to Zoo Atlanta for debut of Ping Ping and Fu Shuang",
+      "url": "https://e.vnexpress.net/news/world/panda-fans-flock-to-zoo-atlanta-for-debut-of-ping-ping-and-fu-shuang-5142093.html",
+      "date": "2026-11-08T03:56:40.000Z",
+      "subtitle": "Zoo Atlanta’s newest pandas munched bamboo and lounged Friday during their public debut as smiling visitors lined up to welcome them.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/08/ap26310639268944-1794105727-6448-1794105868.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=MpTuphJSfXbcFgL61lavxg",
+        "alt": "Panda fans flock to Zoo Atlanta for debut of Ping Ping and Fu Shuang",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/panda-fans-flock-to-zoo-atlanta-for-debut-of-ping-ping-and-fu-shuang-5142093.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-506072f4",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Indonesia presses ahead with equity market reforms after MSCI downgrade warning",
+      "url": "https://e.vnexpress.net/news/world/indonesia-presses-ahead-with-equity-market-reforms-after-msci-downgrade-warning-5141775.html",
+      "date": "2026-11-07T01:35:12.000Z",
+      "subtitle": "Indonesia is accelerating reforms aimed at addressing the equity market ​concerns that prompted index provider MSCI to threaten its emerging-market status and remove it from indexes tracked by funds.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/07/2026t142440z-mt1nurpho0007r0u1-5251-7953-1794010648.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=B100UD7I_9l6w5dcKkAVOQ",
+        "alt": "Indonesia presses ahead with equity market reforms after MSCI downgrade warning",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/indonesia-presses-ahead-with-equity-market-reforms-after-msci-downgrade-warning-5141775.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-68a9afff",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Magnitude-6.1 quake hits off Tokyo, no tsunami alert",
+      "url": "https://e.vnexpress.net/news/world/magnitude-6-1-quake-hits-off-tokyo-no-tsunami-alert-5141767.html",
+      "date": "2026-11-07T00:09:50.000Z",
+      "subtitle": "A magnitude-6.1 earthquake struck off the coast of Tokyo on Friday, Japanese authorities said, but no tsunami alert was issued.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/07/pexelsruiz15275312-1794009495-9447-1794009587.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=vquyGHDzZE5SzTmyAiTYdQ",
+        "alt": "Magnitude-6.1 quake hits off Tokyo, no tsunami alert",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/magnitude-6-1-quake-hits-off-tokyo-no-tsunami-alert-5141767.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-4a8cc5c8",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Trump administration sues Penn State over in-state tuition for students in the US illegally",
+      "url": "https://e.vnexpress.net/news/world/trump-administration-sues-penn-state-over-in-state-tuition-for-students-in-the-us-illegally-5141454.html",
+      "date": "2026-11-06T15:03:23.000Z",
+      "subtitle": "The Department of Justice filed a complaint Thursday against Penn State challenging its policy of offering in-state tuition rates to some immigrants in the country illegally, part of a sweeping crackdown by President Donald Trump's administration.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/06/ap26309760114942-1793933195-4935-1793934164.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=YlbCib0zR0i6fF_TMQ6XMA",
+        "alt": "Trump administration sues Penn State over in-state tuition for students in the US illegally",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/trump-administration-sues-penn-state-over-in-state-tuition-for-students-in-the-us-illegally-5141454.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-5f3a9555",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "New hoax bomb threats hit European flights",
+      "url": "https://e.vnexpress.net/news/world/new-hoax-bomb-threats-hit-european-flights-5141480.html",
+      "date": "2026-11-06T15:02:54.000Z",
+      "subtitle": "Italian, French and Bulgarian fighter jets scrambled Thursday as about 20 commercial flights were hit by a third day of hoax bomb alerts across Europe.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/06/ca-n-cu-kho-ng-qua-n-179393562-7085-3166-1793935627.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=BP3gOoFBycgl8Tk0dDyOSQ",
+        "alt": "New hoax bomb threats hit European flights",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/new-hoax-bomb-threats-hit-european-flights-5141480.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-ff190ad3",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Australia to join Indonesia's wildfire waterbombing operations, disaster agency says",
+      "url": "https://e.vnexpress.net/news/world/australia-to-join-indonesia-s-wildfire-waterbombing-operations-disaster-agency-says-5141142.html",
+      "date": "2026-11-05T07:08:29.000Z",
+      "subtitle": "Australia will join Indonesia's waterbombing operations to help put out fires that have been raging for ​months, a government agency said on Thursday, days ‌after a helicopter crashed during a firefighting mission on Borneo island, killing one person and injuring several others.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/05/wildfe-1793861941-2508-1793862042.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=FofAZxJymHB8QmTkla2GVw",
+        "alt": "Australia to join Indonesia's wildfire waterbombing operations, disaster agency says",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/australia-to-join-indonesia-s-wildfire-waterbombing-operations-disaster-agency-says-5141142.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-8a57cca1",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "'Dragon Ball Z' composer elected to Texas attorney general",
+      "url": "https://e.vnexpress.net/news/world/dragon-ball-z-composer-elected-to-texas-attorney-general-5141138.html",
+      "date": "2026-11-05T07:07:08.000Z",
+      "subtitle": "Long before Texas Democrat Nathan Johnson was elected Tuesday to be the state's attorney general, he was a composer for the music on the acclaimed anime series \"Dragon Ball Z.\"",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/05/dragz-1793861503-5988-1793861570.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=jFCHmZh_L2B856lEY4Jaxw",
+        "alt": "'Dragon Ball Z' composer elected to Texas attorney general",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/dragon-ball-z-composer-elected-to-texas-attorney-general-5141138.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-c3d3e132",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "Indonesia detains 3 police generals suspected of wiretapping President Prabowo",
+      "url": "https://e.vnexpress.net/news/world/indonesia-detains-3-police-generals-suspected-of-wiretapping-president-prabowo-5140589.html",
+      "date": "2026-11-04T04:12:51.000Z",
+      "subtitle": "Indonesian police said Tuesday they had detained three senior police generals suspected of illegally wiretapping President Prabowo Subianto and dozens of other prominent figures.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/04/ap26308018767310-1793764138-4099-1793764494.jpg?w=900&h=0&q=100&dpr=1&fit=crop&s=gIi4Rw69AXVBlSDtnjwvpQ",
+        "alt": "Indonesia detains 3 police generals suspected of wiretapping President Prabowo",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/indonesia-detains-3-police-generals-suspected-of-wiretapping-president-prabowo-5140589.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-c523fbfa",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "China's 3 biggest airlines head for full-year losses as fuel costs weigh",
+      "url": "https://e.vnexpress.net/news/world/china-s-3-biggest-airlines-head-for-full-year-losses-as-fuel-costs-weigh-5140071.html",
+      "date": "2026-11-03T04:20:47.000Z",
+      "subtitle": "China's three biggest airlines are on track for full-year losses after posting far weaker third-quarter results than last year as surging jet fuel costs, weak domestic fares and typhoon disruptions hit what is normally their most profitable period.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/03/20261102t020222z1lynxnpema1051-2987-3938-1793676995.png?w=900&h=0&q=100&dpr=1&fit=crop&s=xeqqa7a2dUGfPMvGV2HErw",
+        "alt": "China's 3 biggest airlines head for full-year losses as fuel costs weigh",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/china-s-3-biggest-airlines-head-for-full-year-losses-as-fuel-costs-weigh-5140071.html"
+      },
+      "kind": "rss"
+    },
+    {
+      "id": "live-f4b35505",
+      "sourceId": "vne-world",
+      "publisher": "VnExpress International",
+      "topic": "World",
+      "title": "British adventurer Karl Bushby ends epic 28-year trek across jungles, frozen sea",
+      "url": "https://e.vnexpress.net/news/world/british-adventurer-karl-bushby-ends-epic-28-year-trek-across-jungles-frozen-sea-5140061.html",
+      "date": "2026-11-03T04:04:25.000Z",
+      "subtitle": "British adventurer Karl Bushby enjoyed an emotional reunion with his mother and family on Nov. 2 as he arrived back home after a 28-year, 50,000-kilometer trek from South America, crossing four continents on foot.",
+      "image": {
+        "src": "https://i1-english.vnecdn.net/2026/11/03/erelf3g47bosneltjiowcex3se-179-2910-4188-1793676315.png?w=900&h=0&q=100&dpr=1&fit=crop&s=o0iPppbsjPMiE1e8VlcSaQ",
+        "alt": "British adventurer Karl Bushby ends epic 28-year trek across jungles, frozen sea",
+        "credit": "Image from VnExpress International",
+        "sourceUrl": "https://e.vnexpress.net/news/world/british-adventurer-karl-bushby-ends-epic-28-year-trek-across-jungles-frozen-sea-5140061.html"
       },
       "kind": "rss"
     },
@@ -900,7 +918,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ai_mode_global_ads_hero.max-600x600.format-webp.webp",
         "alt": "Ads in AI Mode expand to new markets.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/ads-in-ai-mode-global/"
       },
       "kind": "rss"
@@ -917,7 +935,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/S2E7_YT_thumbnail.max-600x600.format-webp.webp",
         "alt": "Adapt your ad strategy to meet the way people search today.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/ads-decoded-podcast-search-data/"
       },
       "kind": "rss"
@@ -934,7 +952,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/S2E6_thumbnail.max-600x600.format-webp.webp",
         "alt": "New bidding and budgeting tools can transform your upcoming holiday ad strategy.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/holiday-shopping-bidding-budgeting/"
       },
       "kind": "rss"
@@ -951,7 +969,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/financial_protection_US__Canada.max-600x600.format-webp.webp",
         "alt": "Expanding our defenses against financial scam ads",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/financial-services-verification-united-states-canada/"
       },
       "kind": "rss"
@@ -968,7 +986,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GlobalCart_Hero.max-600x600.format-webp.webp",
         "alt": "An intelligent new shopping cart",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/"
       },
       "kind": "rss"
@@ -985,7 +1003,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/When_to_buy_guide_resize.max-600x600.format-webp.webp",
         "alt": "Data-backed secrets to smarter holiday shopping",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/holiday-shopping-when-to-buy-guide/"
       },
       "kind": "rss"
@@ -1002,7 +1020,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Waterfall_Search_Chart_01_No_Li.max-600x600.format-webp.webp",
         "alt": "Guide your campaign spending with new priority and allocation features",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/channel-prioritization-budget-allocation/"
       },
       "kind": "rss"
@@ -1019,7 +1037,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_October_2026.max-600x600.format-webp.webp",
         "alt": "Build your data strength with October’s Demand Gen drop.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/"
       },
       "kind": "rss"
@@ -1036,7 +1054,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/S2E5_thumbnail.max-600x600.format-webp.webp",
         "alt": "Turn your existing social assets into high-impact YouTube ads.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/creating-assets-youtube-ads/"
       },
       "kind": "rss"
@@ -1053,7 +1071,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_Drop_-_September.max-600x600.format-webp.webp",
         "alt": "Turn discovery into action with September’s Demand Gen Drop.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/demand-gen-drop-september-2026/"
       },
       "kind": "rss"
@@ -1070,7 +1088,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIMax_morelanguages_social.max-600x600.format-webp.webp",
         "alt": "We’re bringing AI Brief to more languages and adding a new AI Max reporting feature.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/ai-max-language-reporting-features/"
       },
       "kind": "rss"
@@ -1087,7 +1105,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/S2E4_thumbnail.max-600x600.format-webp.webp",
         "alt": "Build campaigns that drive high-converting, sales-ready leads.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/ads-decoded-podcast-data-strength/"
       },
       "kind": "rss"
@@ -1104,7 +1122,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/S2E3_thumbnail.max-600x600.format-webp.webp",
         "alt": "Rethink your strategy to drive sales this holiday season.",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/ads-decoded-podcast-holiday-sales-strategies/"
       },
       "kind": "rss"
@@ -1121,7 +1139,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Think_Retail_hero_xePKgsT.max-600x600.format-webp.webp",
         "alt": "Boost your holiday sales with these agentic commerce updates",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/google-shopping-updates-holiday-shopping/"
       },
       "kind": "rss"
@@ -1138,7 +1156,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Rethink_2026_collection_hero.max-600x600.format-webp.webp",
         "alt": "Rethink 2026",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/rethink-2026/"
       },
       "kind": "rss"
@@ -1155,7 +1173,7 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
         "alt": "3 ways to prep for your next big race with Search",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/"
       },
       "kind": "rss"
@@ -1172,120 +1190,113 @@
       "image": {
         "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_EnnLoZX.max-600x600.format-webp.webp",
         "alt": "Drive profitable growth with new data and measurement tools",
-        "credit": "Ảnh từ Google Ads & Commerce",
+        "credit": "Image from Google Ads & Commerce",
         "sourceUrl": "https://blog.google/products/ads-commerce/data-strength-updates/"
       },
       "kind": "rss"
-    },
-    {
-      "id": "live-2babd759",
-      "sourceId": "google-ads",
-      "publisher": "Google Ads & Commerce",
-      "topic": "Marketing",
-      "title": "Build a measurement stack you can rely on to steer your campaigns.",
-      "url": "https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/",
-      "date": "2026-09-02T17:00:00.000Z",
-      "subtitle": "In this Ads Decoded episode, we discuss how to assess marketing campaigns with attribution, incrementality, and media mix models.",
-      "image": {
-        "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/S2E2_thumbnail.max-600x600.format-webp.webp",
-        "alt": "Build a measurement stack you can rely on to steer your campaigns.",
-        "credit": "Ảnh từ Google Ads & Commerce",
-        "sourceUrl": "https://blog.google/products/ads-commerce/ads-decoded-podcast-measurement-stack/"
-      },
-      "kind": "rss"
-    }
-  ],
-  "sources": [
-    {
-      "id": "vne-business",
-      "publisher": "VnExpress",
-      "url": "https://vnexpress.net/rss/kinh-doanh.rss",
-      "checkedAt": "2026-11-16T10:05:28.684Z",
-      "lastSuccessAt": "2026-11-16T10:05:28.684Z",
-      "error": null
-    },
-    {
-      "id": "vne-world",
-      "publisher": "VnExpress",
-      "url": "https://vnexpress.net/rss/the-gioi.rss",
-      "checkedAt": "2026-11-16T10:05:28.734Z",
-      "lastSuccessAt": "2026-11-16T10:05:28.734Z",
-      "error": null
-    },
-    {
-      "id": "google-ads",
-      "publisher": "Google Ads & Commerce",
-      "url": "https://blog.google/products/ads-commerce/rss/",
-      "checkedAt": "2026-11-16T10:30:23.602Z",
-      "lastSuccessAt": "2026-11-16T10:30:23.602Z",
-      "error": null
     }
   ],
   "caseStudies": [
     {
       "id": "case-befa3d04",
-      "title": "OMG 3Q: làm mới cộng đồng sau chín năm",
-      "summary": "VNGGames kết hợp trang phục lấy cảm hứng văn hóa Việt, nội dung theo mô hình 3H và livestream để kết nối người chơi. Bài gốc phân tích cách một thương hiệu lâu năm chuyển di sản cộng đồng thành trải nghiệm mới.",
+      "title": "OMG 3Q: renewing a gaming community after nine years",
+      "summary": "VNGGames combined outfits inspired by Vietnamese culture, a 3H content approach, and livestreaming to connect players. The original case examines how a long-established brand turned its community heritage into a new experience.",
       "url": "https://www.brandsvietnam.com/campaign/omg-3q-va-bai-toan-lam-moi-tuong-dai-sau-9-nam-dong-hanh-cung-game-thu-viet",
       "publisher": "Brands Vietnam",
       "brand": "VNGGames",
       "date": null,
       "campaignPeriod": "2026",
       "checkedAt": "2026-11-16T10:30:23.785Z",
-      "question": "Hoạt động nào phục vụ người chơi hiện tại, hoạt động nào giúp tiếp cận người chơi mới? Phân biệt mục tiêu và chỉ số đánh giá của từng nhóm.",
-      "kind": "web"
+      "question": "Which activities serve existing players and which reach new players? Distinguish the objectives and evaluation metrics for each group.",
+      "kind": "web",
+      "image": null,
+      "language": "en"
     },
     {
       "id": "case-e6fd4dc3",
-      "title": "Play Together: biến “Hội” thành cơ chế kết nối",
-      "summary": "Chiến dịch khai thác đặc tính chơi cùng bạn bè để kết nối nội dung mạng xã hội, livestream, hoạt động trực tiếp và trải nghiệm trong game. Bài gốc đặt vấn đề thu hút người mới, giữ người hiện tại và gợi nhắc người chơi cũ.",
+      "title": "Play Together: turning shared play into connection",
+      "summary": "The campaign used playing with friends to connect social content, livestreaming, in-person activities, and in-game experiences. The original case considers attracting new players, retaining current players, and reminding former players of the game.",
       "url": "https://www.brandsvietnam.com/campaign/play-together-dung-dang-dung-de-play-he-co-hoi",
       "publisher": "Brands Vietnam",
       "brand": "Play Together VNG",
       "date": null,
       "campaignPeriod": "Mùa hè 2026",
       "checkedAt": "2026-11-16T10:30:23.785Z",
-      "question": "Insight nào dẫn đến lựa chọn chiến lược này? Bạn sẽ kiểm chứng hiệu quả bằng dữ liệu gì?",
-      "kind": "web"
+      "question": "Which insight led to this strategic choice? What evidence would you use to assess its results?",
+      "kind": "web",
+      "image": null,
+      "language": "en"
     },
     {
       "id": "case-f3252d60",
-      "title": "VALORANT: bản sắc Việt trong một giải đấu khu vực",
-      "summary": "Riot Games và VNGGames đưa chất liệu văn hóa Việt vào trải nghiệm giải đấu VCT Pacific Stage 1 tại TP.HCM. Bài gốc giúp xem cách địa điểm tổ chức trở thành một phần câu chuyện thương hiệu.",
+      "title": "VALORANT: Vietnamese identity at a regional tournament",
+      "summary": "Riot Games and VNGGames incorporated Vietnamese cultural elements into the VCT Pacific Stage 1 experience in Ho Chi Minh City. The source explores how the host location became part of the event’s brand story.",
       "url": "https://www.brandsvietnam.com/campaign/valorant-tu-non-la-den-vinahouse",
       "publisher": "Brands Vietnam",
       "brand": "VALORANT",
       "date": null,
       "campaignPeriod": "2026",
       "checkedAt": "2026-11-16T10:30:23.785Z",
-      "question": "Khi bản địa hóa một sự kiện quốc tế, làm sao giữ bản sắc thương hiệu và tránh dùng yếu tố văn hóa chỉ để trang trí?",
-      "kind": "web"
+      "question": "How can an international event retain its brand identity while using local culture meaningfully rather than as decoration?",
+      "kind": "web",
+      "image": null,
+      "language": "en"
     },
     {
       "id": "case-826a8cc6",
-      "title": "Clorox: “Clean is the beginning”",
-      "summary": "Clorox mở rộng câu chuyện làm sạch sang những khởi đầu tích cực trong đời sống, kết hợp lập luận về khoa học thần kinh. Khi đọc, cần phân biệt thông điệp thương hiệu với bằng chứng khoa học và điều kiện áp dụng.",
+      "title": "Clorox: Clean is the beginning",
+      "summary": "Clorox extended its cleaning story to positive new beginnings in everyday life, drawing on a neuroscience-based argument. When reading the case, distinguish the brand message from scientific evidence and the conditions under which a claim applies.",
       "url": "https://www.brandsvietnam.com/campaign/clorox-clean-is-the-beginning",
       "publisher": "Brands Vietnam",
       "brand": "Clorox",
       "date": null,
-      "campaignPeriod": "09/2017 · case lịch sử",
+      "campaignPeriod": "09/2017 ? historical case",
       "checkedAt": "2026-11-16T10:30:23.785Z",
-      "question": "Bằng chứng nào hỗ trợ lời hứa thương hiệu? Kết quả nào chỉ là số liệu do chiến dịch tự báo cáo?",
-      "kind": "web"
+      "question": "What evidence supports the brand promise? Which campaign results are self-reported, and what would require independent verification?",
+      "kind": "web",
+      "image": null,
+      "language": "en"
     },
     {
       "id": "case-626a3cfe",
-      "title": "NESCAFÉ Signature: “Sao không đi cà phê tại nhà?”",
-      "summary": "NESCAFÉ khai thác những bất tiện khi đi quán để giới thiệu trải nghiệm cà phê tại nhà. Bài gốc mô tả cách kết nối thông điệp với thời điểm sử dụng, quảng cáo ngoài trời và hợp tác với Grab.",
+      "title": "NESCAFÉ Signature: Why not enjoy café-style coffee at home?",
+      "summary": "NESCAFÉ used the inconveniences of going to a café to introduce an at-home coffee experience. The source describes connections between usage occasions, outdoor advertising, and a partnership with Grab.",
       "url": "https://www.brandsvietnam.com/campaign/nescafe-signature-sao-khong-di-ca-phe-tai-nha",
       "publisher": "Brands Vietnam",
       "brand": "NESCAFÉ",
       "date": null,
       "campaignPeriod": "",
       "checkedAt": "2026-11-16T10:30:23.785Z",
-      "question": "Insight, lợi ích sản phẩm và ngữ cảnh xuất hiện của quảng cáo kết nối với nhau như thế nào? Có giới hạn nào khi chuyển thói quen đi quán về nhà?",
-      "kind": "web"
+      "question": "How do the consumer insight, product benefit, and advertising context connect? What might limit a shift from café visits to coffee at home?",
+      "kind": "web",
+      "image": null,
+      "language": "en"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vne-business",
+      "publisher": "VnExpress International",
+      "url": "https://e.vnexpress.net/rss/business.rss",
+      "checkedAt": "2026-11-16T16:43:11.924Z",
+      "lastSuccessAt": "2026-11-16T16:43:11.924Z",
+      "error": null
+    },
+    {
+      "id": "vne-world",
+      "publisher": "VnExpress International",
+      "url": "https://e.vnexpress.net/rss/world.rss",
+      "checkedAt": "2026-11-16T16:43:11.924Z",
+      "lastSuccessAt": "2026-11-16T16:43:11.924Z",
+      "error": null
+    },
+    {
+      "id": "google-ads",
+      "publisher": "Google Ads & Commerce",
+      "url": "https://blog.google/products/ads-commerce/rss/",
+      "checkedAt": "2026-11-16T16:43:11.924Z",
+      "lastSuccessAt": "2026-11-16T16:43:11.924Z",
+      "error": null
     }
   ],
   "degraded": false

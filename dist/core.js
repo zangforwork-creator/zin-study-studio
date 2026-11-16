@@ -4,10 +4,10 @@ export const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&a
 export const uid=()=>crypto.randomUUID();
 export const initialState=()=>({version:1,saved:[],hidden:[],read:[],caseRead:[],completed:[],attempts:[],reviews:{},notes:{},documents:[],cards:[],courses:[],courseLinks:{},goals:{gpa:null,certificates:{},ielts:{},hsk:{}},bookmarks:{},duration:15,newsTopics:[],lastBackup:null});
 export function courseSiteUrl(value){
- if(typeof value!=='string'||value.length>2000)throw Error('Nhập địa chỉ HTTPS hợp lệ.');
+ if(typeof value!=='string'||value.length>2000)throw Error('Enter a valid HTTPS address.');
  if(!value.trim())return '';
- let url;try{url=new URL(value.trim());}catch{throw Error('Nhập địa chỉ đầy đủ, bắt đầu bằng https://.');}
- if(url.protocol!=='https:'||url.username||url.password||!url.hostname.includes('.'))throw Error('Dùng địa chỉ HTTPS, không kèm thông tin đăng nhập.');
+ let url;try{url=new URL(value.trim());}catch{throw Error('Enter the full address, starting with https://.');}
+ if(url.protocol!=='https:'||url.username||url.password||!url.hostname.includes('.'))throw Error('Use an HTTPS address without embedded sign-in credentials.');
  return url.href;
 }
 export function loadState(storage=globalThis.localStorage){

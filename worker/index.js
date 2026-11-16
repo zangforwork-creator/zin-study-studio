@@ -1,11 +1,12 @@
 import {FEED_TTL,refreshEdition,allowedUrl,rasterMime} from './feeds.js';
 import {materialRequest} from './materials.js';
+import {englishEdition} from '../dist/language.js';
 const EDITION_KEY='reading/edition-v1.json';
 let inFlight=null;
 const json=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 async function readEdition(env){
- try{const object=await env.BUCKET?.get(EDITION_KEY);if(object)return await object.json();}catch{}
- try{const r=await env.ASSETS.fetch(new Request('https://assets.local/data/reading-seed.json'));if(r.ok)return await r.json();}catch{}
+ try{const object=await env.BUCKET?.get(EDITION_KEY);if(object)return englishEdition(await object.json());}catch{}
+ try{const r=await env.ASSETS.fetch(new Request('https://assets.local/data/reading-seed.json'));if(r.ok)return englishEdition(await r.json());}catch{}
  return {version:1,items:[],caseStudies:[],sources:[],updatedAt:null,checkedAt:null};
 }
 async function update(env,previous,cases=null){
@@ -17,7 +18,7 @@ export default {
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(!url.pathname.startsWith('/api/'))return env.ASSETS.fetch(request);
-  if(url.pathname.startsWith('/api/materials')){try{return await materialRequest(request,env);}catch{return json({error:'Không mở được tài liệu lúc này. Hãy thử lại; bản gốc vẫn được giữ.'},503);}}
+  if(url.pathname.startsWith('/api/materials')){try{return await materialRequest(request,env);}catch{return json({error:'The document is unavailable right now. Please retry; the original is retained.'},503);}}
   if(['/api/reading/image','/api/reading/case-image'].includes(url.pathname)&&request.method==='GET'){
    const edition=await readEdition(env),isCase=url.pathname==='/api/reading/case-image';
    const story=(isCase?edition.caseStudies:edition.items).find(n=>n.id===url.searchParams.get('id'));
@@ -38,7 +39,7 @@ export default {
   if(url.pathname==='/api/reading'&&request.method==='GET'){
    const previous=await readEdition(env);
    if(Date.now()-Date.parse(previous.checkedAt||0)<FEED_TTL)return json(previous);
-   try{return json(await update(env,previous));}catch{return json({...previous,degraded:true,serviceError:'Không thể cập nhật lúc này. Đang giữ bản gần nhất.'},previous.items.length?200:503);}
+   try{return json(await update(env,previous));}catch{return json({...previous,degraded:true,serviceError:'An update is unavailable right now. Your latest saved edition is retained.'},previous.items.length?200:503);}
   }
   // Sites owner-private access protects this shared, non-personal content writer.
   // Service calls use the platform's service bearer; no browser document enters here.
@@ -54,7 +55,7 @@ export default {
     const cases=input.caseStudies?.length?input.caseStudies:null;
     const next=await update(env,previous,cases);
     return json({updatedAt:next.updatedAt,caseUpdatedAt:next.caseUpdatedAt,checkedAt:next.checkedAt,items:next.items.length,caseStudies:next.caseStudies.length,degraded:next.degraded,sources:next.sources});
-   }catch(error){return json({error:'Cập nhật thất bại. Dữ liệu trước đó được giữ nguyên.',detail:String(error.message).slice(0,150)},400);}
+   }catch(error){return json({error:'The update failed. Your previous data is retained.',detail:String(error.message).slice(0,150)},400);}
   }
   return json({error:'Not found.'},404);
  }

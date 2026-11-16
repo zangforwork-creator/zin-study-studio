@@ -12,7 +12,7 @@ await open();
 await check('header button opens a real timer with exactly the four durations; redundant panel is absent',async()=>{
  assert(await page.locator('#home .focus-panel').count()===0,'Old focus panel remains');assert(!(await page.locator('#home').innerText()).includes('Your next small step'),'Old heading remains');
  await page.locator('#home [data-action="timer-open"]').click();
- assert(await page.locator('.study-timer-options button').allTextContents().then(values=>JSON.stringify(values)===JSON.stringify(['15 phút','30 phút','45 phút','60 phút'])),'Wrong duration choices');
+ assert(await page.locator('.study-timer-options button').allTextContents().then(values=>JSON.stringify(values)===JSON.stringify(['15 min','30 min','45 min','60 min'])),'Wrong duration choices');
  for(const minutes of [15,30,45,60]){await page.locator('[data-action="timer-duration"][data-minutes="'+minutes+'"]').click();assert(await clock().innerText()===minutes+':00','Selected time not applied');}
 });
 await check('start, pause and resume use actual elapsed time; double-click cannot reset or duplicate the countdown',async()=>{
@@ -34,7 +34,7 @@ await check('minimizing and reopening retain the same timer; section navigation 
 await check('expiry clamps to zero, announces once and does not alter learning progress or block lessons',async()=>{
  const before=await page.evaluate(()=>localStorage.getItem('zin-studio-v1'));
  await page.clock.fastForward(31*60000);assert(await page.locator('#study-timer-dock [data-timer-clock]').innerText()==='00:00','Expired clock is not zero');
- assert((await page.locator('.timer-sr-only').innerText()).includes('Đã hết 30 phút'),'No completion announcement');
+ assert((await page.locator('.timer-sr-only').innerText()).includes('Your 30 min'),'No completion announcement');
  assert(await page.evaluate(()=>localStorage.getItem('zin-studio-v1'))===before,'Clock changed mastery or progress');
  assert(await page.locator('#modal').evaluate(dialog=>!dialog.open),'Expiry interrupted lesson with a dialog');
  assert(await page.locator('#lesson [data-action="practice-lesson"]').count()===1,'Lesson practice blocked');
@@ -58,7 +58,7 @@ for(const theme of ['light','dark'])for(const width of [390,768,1440])await chec
 await check('storage failure preserves a usable countdown and explains reload limitations',async()=>{
  const fresh=await browser.newContext();await fresh.addInitScript(()=>{const set=Storage.prototype.setItem;Storage.prototype.setItem=function(key,value){if(key==='zin-study-timer-v1')throw Error('Quota exceeded');return set.call(this,key,value);};});
  const p=await fresh.newPage();await p.goto('http://127.0.0.1:4173');await p.locator('#home [data-action="timer-open"]').click();await p.locator('[data-action="timer-start"]').click();
- assert((await p.locator('#study-timer-panel .error').innerText()).includes('chưa lưu được'),'Storage failure is hidden');assert(await p.locator('#study-timer-panel [data-action="timer-toggle"]').isVisible(),'Timer became unusable');await fresh.close();
+ assert((await p.locator('#study-timer-panel .error').innerText()).includes('could not save'),'Storage failure is hidden');assert(await p.locator('#study-timer-panel [data-action="timer-toggle"]').isVisible(),'Timer became unusable');await fresh.close();
 });
 await check('no browser runtime errors',async()=>assert(!errors.length,errors.join('; ')));
 await writeFile('.preview/study-timer-qa.json',JSON.stringify({results,errors},null,2));await browser.close();if(results.some(result=>!result.pass))process.exitCode=1;

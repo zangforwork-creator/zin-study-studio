@@ -4,6 +4,10 @@ This Site is owner-private. News and web case metadata are shared public-source 
 
 The Worker reads official RSS/Atom from VnExpress Business, VnExpress World and Google Ads & Commerce (`https://blog.google/products/ads-commerce/rss/`). It validates source URLs, dates and images, deduplicates and saves the result in R2. `GET /api/reading` refreshes an edition older than 15 minutes. The browser checks every 15 minutes while visible. Source failures preserve the last successful edition and expose per-source errors. Do not claim a failed source is current.
 
+## Permanent language requirement
+
+Zin requires the website to remain in English. Always write case titles, summaries, analysis questions, image alt text, and credits in English, even when a publisher is Vietnamese. Keep the original publisher URL and campaign context. Include `language: "en"` in new case records. The writer rejects Vietnamese summaries; translate faithfully and retry rather than bypassing validation. Original personal documents and notes must never be rewritten. RSS business/world news now uses VnExpress International at `https://e.vnexpress.net/rss/business.rss` and `https://e.vnexpress.net/rss/world.rss`; Google Ads remains its English feed. Do not create or replace the existing hourly schedule for a language change.
+
 ## Unattended update
 
 1. Read the linked Site with `get_site`. Confirm the audience is still owner-private and obtain the returned `siwc_bypass_bearer_token`. It is a short-lived service credential; never print it, store it or put it in a task prompt. If access is unavailable, report the failure without changing sharing.
