@@ -1,6 +1,6 @@
 # Zin's Study Studio
 
-An English personal learning website for Zin, a Marketing student at VNUIS. The Night Sky palette combines indigo, blue, lavender and pink in light/dark themes, with the cat illustrations from the supplied `Image` collection. The bookshelf is inspired by the supplied Khoaverse design notes.
+An English personal learning website for Zin, a Marketing student at VNUIS. The blue and gold palette combines navy, royal blue, bright blue, ice blue, gold and soft yellow in light/dark themes, with the cat illustrations from the supplied `Image` collection. The bookshelf is inspired by the supplied Khoaverse design notes.
 
 ## Run locally
 
@@ -112,6 +112,6 @@ All ten course tiles now use original document artwork: nine PDF cover pages and
 
 The three suggested courses in “Keep your curiosity going” reuse the same 3D book renderer as My Bookshelf and retain their existing progress data. Main navigation scrolls to sections instead of replacing the page. Opening a course, lesson, document or review session inserts its content beside the relevant section and scrolls to it. Notes and recall drafts stay available while moving between sections; document uploads and small editing forms still use dialogs. Existing browser storage keys, course IDs, document versions and review history are preserved.
 
-## Night Sky update
+## Blue and gold update
 
-The supplied palette is `#1E0F75`, `#1C1DAB`, `#3785D8`, `#ADC6E5`, `#BF8CE1`, `#E893C5`, `#EBB2D3`, `#CBD8E8`. Deep indigo anchors text and actions; blue, lavender and pink provide accents. Both themes retain readable text and visible focus. Goals & Growth, its sidebar link, the academic timeline and the home goals panel have been removed. Existing goal values in browser storage and backup files are retained without a schema migration. The homepage prioritizes study sessions and review activity; old `#goals` links return to The Daily.
+The six tones interpreted from Zin's latest image are `#050D4B`, `#08418B`, `#0877BB`, `#D8E9F5`, `#F0BA1B`, `#F5E56B`. Navy anchors the sidebar, blues structure content and links, and gold highlights the study action. Both light and dark themes use this palette. Goals & Growth remains removed, and the existing single-page navigation, 3D books, storage and backup schema are unchanged.

@@ -1,6 +1,6 @@
 # Initial release
 
-Latest requested update (16 November 2026): apply Zin's Night Sky palette to both themes and remove Goals & Growth, its navigation item and the home goal summary. Six main sections retain continuous scroll navigation and 3D books. Existing goals, grades, notes and review records remain in storage and backups; old goals links return to The Daily. The initial release description below records the original scope.
+Latest requested update (16 November 2026): apply Zin's navy, blue and gold palette to both themes and remove Goals & Growth, its navigation item and the home goal summary. Six main sections retain continuous scroll navigation and 3D books. Existing goals, grades, notes and review records remain in storage and backups; old goals links return to The Daily. The initial release description below records the original scope.
 
 User request (16 November 2026): English website, light and dark themes, a news-first home with goals and learning progress. Blue, cats, an editorial feel for a marketing student, and an approachable bookshelf inspired by the supplied Khoaverse reference.
 
