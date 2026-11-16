@@ -1,29 +1,29 @@
 /* Cover dimensions define the book itself: no padded picture frame or crop. */
 .bookshelf.bookshelf{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 27px;align-items:start;padding:6px 5px 10px}
-.bookshelf .book-tile{display:flex;flex-direction:column;align-items:stretch;min-width:0;border-radius:12px}
-.bookshelf .book-stage{height:306px;display:flex;align-items:flex-end;justify-content:center;padding:12px 5px 16px;perspective:1100px;position:relative}
-.bookshelf .book-stage:after{content:'';position:absolute;bottom:8px;width:75%;height:18px;background:#091b3330;filter:blur(9px);border-radius:50%;pointer-events:none}
-.bookshelf .book-volume{position:relative;width:min(210px,85%);aspect-ratio:var(--cover-ratio);transform-style:preserve-3d;transform:rotateX(2deg) rotateY(-20deg);z-index:1}
-.bookshelf .book-face{position:absolute;inset:0;transform:translateZ(12px);background:var(--book-edge);border-radius:2px 3px 3px 2px;overflow:hidden;box-shadow:3px 5px 9px #0002;backface-visibility:hidden}
-.bookshelf .book-face:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#0005 0%,#0001 2%,#fff3 3%,transparent 6%,transparent 94%,#0001 100%);box-shadow:inset 0 0 0 1px #0002}
-.bookshelf .book-cover-image{display:block;width:100%;height:100%;object-fit:contain;transform:none;transition:none}
-.bookshelf .book-pages{position:absolute;top:3px;bottom:3px;left:100%;width:24px;transform:translateZ(12px) rotateY(90deg);transform-origin:left center;background:repeating-linear-gradient(90deg,#c8c4ba 0 1px,#f7f3e9 1px 3px);border-top:2px solid var(--book-edge);border-bottom:2px solid var(--book-edge);backface-visibility:visible}
-.bookshelf .book-back{position:absolute;inset:1px -1px -1px 0;background:var(--book-edge);transform:translateZ(-12px);border-radius:2px;box-shadow:7px 12px 17px #0003}
-.bookshelf .book-meta{padding:18px 8px 9px;min-width:0}
-.bookshelf .book-meta .book-course-name{display:block;color:var(--blue-text);font-size:10px;line-height:1.5;margin-bottom:7px;font-weight:600}
-.bookshelf .book-meta h3{font-size:13px;line-height:1.55;text-wrap:balance}
-.bookshelf .book-meta p{font-size:11px;line-height:1.7;margin-top:7px}
-.bookshelf .book-meta .pill{margin-top:12px}
-.bookshelf .book-placeholder{height:100%;padding:20px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:#23466b}
+:is(.bookshelf,.course-grid) .book-tile{display:flex;flex-direction:column;align-items:stretch;min-width:0;border-radius:12px}
+:is(.bookshelf,.course-grid) .book-stage{height:306px;display:flex;align-items:flex-end;justify-content:center;padding:12px 5px 16px;perspective:1100px;position:relative}
+:is(.bookshelf,.course-grid) .book-stage:after{content:'';position:absolute;bottom:8px;width:75%;height:18px;background:#091b3330;filter:blur(9px);border-radius:50%;pointer-events:none}
+:is(.bookshelf,.course-grid) .book-volume{position:relative;width:min(210px,85%);aspect-ratio:var(--cover-ratio);transform-style:preserve-3d;transform:rotateX(2deg) rotateY(-20deg);z-index:1}
+:is(.bookshelf,.course-grid) .book-face{position:absolute;inset:0;transform:translateZ(12px);background:var(--book-edge);border-radius:2px 3px 3px 2px;overflow:hidden;box-shadow:3px 5px 9px #0002;backface-visibility:hidden}
+:is(.bookshelf,.course-grid) .book-face:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#0005 0%,#0001 2%,#fff3 3%,transparent 6%,transparent 94%,#0001 100%);box-shadow:inset 0 0 0 1px #0002}
+:is(.bookshelf,.course-grid) .book-cover-image{display:block;width:100%;height:100%;object-fit:contain;transform:none;transition:none}
+:is(.bookshelf,.course-grid) .book-pages{position:absolute;top:3px;bottom:3px;left:100%;width:24px;transform:translateZ(12px) rotateY(90deg);transform-origin:left center;background:repeating-linear-gradient(90deg,#c8c4ba 0 1px,#f7f3e9 1px 3px);border-top:2px solid var(--book-edge);border-bottom:2px solid var(--book-edge);backface-visibility:visible}
+:is(.bookshelf,.course-grid) .book-back{position:absolute;inset:1px -1px -1px 0;background:var(--book-edge);transform:translateZ(-12px);border-radius:2px;box-shadow:7px 12px 17px #0003}
+:is(.bookshelf,.course-grid) .book-meta{padding:18px 8px 9px;min-width:0}
+:is(.bookshelf,.course-grid) .book-meta .book-course-name{display:block;color:var(--blue-text);font-size:10px;line-height:1.5;margin-bottom:7px;font-weight:600}
+:is(.bookshelf,.course-grid) .book-meta h3{font-size:13px;line-height:1.55;text-wrap:balance}
+:is(.bookshelf,.course-grid) .book-meta p{font-size:11px;line-height:1.7;margin-top:7px}
+:is(.bookshelf,.course-grid) .book-meta .pill{margin-top:12px}
+:is(.bookshelf,.course-grid) .book-placeholder{height:100%;padding:20px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:#23466b}
 .book-placeholder span{font-size:9px;letter-spacing:1px}.book-placeholder strong{font:24px/1.2 Georgia,serif}
-.bookshelf .book-tile:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+:is(.bookshelf,.course-grid) .book-tile:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
 @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
- .bookshelf .book-volume{transition:transform 350ms cubic-bezier(.2,.65,.3,1)}
- .bookshelf .book-stage:after{transition:opacity 350ms ease,transform 350ms ease}
- .bookshelf .book-tile:hover .book-volume,.bookshelf .book-tile:focus-visible .book-volume{transform:translateY(-7px) rotateX(0deg) rotateY(-26deg)}
- .bookshelf .book-tile:hover .book-stage:after{transform:scale(.9);opacity:.7}
+ :is(.bookshelf,.course-grid) .book-volume{transition:transform 350ms cubic-bezier(.2,.65,.3,1)}
+ :is(.bookshelf,.course-grid) .book-stage:after{transition:opacity 350ms ease,transform 350ms ease}
+ :is(.bookshelf,.course-grid) .book-tile:hover .book-volume,:is(.bookshelf,.course-grid) .book-tile:focus-visible .book-volume{transform:translateY(-7px) rotateX(0deg) rotateY(-26deg)}
+ :is(.bookshelf,.course-grid) .book-tile:hover .book-stage:after{transform:scale(.9);opacity:.7}
 }
 @media(max-width:1200px){.bookshelf.bookshelf{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}}
-@media(max-width:760px){.bookshelf.bookshelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 18px}.bookshelf .book-stage{height:260px}.bookshelf .book-volume{width:min(175px,84%)}.bookshelf .book-meta{padding:13px 3px 5px}}
-@media(max-width:480px){.bookshelf.bookshelf{gap:22px 14px;padding-left:0;padding-right:0}.bookshelf .book-stage{height:222px;padding:7px 3px 13px}.bookshelf .book-volume{width:min(145px,86%)}.bookshelf .book-meta h3{font-size:12px}.bookshelf .book-meta p{font-size:10px}.bookshelf .book-meta .pill{font-size:8px;padding:5px 7px}}
-@media(prefers-reduced-motion:reduce){.bookshelf .book-volume,.bookshelf .book-tile:hover .book-volume,.bookshelf .book-tile:focus-visible .book-volume{transform:rotateY(-12deg);transition:none}.bookshelf .book-stage:after{transition:none}}
+@media(max-width:760px){.bookshelf.bookshelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 18px}:is(.bookshelf,.course-grid) .book-stage{height:260px}:is(.bookshelf,.course-grid) .book-volume{width:min(175px,84%)}:is(.bookshelf,.course-grid) .book-meta{padding:13px 3px 5px}}
+@media(max-width:480px){.bookshelf.bookshelf{gap:22px 14px;padding-left:0;padding-right:0}:is(.bookshelf,.course-grid) .book-stage{height:222px;padding:7px 3px 13px}:is(.bookshelf,.course-grid) .book-volume{width:min(145px,86%)}:is(.bookshelf,.course-grid) .book-meta h3{font-size:12px}:is(.bookshelf,.course-grid) .book-meta p{font-size:10px}:is(.bookshelf,.course-grid) .book-meta .pill{font-size:8px;padding:5px 7px}}
+@media(prefers-reduced-motion:reduce){:is(.bookshelf,.course-grid) .book-volume,:is(.bookshelf,.course-grid) .book-tile:hover .book-volume,:is(.bookshelf,.course-grid) .book-tile:focus-visible .book-volume{transform:rotateY(-12deg);transition:none}:is(.bookshelf,.course-grid) .book-stage:after{transition:none}}

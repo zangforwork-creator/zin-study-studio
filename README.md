@@ -18,7 +18,8 @@ Open **http://127.0.0.1:4173**. On other shells, `npm` is equivalent to `npm.cmd
 ## What works
 
 - The Daily: a source-backed five-story reading edition, one reading stream, saved stories, read activity, goals, weekly recall activity and course progress.
-- Light and dark themes, responsive navigation, keyboard focus, a skip link and reduced-motion styles.
+- One continuous page: sidebar items scroll to The Daily, My Bookshelf, Study Room, Goals & Growth, Market Pulse, Saved Stories and Settings. Course collections, lessons, reading and recall open inline. The sticky toolbar stays available, the active sidebar item follows scrolling, and navigation supports deep links and browser Back/Forward.
+- Shared 3D books on The Daily and My Bookshelf: original cover proportions, page edges, rear boards and shadows. Light and dark themes, responsive navigation, keyboard focus, a skip link and reduced-motion styles.
 - Ten real course collections from the checked catalog; create additional courses without altering the source catalog.
 - Seventeen transcript entries across three confirmed terms. Eleven recorded 10-point grades and six pending results. GPA remains blank until credits and official conversion rules are confirmed. A personal 4-point target can be saved.
 - Six planned qualification courses with local completion checkboxes. IELTS 7.5 and HSK 5 are clearly labelled plans, not verified scores.
@@ -66,11 +67,14 @@ The reading edition was checked **16 November 2026**. It is not a live feed. Bri
 ```powershell
 npm.cmd run check
 npm.cmd test
+# With npm.cmd run dev running in another terminal:
+node scripts/single-page-qa.mjs
+node scripts/accessibility-qa.mjs
 ```
 
 - 8 unit tests: scheduling, same-day repetition, assistance, idempotency, real-zero versus pending grades, source counts, backup validation/merge and failed text.
-- 14 browser checks: themes, saving/reloading, grade timeline, notes, recall, PDF upload/extraction/cards, errors, source media, hide/restore controls and layout at 390/430/768/1024/1440 px. Seven routes were checked at each width.
-- 8 extended browser checks: DOCX, PPTX ordering, duplicate uploads, blank PDF, export/import, malformed backup, keyboard operation and learning with external news requests blocked.
+- 16 browser checks for the continuous page: all seven sections stay mounted during navigation; original 3D covers; inline courses; search; draft preservation and saved notes; recall and deduplicated review persistence; saved stories; PDF upload/extraction/source-linked cards; deep links and Back/Forward; navigation without horizontal overflow at 390/430/768/1024/1440 px; keyboard, both themes and reduced motion; unique DOM IDs and no observed JavaScript runtime errors.
+- The older browser, extended, bookshelf and card-effects scripts describe the previous separate-screen layout. Use `single-page-qa.mjs` for current navigation and cover checks.
 - Automated axe-core checks on seven routes in both themes: no reported violations for the selected WCAG 2 A/AA, 2.1 A/AA and 2.2 AA rules. This is not a complete accessibility certification.
 - Browser checks used installed Chrome through Playwright. No JavaScript runtime errors were observed in the main-flow checks.
 - Dependency audit after upgrading fflate: zero reported vulnerabilities at check time.
@@ -80,6 +84,7 @@ QA screenshots and machine-readable reports are in `.preview/` locally, excluded
 ## Project layout
 
 - `dist/app.js`: navigation, screens and interactions.
+- `dist/bookshelf.css`, `dist/single-page.css`: shared 3D books, responsive continuous sections and sticky navigation.
 - `dist/core.js`: state validation, backup merge, recall scheduling and metric calculations.
 - `dist/documents.js`, `office-worker.js`: local document storage and processing.
 - `dist/content.js`: source-checked lessons and the dated news edition.
@@ -103,3 +108,7 @@ Consumer Behaviour, Digital Marketing and Introduction to Marketing Career now s
 ## Complete 3D bookshelf
 
 All ten course tiles now use original document artwork: nine PDF cover pages and the original Logistics title slide (explicitly labelled Course slides). Every book face uses its actual source aspect ratio, without cropping or a padded outer frame. CSS perspective, cover creases, page edges, rear boards and contact shadows form the 3D view; hover and keyboard focus adjust the angle. Touch and reduced-motion layouts remain usable. The generated `dist/course-covers.js` and `COURSE-COVER-SOURCES.json` record dimensions and provenance. New courses use a clearly labelled text placeholder until a cover is provided.
+
+## Continuous-page update
+
+The three suggested courses in “Keep your curiosity going” reuse the same 3D book renderer as My Bookshelf and retain their existing progress data. Main navigation scrolls to sections instead of replacing the page. Opening a course, lesson, document or review session inserts its content beside the relevant section and scrolls to it. Notes and recall drafts stay available while moving between sections; document uploads and small editing forms still use dialogs. Existing browser storage keys, course IDs, document versions and review history are preserved.

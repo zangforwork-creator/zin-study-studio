@@ -1,0 +1,30 @@
+/* Every destination stays in the same reading stream, below the sticky bar. */
+.topbar{position:sticky;top:0;z-index:18}
+.studio-section{scroll-margin-top:100px;min-width:0;outline:none}
+.studio-section+.studio-section{margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}
+.studio-section.detail-section{margin-top:32px;padding:28px 0;border-top:2px solid var(--blue-soft)}
+/* The Daily shares the bookshelf's actual 3D volumes and uncropped covers. */
+.course-grid .course-card{border:0;background:transparent;box-shadow:none;border-radius:0;overflow:visible;transform:none;transition:none}
+.course-grid .course-link{display:flex;flex-direction:column;height:100%;border-radius:12px}
+.course-grid .book-stage{height:270px;width:100%}
+.course-grid .book-volume{width:min(180px,82%)}
+.course-grid .course-content{padding:18px 6px 8px;width:100%;flex:1;display:flex;flex-direction:column;align-items:flex-start}
+.course-grid .course-content h3{margin:12px 0 7px;font-size:14px;line-height:1.5}
+.course-grid .course-content>p{font-size:11px;color:var(--muted);min-height:36px}
+.course-grid .progress-track{width:100%;margin-top:auto;flex-shrink:0}
+.course-grid .course-footer{width:100%;margin-top:5px}
+.course-grid .course-card:hover,.course-grid .course-card:focus-within{box-shadow:none;transform:none}
+@media(max-width:760px){
+ .studio-section{scroll-margin-top:84px}
+ .studio-section+.studio-section{margin-top:44px;padding-top:28px}
+ .course-grid .book-stage{height:250px}
+ .course-grid>.course-card:last-child:nth-child(3){grid-column:auto;display:block}
+ .course-grid>.course-card:last-child:nth-child(3) .course-link{display:flex;flex-direction:column}
+}
+@media(max-width:480px){
+ .course-grid .book-stage{height:222px}
+ .course-grid .book-volume{width:min(145px,82%)}
+ .course-grid .course-content{padding:14px 3px 8px}
+ .course-grid .course-content h3{font-size:13px}
+ .course-grid .pill{font-size:8px;padding:5px 7px}
+}
