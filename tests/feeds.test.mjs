@@ -1,12 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {SOURCES,parseFeed,refreshEdition,allowedUrl,validateCases,selectHeadlines} from '../worker/feeds.js';
+import {SOURCES,parseFeed,refreshEdition,allowedUrl,validateCases,selectHeadlines,rasterMime} from '../worker/feeds.js';
 import {initialState,validateState,mergeState,metrics} from '../dist/core.js';
 import worker from '../worker/index.js';
 const now='2026-11-16T10:00:00.000Z';
 const rss=(title='Một bản tin',link='https://vnexpress.net/business-123.html')=>`<rss><channel><item><title>${title}</title><description><![CDATA[<a><img src="https://i1-kinhdoanh.vnecdn.net/photo.jpg"></a> Nội dung &amp; điều kiện từ nguồn.]]></description><pubDate>Mon, 16 Nov 2026 15:00:00 +0700</pubDate><link>${link}</link></item></channel></rss>`;
 test('RSS preserves source, date and matching image while removing HTML',()=>{
  const [n]=parseFeed(rss(),SOURCES[0],Date.parse(now));assert.equal(n.publisher,'VnExpress');assert.equal(n.date,'2026-11-16T08:00:00.000Z');assert.match(n.image.src,/photo.jpg$/);assert.equal(n.subtitle,'Nội dung & điều kiện từ nguồn.');assert.equal(n.id,parseFeed(rss(),SOURCES[0])[0].id);
+});
+test('real raster signatures are accepted when a trusted CDN declares octet-stream; HTML is rejected',()=>{
+ assert.equal(rasterMime(new Uint8Array([82,73,70,70,0,0,0,0,87,69,66,80])),'image/webp');
+ assert.equal(rasterMime(new Uint8Array([137,80,78,71,13,10,26,10])),'image/png');
+ assert.equal(rasterMime(new TextEncoder().encode('<html>not an image</html>')),'');
+});
+test('case cover metadata keeps its source and rejects unapproved image origins',()=>{
+ const c={title:'Campaign',summary:'Source overview',url:'https://www.brandsvietnam.com/campaign/example',image:{src:'https://cdn.brvn.vn/campaign/cover.jpg'}};
+ assert.equal(validateCases([c],now)[0].image.sourceUrl,c.url);
+ assert.equal(validateCases([{...c,image:{src:'https://evil.test/cover.jpg'}}],now)[0].image,null);
 });
 test('Atom alternate links with legacy HTTP are upgraded only for an approved publisher',()=>{
  const atom=`<feed><entry><title type="text">Update</title><published>2026-11-16T01:00:00Z</published><content type="html">&lt;p&gt;A verified update.&lt;/p&gt;</content><link rel="alternate" href="http://blog.google/products/ads-commerce/update/"/></entry></feed>`;

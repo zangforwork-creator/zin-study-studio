@@ -1,4 +1,4 @@
-import {FEED_TTL,refreshEdition,allowedUrl} from './feeds.js';
+import {FEED_TTL,refreshEdition,allowedUrl,rasterMime} from './feeds.js';
 const EDITION_KEY='reading/edition-v1.json';
 let inFlight=null;
 const json=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
@@ -16,18 +16,21 @@ export default {
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(!url.pathname.startsWith('/api/'))return env.ASSETS.fetch(request);
-  if(url.pathname==='/api/reading/image'&&request.method==='GET'){
-   const edition=await readEdition(env),story=edition.items.find(n=>n.id===url.searchParams.get('id'));
-   const image=allowedUrl(story?.image?.src,['vnecdn.net','googleusercontent.com','blogger.com','gstatic.com','googleblog.com','storage.googleapis.com']);
+  if(['/api/reading/image','/api/reading/case-image'].includes(url.pathname)&&request.method==='GET'){
+   const edition=await readEdition(env),isCase=url.pathname==='/api/reading/case-image';
+   const story=(isCase?edition.caseStudies:edition.items).find(n=>n.id===url.searchParams.get('id'));
+   const hosts=isCase?['brvn.vn','brandsvietnam.com','googleusercontent.com','storage.googleapis.com','gstatic.com','thinkwithgoogle.com','business.google.com']:['vnecdn.net','googleusercontent.com','blogger.com','gstatic.com','googleblog.com','storage.googleapis.com'];
+   const image=allowedUrl(story?.image?.src,hosts);
    if(!image)return new Response('Image not available',{status:404});
    try{
     const upstream=await fetch(image,{redirect:'manual',signal:AbortSignal.timeout(12000),headers:{Accept:'image/avif,image/webp,image/jpeg,image/png',Referer:story.url}});
-    const type=(upstream.headers.get('content-type')||'').split(';')[0];
-    if(!upstream.ok||!['image/jpeg','image/png','image/webp','image/avif','image/gif'].includes(type))return new Response('Source image unavailable',{status:502});
+    if(!upstream.ok)return new Response('Source image unavailable',{status:502});
     if(Number(upstream.headers.get('content-length'))>4000000)return new Response('Image too large',{status:413});
     const reader=upstream.body.getReader(),chunks=[];let size=0;
     while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>4000000){await reader.cancel();return new Response('Image too large',{status:413});}chunks.push(value);}
-    return new Response(new Blob(chunks,{type}),{headers:{'Content-Type':type,'Cache-Control':'private, max-age=900','X-Content-Type-Options':'nosniff'}});
+    const data=new Uint8Array(size);let offset=0;for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.length;}
+    const type=rasterMime(data);if(!type)return new Response('Source is not a supported raster image',{status:502});
+    return new Response(data,{headers:{'Content-Type':type,'Cache-Control':'private, max-age=900','X-Content-Type-Options':'nosniff'}});
    }catch{return new Response('Source image temporarily unavailable',{status:502});}
   }
   if(url.pathname==='/api/reading'&&request.method==='GET'){

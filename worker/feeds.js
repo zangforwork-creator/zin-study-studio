@@ -5,6 +5,15 @@ export const SOURCES=[
  {id:'google-ads',publisher:'Google Ads & Commerce',topic:'Marketing',url:'https://blog.google/products/ads-commerce/rss/',hosts:['blog.google']}
 ];
 export const CASE_HOSTS=['www.brandsvietnam.com','brandsvietnam.com','www.thinkwithgoogle.com','business.google.com','www.warc.com'];
+export function rasterMime(bytes){
+ const b=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes);
+ if(b.length>=12&&String.fromCharCode(...b.slice(0,4))==='RIFF'&&String.fromCharCode(...b.slice(8,12))==='WEBP')return 'image/webp';
+ if(b.length>=8&&[137,80,78,71,13,10,26,10].every((v,i)=>b[i]===v))return 'image/png';
+ if(b.length>=3&&b[0]===255&&b[1]===216&&b[2]===255)return 'image/jpeg';
+ if(b.length>=6&&['GIF87a','GIF89a'].includes(String.fromCharCode(...b.slice(0,6))))return 'image/gif';
+ if(b.length>=12&&String.fromCharCode(...b.slice(4,8))==='ftyp'&&['avif','avis'].includes(String.fromCharCode(...b.slice(8,12))))return 'image/avif';
+ return '';
+}
 export function decodeText(value){
  return String(value||'').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1').replace(/&#(x[0-9a-f]+|\d+);/gi,(_,n)=>{const v=n[0].toLowerCase()==='x'?parseInt(n.slice(1),16):Number(n);return v>0&&v<=0x10ffff?String.fromCodePoint(v):'';}).replace(/&(amp|lt|gt|quot|apos|nbsp);/gi,(_,n)=>({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'",nbsp:' '})[n.toLowerCase()]);
 }
@@ -52,7 +61,9 @@ export function validateCases(value,now=new Date().toISOString()){
   if(!url||!title||!summary)throw Error('Case study cần tiêu đề, tóm tắt và nguồn được phép.');
   const date=c.date&&Number.isFinite(Date.parse(c.date))?new Date(c.date).toISOString():null;
   if(date&&Date.parse(date)>Date.parse(now)+86400000)throw Error('Ngày xuất bản ở tương lai.');
-  return {id:stableId(url,'case'),title,summary,url,publisher:plainText(c.publisher||new URL(url).hostname,80),brand:plainText(c.brand,80),date,campaignPeriod:plainText(c.campaignPeriod,60),checkedAt:now,question:plainText(c.question||'Insight nào dẫn đến lựa chọn chiến lược này? Bạn sẽ kiểm chứng hiệu quả bằng dữ liệu gì?',300),kind:'web'};
+  const imageUrl=allowedUrl(c.image?.src||c.imageUrl,['brvn.vn','brandsvietnam.com','googleusercontent.com','storage.googleapis.com','gstatic.com','thinkwithgoogle.com','business.google.com']);
+  const image=imageUrl?{src:imageUrl,alt:plainText(c.image?.alt||title,220),credit:plainText(c.image?.credit||'Ảnh từ nguồn case study',100),sourceUrl:url}:null;
+  return {id:stableId(url,'case'),title,summary,url,publisher:plainText(c.publisher||new URL(url).hostname,80),brand:plainText(c.brand,80),date,campaignPeriod:plainText(c.campaignPeriod,60),checkedAt:now,question:plainText(c.question||'Insight nào dẫn đến lựa chọn chiến lược này? Bạn sẽ kiểm chứng hiệu quả bằng dữ liệu gì?',300),image,kind:'web'};
  });
  return [...new Map(cases.map(c=>[c.url,c])).values()];
 }

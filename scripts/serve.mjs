@@ -3,7 +3,7 @@ import {readFile,stat,mkdir,writeFile} from 'node:fs/promises';
 import {resolve,extname,sep} from 'node:path';
 import worker from '../worker/index.js';
 const root=resolve(import.meta.dirname,'../dist');
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.webp':'image/webp','.svg':'image/svg+xml','.pdf':'application/pdf','.wasm':'application/wasm'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.gif':'image/gif','.svg':'image/svg+xml','.pdf':'application/pdf','.wasm':'application/wasm'};
 const cacheFile=resolve(import.meta.dirname,'../.preview/reading/edition.json');
 const env={
  BUCKET:{async get(key){if(key!=='reading/edition-v1.json')return null;try{const text=await readFile(cacheFile,'utf8');return {json:async()=>JSON.parse(text)};}catch{return null;}},async put(key,value){if(key!=='reading/edition-v1.json')throw Error('Unknown key');await mkdir(resolve(cacheFile,'..'),{recursive:true});await writeFile(cacheFile,value);}},

@@ -1,6 +1,12 @@
-import {mkdir,readFile,writeFile,copyFile,cp,readdir} from 'node:fs/promises';
-import {resolve} from 'node:path';
+import {mkdir,readFile,writeFile,copyFile,cp,readdir,realpath,rm} from 'node:fs/promises';
+import {resolve,sep} from 'node:path';
 const root=resolve(import.meta.dirname,'..'),dist=resolve(root,'dist');
+const client=resolve(dist,'client');
+try{
+ const actual=await realpath(client);
+ if(actual.toLowerCase()!==client.toLowerCase()||!actual.toLowerCase().startsWith(root.toLowerCase()+sep))throw Error('Generated client output is outside the checkout.');
+ await rm(actual,{recursive:true,force:true});
+}catch(error){if(error.code!=='ENOENT')throw error;}
 await mkdir(resolve(dist,'client'),{recursive:true});await mkdir(resolve(dist,'server'),{recursive:true});await mkdir(resolve(dist,'.openai'),{recursive:true});
 for(const entry of await readdir(dist,{withFileTypes:true})){
  if(['client','server','.openai'].includes(entry.name))continue;

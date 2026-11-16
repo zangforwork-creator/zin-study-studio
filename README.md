@@ -18,7 +18,7 @@ Open **http://127.0.0.1:4173**. On other shells, `npm` is equivalent to `npm.cmd
 ## What works
 
 - The Daily: five RSS-sourced headlines, source dates and update status, saved stories, read activity, weekly recall activity and a daily case-study panel.
-- One continuous page: sidebar items scroll to The Daily, My Bookshelf, Study Room, Market Pulse, Saved Stories and Settings. Course collections, lessons, reading and recall open inline. The sticky toolbar stays available, the active sidebar item follows scrolling, and navigation supports deep links and browser Back/Forward.
+- One continuous page: an 80px icon rail scrolls to The Daily, My Bookshelf, Study Room, Market Pulse, Saved Stories and Settings. Every icon retains an accessible name and hover title. Course collections, lessons, reading and recall open inline. The sticky toolbar stays available, the active sidebar item follows scrolling, and navigation supports deep links and browser Back/Forward.
 - My Bookshelf: original 3D cover proportions, page edges, rear boards and shadows. The duplicate suggested shelf on The Daily has been removed. Light and dark themes, responsive navigation, keyboard focus, a skip link and reduced-motion styles.
 - Ten real course collections from the checked catalog; create additional courses without altering the source catalog.
 - Two source-checked starter lessons and six recall questions from *Marketing: An Introduction*, with diagrams, objectives, key ideas, hypothetical examples, cautions and original source pages.
@@ -73,7 +73,7 @@ node scripts/reading-qa.mjs
 node scripts/accessibility-qa.mjs
 ```
 
-- 17 unit tests: scheduling, assistance, idempotency, real-zero versus pending grades, backup merge, failed text, RSS/Atom parsing, matching source images, URL and redirect restrictions, future dates, cached fallback, provenance validation, case-reading persistence and writer origin restrictions.
+- 19 unit tests: scheduling, assistance, idempotency, real-zero versus pending grades, backup merge, failed text, RSS/Atom parsing, matching source images, URL and redirect restrictions, future dates, cached fallback, provenance validation, case-reading persistence, writer origin restrictions, binary raster signatures and case-cover source validation.
 - 16 browser checks for the continuous page: all six sections stay mounted during navigation; Goals & Growth and its home panel are absent; old goals links return to The Daily; original 3D covers; inline courses; search; draft preservation and saved notes; recall and deduplicated review persistence; saved stories; PDF upload/extraction/source-linked cards; deep links and Back/Forward; navigation without horizontal overflow at 390/430/768/1024/1440 px; keyboard, both themes and reduced motion; unique DOM IDs and no observed JavaScript runtime errors.
 - The older browser, extended, bookshelf and card-effects scripts describe the previous separate-screen layout. Use `single-page-qa.mjs` for current navigation and cover checks.
 - Automated axe-core checks on seven routes in both themes: no reported violations for the selected WCAG 2 A/AA, 2.1 A/AA and 2.2 AA rules. This is not a complete accessibility certification.
@@ -86,6 +86,7 @@ QA screenshots and machine-readable reports are in `.preview/` locally, excluded
 
 - `dist/app.js`: navigation, screens and interactions.
 - `dist/reading.js`, `dist/reading.css`: live-reading state, safe source links, daily case selection, source-document excerpts and clear image frames.
+- `dist/layout.css`, `dist/media-snapshots.js`: responsive 6:4 news/case columns, the icon rail and exact-source image screenshots. Provenance is in `READING-MEDIA-SOURCES.json`.
 - `worker/feeds.js`, `worker/index.js`: RSS/Atom intake, case validation, owner-private reading endpoints and R2 persistence.
 - `READING-UPDATES.md`, `scripts/reading-service.mjs`: unattended updater instructions and credential-safe writer/readback.
 - `dist/bookshelf.css`, `dist/single-page.css`: shared 3D books, responsive continuous sections and sticky navigation.
@@ -105,6 +106,8 @@ No live Notion sync, external AI synthesis, OCR, official GPA conversion, verifi
 ## News presentation update
 
 The news feed is a single reading stream. RSS images are tied to their article URL and shown uncropped in a separate 16:9 frame, with text below the image and no tint overlay. A failed image leaves a stable labelled placeholder. News-reading and case-reading activity stay separate from course evidence. Existing saved/read/hidden story IDs are preserved.
+
+The desktop Daily now uses 60% news / 40% case-study columns, excluding the gutter, and stacks below 900px. Existing case studies have backgrounds captured from their own source artwork, with visible credit. Seven Google article images and five campaign covers were captured as image-element screenshots and stored locally in the deployed assets. The image proxy checks real raster signatures, so a valid WebP served as `application/octet-stream` is accepted; HTML and unknown binary payloads are rejected. New cases can carry a checked, approved source-image URL. If a future source has no usable image, its cover uses a labelled source-free design rather than another campaign's photograph.
 
 ## Covers and pointer interaction
 
