@@ -61,3 +61,6 @@ main{padding:18px 32px 40px;max-width:1720px;margin:0 auto}.hero{margin-bottom:2
 .next-exam .today-count strong{font-size:32px;white-space:nowrap}
 .next-exam .long-count strong{font-size:34px;white-space:nowrap}
 @media(max-width:520px){.next-exam .today-count strong{font-size:27px}.next-exam .long-count strong{font-size:26px}}
+
+/* Warm countdown contrast on the peach/pink side of the card. */
+.next-exam .exam-time strong,.next-exam .exam-time>span,.next-exam .exam-time time{color:#20104f}
