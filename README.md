@@ -1,6 +1,6 @@
 # Zin’s Study Studio
 
-Two pages: `#home` and `#bookshelf`. The studio reuses Consumer Behavior Lab’s navy sidebar, yellow logo, blue buttons, rounded white cards and light/dark palette. English is permanent; light mode is the default. Navigation collapses on desktop and becomes a labelled bottom bar on mobile.
+Two pages: `#home` and `#bookshelf`. The current design follows Zin’s supplied reference: a narrow indigo sidebar, peach Z. mark, lavender background, rounded white cards, image-cover reading panels and a compact two-column exam dashboard. English is permanent; light mode is the default. Navigation collapses on desktop and becomes a labelled bottom bar on mobile.
 
 Home contains only the greeting/date, Market Pulse beside Today’s case study, then Exam Countdown. The previous lesson, review, saved-story, separate news and goal sections and their code/data are removed.
 

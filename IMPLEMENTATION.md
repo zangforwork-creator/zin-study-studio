@@ -1,3 +1,15 @@
+# Reference-led Studio redesign
+
+The current interface follows Zin’s supplied image. It keeps Home and Bookshelf, all current data keys, document files, reflections, reading services and exam behavior. New `dist/studio-reference.css` applies the indigo/lavender/peach visual system over the existing components. Home uses 136px desktop navigation, compact greeting/date, two cover cards with labelled previous/next arrows, source badges and a two-column exam panel. Large headlines grow their cards rather than being truncated; mobile stacks the cards and uses labelled bottom navigation. Unknown exam dates and publication dates remain explicitly unknown.
+
+The cover headline opens the full story/case dialog; sources and reflections remain available. Reading freshness and failed-feed recovery stay visible in a compact disclosure. Photo failures use a labelled gradient fallback. Exams retain add/edit/delete/undo, timing, notes, progress and completed history; unscheduled subjects are direct add-exam actions. Original data and document schemas are unchanged. A delayed native dialog-close event is ignored when a new dialog is already open, fixing a loading race during document upload → reader handoff.
+
+Verification results: 26 unit tests and 12 browser acceptance flows passed; 24 automated accessibility views reported zero violations. Main workflows cover PDF/DOCX/PPTX, OCR warnings, backup merge, news failure recovery, date boundaries, CRUD and reload. Visual inspection covers the supplied 1204px reference size, 1366/1920px desktop and 390px mobile; populated exam examples used isolated QA-only dates. More than four exams, long headlines, expanded notes and source details can require additional scrolling. External images/feeds remain dependent on their publishers; no new content or exam dates were invented. No dependency, API key, paid AI or access-policy change.
+
+Build/run/configuration instructions remain in README.md. Screenshots are in `.preview/reference/`; the regression report is `.preview/two-page/qa.json`. These checks do not establish complete accessibility or absence of bugs.
+
+## Prior implementation
+
 # Two-page Studio
 
 Latest scope: complete the first supplied prompt before starting Consumer Behavior Lab’s UX pass. Only Home and Bookshelf remain; the former Study Room, separate news/saved/goals/settings routes, study timer, learning content/schedules and obsolete styles/tests have been removed from the deployed app. Backup/recovery remains a dialog accessible through the avatar/profile.

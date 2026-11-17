@@ -1,14 +1,7 @@
-# Publication authorization and configuration
+# Current publication workflow
 
-Updated 16 November 2026.
+Updated 17 November 2026 (Asia/Bangkok).
 
-- Local implementation, build and checks are complete.
-- Sites project registered: `appgprj_6afa0752ea1881918de71089c217a380`.
-- Access verified by `get_site`: current user is owner; custom access includes only the owner; no other viewers, groups, editors or external visitors.
-- Zin explicitly answered **“Cho phép đưa lên Sites riêng tư”** after being shown the exact payload and destination on 16 November 2026.
-- Authorized payload: source code, Notion grades and goals snapshot, course/book metadata, optimized cat art and four textbook source pages. Original full textbooks and future local learning progress are not included.
-- The earlier automatic approval rejection required this authorization; the user has now provided it. Preserve owner-only access.
+Zin requested the supplied-reference redesign of the existing Studio. The existing Sites project is `appgprj_6afa0752ea1881918de71089c217a380`; the current user is an editor and the current audience is custom. Preserve that current access policy and the existing Worker BUCKET binding. This release changes UI/source only and adds no new private document, provider, synchronization or paid service.
 
-Use the project ID in `.openai/hosting.json`, the Sites source helper with credentials only through stdin, the reviewed pushed source commit and its matching package, and the owner-private save/deploy tool. Confirm native deployment success before treating a URL as live. The publication receipt is kept alongside the project at `../zin-study-studio-publication.json` after successful deployment, avoiding a circular source commit.
-
-Local use: run `Start-Website.cmd`, then open http://127.0.0.1:4173.
+Use the existing source workflow, pushed commit and matching archive, then save_site_version and deploy_site_version for the current audience. A native succeeded result verifies publication. Source repository credentials stay in memory and travel through hidden stdin. Read README.md for local run instructions.
