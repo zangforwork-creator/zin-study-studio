@@ -3,22 +3,9 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {MATERIALS} from '../worker/material-catalog.js';
 import {materialRequest,materialRange} from '../worker/materials.js';
-import {initialState,validateState,mergeState,courseSiteUrl} from '../dist/core.js';
 const origin='https://studio.example';
-test('course URLs are isolated, survive reload and old backups, and merge without losing local edits',()=>{
- const state=initialState();state.courseLinks.a=courseSiteUrl(' https://marketing.example/chapters ');state.courseLinks.b='https://economics.example/';
- const restored=validateState(JSON.parse(JSON.stringify(state)));assert.equal(restored.courseLinks.a,'https://marketing.example/chapters');assert.equal(restored.courseLinks.b,'https://economics.example/');
- const old=initialState();delete old.courseLinks;assert.deepEqual(validateState(old).courseLinks,{});
- const incoming=initialState();incoming.courseLinks.a='https://old.example/';incoming.courseLinks.c='https://new.example/';
- assert.deepEqual(mergeState(state,incoming).courseLinks,{a:state.courseLinks.a,b:state.courseLinks.b,c:incoming.courseLinks.c});
- state.courseLinks.a='';assert.equal(validateState(state).courseLinks.a,'');assert.deepEqual(state.attempts,[]);
-});
-test('unsafe URLs and prototype entries never become executable course links',()=>{
- for(const url of ['javascript:alert(1)','data:text/html,hello','http://example.com','https://user:secret@example.com','not a url'])assert.throws(()=>courseSiteUrl(url));
- const state=initialState();state.courseLinks=JSON.parse('{"__proto__":"https://example.com"}');assert.throws(()=>validateState(state));
-});
 test('every confirmed course has its exact original attached, including two MIS books and the legacy slide',async()=>{
- const ref=JSON.parse(await readFile(new URL('../dist/data/reference.json',import.meta.url),'utf8'));
+ const ref=JSON.parse(await readFile(new URL('../dist/data/studio.json',import.meta.url),'utf8'));
  assert.equal(MATERIALS.length,11);assert.equal(new Set(MATERIALS.map(m=>m.courseId)).size,10);
  for(const course of ref.courses)for(const book of course.books){const m=MATERIALS.find(m=>m.id===book.id);assert.equal(m.filename,book.filename);assert.equal(m.courseId,course.id);assert.equal(m.chunks.reduce((n,c)=>n+c.size,0),m.bytes);assert(m.chunks.every(c=>/^[a-f0-9]{64}$/.test(c.sha256)));}
  assert.equal(MATERIALS.filter(m=>m.type==='ppt').length,1);

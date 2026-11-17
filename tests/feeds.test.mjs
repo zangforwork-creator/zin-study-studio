@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {SOURCES,parseFeed,refreshEdition,allowedUrl,validateCases,selectHeadlines,rasterMime} from '../worker/feeds.js';
-import {initialState,validateState,mergeState,metrics} from '../dist/core.js';
 import worker from '../worker/index.js';
 const now='2026-11-16T10:00:00.000Z';
 const rss=(title='A sourced story',link='https://e.vnexpress.net/business-123.html')=>`<rss><channel><item><title>${title}</title><description><![CDATA[<a><img src="https://i1-kinhdoanh.vnecdn.net/photo.jpg"></a> Source content and conditions.]]></description><pubDate>Mon, 16 Nov 2026 15:00:00 +0700</pubDate><link>${link}</link></item></channel></rss>`;
@@ -41,9 +40,6 @@ test('the hosted fetch mode blocks upstream redirects and retains prior content'
 test('case writer validates provenance, deduplicates and keeps unknown publication dates unknown',()=>{
  const c={title:'Case',summary:'A source-linked overview.',url:'https://www.brandsvietnam.com/campaign/example',publisher:'Brands Vietnam'};
  const result=validateCases([c,c],now);assert.equal(result.length,1);assert.equal(result[0].date,null);assert.equal(result[0].checkedAt,now);assert.throws(()=>validateCases([{...c,url:'https://evil.test/case'}],now));
-});
-test('case reading survives old backup imports and merges without raising mastery',()=>{
- const old=initialState();delete old.caseRead;const a=validateState(old),b=initialState();b.caseRead=['case-one'];b.notes['case:case-one']='My analysis';const merged=mergeState(a,b);assert.deepEqual(merged.caseRead,['case-one']);assert.equal(merged.notes['case:case-one'],'My analysis');assert.equal(metrics(merged,[]).evidence,0);assert.equal(merged.attempts.length,0);
 });
 test('cross-origin writer requests and unknown API routes are rejected without touching storage',async()=>{
  const denied=await worker.fetch(new Request('https://studio.test/api/reading/refresh',{method:'POST',headers:{Origin:'https://evil.test'}}),{},{});assert.equal(denied.status,403);

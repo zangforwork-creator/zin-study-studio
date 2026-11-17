@@ -1,5 +1,5 @@
 import {englishEdition} from './language.js';
-const CACHE='zin-reading-cache-v1',ARCHIVE='zin-reading-stories-v1';
+const CACHE='zin-reading-cache-v1';
 export const REFRESH_MS=15*60*1000;
 const trusted=['vnexpress.net','blog.google','ads-developers.googleblog.com','brandsvietnam.com','thinkwithgoogle.com','business.google.com','warc.com'];
 export function safeSource(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&trusted.some(h=>u.hostname===h||u.hostname.endsWith('.'+h))?u.href:'';}catch{return '';}}
@@ -14,12 +14,7 @@ export async function fetchEdition(){
  const edition=cleanEdition(await response.json());try{localStorage.setItem(CACHE,JSON.stringify(edition));}catch{}
  return edition;
 }
-export function archivedStories(){try{return JSON.parse(localStorage.getItem(ARCHIVE))||[];}catch{return [];}}
-export function rememberStory(story){
- if(!story)return;
- try{const entries=new Map(archivedStories().map(x=>[x.id,x]));entries.set(story.id,story);localStorage.setItem(ARCHIVE,JSON.stringify([...entries.values()].slice(-500)));}catch{}
-}
-export function todayKey(now=new Date()){return now.toLocaleDateString('en-CA',{timeZone:'Asia/Bangkok'});}
+export function todayKey(now=new Date()){return now.toLocaleDateString('en-CA',{timeZone:'Asia/Ho_Chi_Minh'});}
 export function dailyCase(cases,offset=0,now=new Date()){
  if(!cases.length)return null;
  const day=todayKey(now);let id;

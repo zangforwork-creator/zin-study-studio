@@ -10,6 +10,6 @@ await cp(resolve(root,'node_modules/pdfjs-dist/standard_fonts'),resolve(vendor,'
 await cp(resolve(root,'node_modules/pdfjs-dist/wasm'),resolve(vendor,'wasm'),{recursive:true});
 await copyFile(resolve(root,'node_modules/pdfjs-dist/LICENSE'),resolve(vendor,'PDFJS-LICENSE.txt'));
 await copyFile(resolve(root,'node_modules/fflate/LICENSE'),resolve(vendor,'FFLATE-LICENSE.txt'));
-const ref=JSON.parse(await readFile(resolve(root,'dist/data/reference.json'),'utf8'));
-if(ref.courses.length!==10 || ref.gpa.pending_course_count!==6) throw Error('Reference counts changed: inspect sources.');
-console.log('Prepared self-hosted document libraries. Reference data verified.');
+const data=JSON.parse(await readFile(resolve(root,'dist/data/studio.json'),'utf8'));
+if(!Array.isArray(data.courses)||!data.courses.length||new Set(data.courses.map(c=>c.id)).size!==data.courses.length||!data.links.consumerBehaviorLab)throw Error('Inspect the course catalog and links.');
+console.log('Prepared document libraries and verified the two-page catalog.');

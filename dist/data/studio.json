@@ -1,0 +1,284 @@
+{
+  "version": 1,
+  "title": "Zin's Study Studio",
+  "timeZone": "Asia/Ho_Chi_Minh",
+  "links": {
+    "consumerBehaviorLab": "https://zin-consumer-behaviour-lab.taupeperiwinkle4.chatgpt.site"
+  },
+  "exams": [],
+  "courses": [
+    {
+      "id": "consumer-behaviour",
+      "name": "Consumer Behaviour",
+      "current": true,
+      "books": [
+        {
+          "id": "cd079cb9c064cac8",
+          "title": "Consumer Behavior - Building Marketing Strategy",
+          "authors": [
+            "David L. Mothersbaugh",
+            "Del I. Hawkins",
+            "Susan Bardi Kleiser"
+          ],
+          "pages": 833,
+          "filename": "Consumer Behavior - Building Marketing Strategy - David L. Mothersbaugh, Del I. Hawkins, Susan Bardi Kleiser.pdf",
+          "sha256": "cd079cb9c064cac8f95989d3ceb2d1105220c6d5d041e956958208c8e1643103",
+          "edition": "14th edition, copyright 2020"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/consumer-behaviour.webp",
+        "width": 650,
+        "height": 821,
+        "kind": "textbook",
+        "edge": "#1d3545"
+      }
+    },
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing",
+      "current": true,
+      "books": [
+        {
+          "id": "f41c3c8ba1e4d97a",
+          "title": "Digital Marketing",
+          "authors": [
+            "Dave Chaffey",
+            "Fiona Ellis-Chadwick"
+          ],
+          "pages": 562,
+          "filename": "Digital Marketing - Dave Chaffey, Fiona Ellis-Chadwick.pdf",
+          "sha256": "f41c3c8ba1e4d97a82360c28e0316967e758ec605347fcd8ea4ad233f62de25a",
+          "edition": null
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/digital-marketing.webp",
+        "width": 650,
+        "height": 882,
+        "kind": "textbook",
+        "edge": "#a6a9aa"
+      }
+    },
+    {
+      "id": "e-commerce",
+      "name": "E-Commerce",
+      "current": true,
+      "books": [
+        {
+          "id": "d5fb8aae645f3a66",
+          "title": "E-Commerce 2019 - Business, Technology, Society",
+          "authors": [
+            "Kenneth C. Laudon",
+            "Carol Guercio Traver"
+          ],
+          "pages": 913,
+          "filename": "E-Commerce 2019 - Business, Technology, Society - Kenneth C. Laudon, Carol Guercio Traver.pdf",
+          "sha256": "d5fb8aae645f3a66069b8deec1190a3e34d90e035b08708f5269c876ba210c0f",
+          "edition": "15th edition"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/e-commerce.webp",
+        "width": 650,
+        "height": 812,
+        "kind": "textbook",
+        "edge": "#090909"
+      }
+    },
+    {
+      "id": "management-information-system",
+      "name": "Management Information System",
+      "current": true,
+      "books": [
+        {
+          "id": "1d4c2c2333feb63e",
+          "title": "Integrated Business Processes with ERP Systems",
+          "authors": [
+            "Simha R. Magal",
+            "Jeffrey Word"
+          ],
+          "pages": 376,
+          "filename": "Integrated Business Processes with ERP Systems - Simha R. Magal, Jeffrey Word.pdf",
+          "sha256": "1d4c2c2333feb63e8250e27817aab603a7704feb57ed6402db7bbb602578c4dc",
+          "edition": null
+        },
+        {
+          "id": "4af00a7a709b0672",
+          "title": "Principles of Business Information Systems",
+          "authors": [
+            "Ralph M. Stair",
+            "George W. Reynolds",
+            "Thomas Chesney"
+          ],
+          "pages": 546,
+          "filename": "Principles of Business Information Systems - Ralph M. Stair, George W. Reynolds, Thomas Chesney.pdf",
+          "sha256": "4af00a7a709b06728ad54c41f2515e86b41a7f145aac1fa3821554b44d50e5de",
+          "edition": "4th edition, copyright 2021"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/management-information-system.webp",
+        "width": 650,
+        "height": 813,
+        "kind": "textbook",
+        "edge": "#5b656d"
+      }
+    },
+    {
+      "id": "logistics-management",
+      "name": "Logistics Management",
+      "current": false,
+      "books": [
+        {
+          "id": "logistics-slides",
+          "title": "Distribution & Logistics Management",
+          "authors": [
+            "Jacob Kulleh"
+          ],
+          "pages": null,
+          "filename": "Supply Chain.ppt",
+          "edition": "MKT203 course slides",
+          "legacy": true
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/logistics-management.webp",
+        "width": 1000,
+        "height": 750,
+        "kind": "slides",
+        "edge": "#024f81"
+      }
+    },
+    {
+      "id": "principle-of-marketing",
+      "name": "Principle of Marketing",
+      "current": false,
+      "books": [
+        {
+          "id": "9083ff3f26ba3cb1",
+          "title": "Principles of Marketing",
+          "authors": [
+            "Philip Kotler",
+            "Gary Armstrong",
+            "Sridhar Balasubramanian"
+          ],
+          "pages": 769,
+          "filename": "Principles of Marketing - Philip Kotler, Gary Armstrong, Sridhar Balasubramanian.pdf",
+          "sha256": "9083ff3f26ba3cb13cb45a64bd1d1d6713d4394b82ac393e36b18dae1c3e13da",
+          "edition": "19th Global Edition, copyright 2024"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/principle-of-marketing.webp",
+        "width": 650,
+        "height": 832,
+        "kind": "textbook",
+        "edge": "#9ca1a0"
+      }
+    },
+    {
+      "id": "introduction-to-marketing-career",
+      "name": "Introduction to Marketing Career",
+      "current": false,
+      "books": [
+        {
+          "id": "4a28683a728a0a30",
+          "title": "Marketing - An Introduction",
+          "authors": [
+            "Gary Armstrong",
+            "Philip Kotler",
+            "Marc Oliver Opresnik"
+          ],
+          "pages": 702,
+          "filename": "Marketing - An Introduction - Gary Armstrong, Philip Kotler, Marc Oliver Opresnik.pdf",
+          "sha256": "4a28683a728a0a3055425f44a8a9050d5c50af958f4ef008c006d087f3f73eb0",
+          "edition": "15th Global Edition, copyright 2023"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/introduction-to-marketing-career.webp",
+        "width": 650,
+        "height": 831,
+        "kind": "textbook",
+        "edge": "#888b8c"
+      }
+    },
+    {
+      "id": "microeconomics",
+      "name": "Microeconomics",
+      "current": false,
+      "books": [
+        {
+          "id": "642deac26eaf2d16",
+          "title": "Principles of Microeconomics",
+          "authors": [
+            "N. Gregory Mankiw"
+          ],
+          "pages": 516,
+          "filename": "Principles of Microeconomics - N. Gregory Mankiw.pdf",
+          "sha256": "642deac26eaf2d161e9b2d3b2e90a5a4eeccd4f8ac5fb39664433e68fa4107db",
+          "edition": "9th edition"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/microeconomics.webp",
+        "width": 650,
+        "height": 764,
+        "kind": "textbook",
+        "edge": "#0076a0"
+      }
+    },
+    {
+      "id": "macroeconomics",
+      "name": "Macroeconomics",
+      "current": false,
+      "books": [
+        {
+          "id": "47991dad650a15d7",
+          "title": "Principles of Macroeconomics",
+          "authors": [
+            "N. Gregory Mankiw"
+          ],
+          "pages": 578,
+          "filename": "Principles of Macroeconomics - N. Gregory Mankiw.pdf",
+          "sha256": "47991dad650a15d7a143b54732ea665cd9635dc9b996cd81b3eb3710f9409458",
+          "edition": "8th edition, copyright 2018"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/macroeconomics.webp",
+        "width": 650,
+        "height": 786,
+        "kind": "textbook",
+        "edge": "#686356"
+      }
+    },
+    {
+      "id": "business-management",
+      "name": "Business Management",
+      "current": false,
+      "books": [
+        {
+          "id": "1ba5a6b4ace58e44",
+          "title": "Modern Management - Concepts and Skills",
+          "authors": [
+            "Samuel C. Certo",
+            "S. Trevis Certo"
+          ],
+          "pages": 578,
+          "filename": "Modern Management - Concepts and Skills - Samuel C. Certo, S. Trevis Certo.pdf",
+          "sha256": "1ba5a6b4ace58e44a06faf99f888af7770e9f8e1f4b4f63486bcbd6c851bc32d",
+          "edition": "15th Global Edition, copyright 2019"
+        }
+      ],
+      "cover": {
+        "src": "assets/covers/business-management.webp",
+        "width": 649,
+        "height": 831,
+        "kind": "textbook",
+        "edge": "#4c5661"
+      }
+    }
+  ]
+}

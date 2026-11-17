@@ -2,7 +2,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 const root=resolve(import.meta.dirname,'..');
-const ref=JSON.parse(await readFile(resolve(root,'dist/data/reference.json'),'utf8'));
+const ref=JSON.parse(await readFile(resolve(root,'dist/data/studio.json'),'utf8'));
 const inventory=JSON.parse(await readFile(resolve(root,'../book-inventory.json'),'utf8'));
 const materials=[];
 for(const course of ref.courses)for(const book of course.books){
