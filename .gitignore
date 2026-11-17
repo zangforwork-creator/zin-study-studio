@@ -1,6 +1,9 @@
 node_modules/
 .sites-runtime/
 .preview/
+.sources/reference-redesign/
+.env*
+!.env.example
 *.tar.gz
 *.log
 dist/client/

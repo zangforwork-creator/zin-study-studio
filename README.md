@@ -1,12 +1,14 @@
 # Zin’s Study Studio
 
-Two pages: `#home` and `#bookshelf`. The current design follows Zin’s supplied reference: a narrow indigo sidebar, peach Z. mark, lavender background, rounded white cards, image-cover reading panels and a compact two-column exam dashboard. English is permanent; light mode is the default. Navigation collapses on desktop and becomes a labelled bottom bar on mobile.
+Three pages: `#home`, `#bookshelf` and `#courses`. The current design follows Zin’s supplied reference: a narrow indigo sidebar, peach Z. mark, lavender background, rounded white cards, image-cover reading panels and a compact two-column exam dashboard. English is permanent; light mode is the default. Navigation collapses on desktop and becomes a labelled bottom bar on mobile.
 
-Home contains only the greeting/date, Market Pulse beside Today’s case study, then Exam Countdown. The previous lesson, review, saved-story, separate news and goal sections and their code/data are removed.
+Home contains the greeting/date, Market Pulse beside Today’s case study, Exam Countdown, and previews of the current Bookshelf and curated Courses. The previous lesson, review, saved-story, separate news and goal sections and their code/data are removed.
+
+Courses supports title/provider search, provider and Online only filters, source links and catalog-error recovery. AIM’s delivery is explicitly qualified. Global search covers books and external course titles. Course browsing does not alter learning progress or enroll the user.
 
 ## Data and configuration
 
-Edit **dist/data/studio.json** for the ten existing courses, their book/cover metadata, initial exams and links. `links.consumerBehaviorLab` is the single editable destination used by the Consumer Behaviour card. The four current courses follow Zin’s latest supplied list. No exam dates are seeded. Configured initial exams apply on first use; browser edits persist separately.
+Edit **dist/data/studio.json** for the ten existing courses, their book/cover metadata, initial exams and links. `links.consumerBehaviorLab` is the single editable destination used by the Consumer Behaviour card. The four current university courses follow Zin’s supplied list. External training options are stored separately in `dist/data/online-courses.json`, with official links and a source-check date; see COURSES-SOURCES.md. No exam dates are seeded. Configured initial exams apply on first use; browser edits persist separately.
 
 Exams store subject/course, type, date, optional time/location/note and original creation time. Add/edit validates fields and prevents duplicate submissions. Delete requires confirmation and supports Undo for 30 seconds, including after reload. Upcoming exams sort by deadline; passed exams move to Completed. Days left use calendar dates in **Asia/Ho_Chi_Minh**, not elapsed 24-hour periods. An exam without a time ends at the last millisecond of its date. Today’s clock ticks to the deadline; progress measures calendar time from creation to exam day. Urgency always has a text label.
 

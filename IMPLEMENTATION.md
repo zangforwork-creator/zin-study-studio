@@ -1,3 +1,15 @@
+# Current release: Home, Bookshelf, Courses
+
+Zin’s latest clarification keeps the name Bookshelf. Exactly three navigation items and routes are active. The newer reference styling is in `studio-courses.css`: wider indigo navigation, lavender cards, original book covers, summary/source blocks, peach accents, and course previews. Home includes both Bookshelf and Courses preview sections; their full pages keep search and source access. No extra dummy notification, bookmark or enrollment controls were added.
+
+Five external marketing options are verified against official sources in COURSES-SOURCES.md. They use a separate validated catalog, not an invented VNUIS syllabus. Combined query/provider/delivery filters, empty states, retry and real external links work. The existing library/notes/exam schemas and IndexedDB files remain unchanged. A rapid second click after dialog dismissal is ignored to prevent click-through onto an underlying book; dialog close also respects a newly focused search input.
+
+Verification: build/check and 30 unit tests pass. The main 13 browser flows pass, and 32 light/dark Home/Bookshelf/Courses/exam-dialog scans report zero automated violations. Two additional course flows verify global search, catalog failure isolation and retry without changing saved data. Existing upload, duplicate prevention, real PDF/DOCX/PPTX extraction, source recovery, exam CRUD/undo, reload and backup merge checks remain. Reports are in `.preview/two-page/qa.json` and `.preview/courses/qa.json`. The supplied-reference styling is responsive at 390/768/1366/1920px; long headlines, expanded references and the added Home previews naturally require scrolling.
+
+No new dependency, API key, paid AI, enrollment or access-policy change. Existing feeds and source photos remain publisher-dependent; missing images and unavailable updates are labelled. Original book art is preserved and the course graphics are decorative CSS illustrations. Run/configuration instructions are in README.md; the extra catalog check is `node scripts/courses-qa.mjs`.
+
+## Previous visual release
+
 # Reference-led Studio redesign
 
 The current interface follows Zin’s supplied image. It keeps Home and Bookshelf, all current data keys, document files, reflections, reading services and exam behavior. New `dist/studio-reference.css` applies the indigo/lavender/peach visual system over the existing components. Home uses 136px desktop navigation, compact greeting/date, two cover cards with labelled previous/next arrows, source badges and a two-column exam panel. Large headlines grow their cards rather than being truncated; mobile stacks the cards and uses labelled bottom navigation. Unknown exam dates and publication dates remain explicitly unknown.

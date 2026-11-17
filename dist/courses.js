@@ -1,0 +1,11 @@
+import {escapeHTML as e} from './core.js';
+const hosts=['grow.google','www.linkedin.com','academy.hubspot.com','aimacademy.vn','vinalink.edu.vn'];
+export function validateCourses(data){
+ if(data?.version!==1||!/^\d{4}-\d{2}-\d{2}$/.test(data.checkedOn)||!Array.isArray(data.courses))throw Error('The course catalog could not be read. Retry to reload it.');
+ const ids=new Set();for(const course of data.courses){let url;try{url=new URL(course.url);}catch{throw Error('A course source is invalid.');}if(url.protocol!=='https:'||url.username||url.password||!hosts.includes(url.hostname)||!course.id||ids.has(course.id)||['provider','mark','tone','title','shortTitle','type','delivery','duration','level','description','access'].some(k=>typeof course[k]!=='string'||!course[k].trim())||typeof course.online!=='boolean')throw Error('A course source is invalid.');ids.add(course.id);}
+ return data;
+}
+export function filterCourses(courses,query='',provider='all',delivery='all'){
+ const text=query.trim().toLowerCase();return courses.filter(c=>(provider==='all'||c.provider===provider)&&(delivery!=='online'||c.online)&&`${c.title} ${c.provider} ${c.description}`.toLowerCase().includes(text));
+}
+export function courseCards(courses){return courses.map(c=>`<article class="online-course-card panel"><div class="course-visual provider-${e(c.tone)}" aria-hidden="true"><div class="course-laptop"><div class="laptop-screen"><span class="provider-monogram">${e(c.mark)}</span><div class="mini-chart"><i></i><i></i><i></i><i></i></div></div><div class="laptop-base"></div></div><div class="course-visual-orb"></div></div><span class="provider-badge"><b aria-hidden="true">${e(c.mark)}</b>${e(c.provider)}</span><div class="online-course-copy"><h2 title="${e(c.title)}">${e(c.shortTitle)}</h2><p class="online-course-type">${e(c.type)}</p><p>${e(c.level)} · ${e(c.duration)}</p><p class="course-delivery ${!c.online?'delivery-check':''}">${e(c.delivery)}</p><p class="course-access">${e(c.access)}</p><a class="btn course-link" href="${e(c.url)}" target="_blank" rel="noopener noreferrer" aria-label="View ${e(c.title)} at ${e(c.provider)}">View course <span aria-hidden="true">→</span></a></div></article>`).join('');}
