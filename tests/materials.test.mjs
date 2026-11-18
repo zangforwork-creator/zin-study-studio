@@ -6,7 +6,7 @@ import {materialRequest,materialRange} from '../worker/materials.js';
 const origin='https://studio.example';
 test('every confirmed course has its exact original attached, including two MIS books and the legacy slide',async()=>{
  const ref=JSON.parse(await readFile(new URL('../dist/data/studio.json',import.meta.url),'utf8'));
- assert.equal(MATERIALS.length,11);assert.equal(new Set(MATERIALS.map(m=>m.courseId)).size,10);
+ assert.equal(MATERIALS.length,13);assert.equal(new Set(MATERIALS.map(m=>m.courseId)).size,10);
  for(const course of ref.courses)for(const book of course.books){const m=MATERIALS.find(m=>m.id===book.id);assert.equal(m.filename,book.filename);assert.equal(m.courseId,course.id);assert.equal(m.chunks.reduce((n,c)=>n+c.size,0),m.bytes);assert(m.chunks.every(c=>/^[a-f0-9]{64}$/.test(c.sha256)));}
  assert.equal(MATERIALS.filter(m=>m.type==='ppt').length,1);
 });

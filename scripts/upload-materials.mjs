@@ -17,7 +17,7 @@ async function request(path,options={}){
 const before=await (await request('/api/materials')).json(),verified=[];
 const pending=MATERIALS.filter(m=>!before.items.some(x=>x.id===m.id&&x.available));
 async function upload(m){
- const bytes=await readFile(resolve(import.meta.dirname,'../../Kho-tai-lieu-mon-hoc',m.filename));
+ const bytes=await readFile(resolve(import.meta.dirname,'../../Kho-tai-lieu-mon-hoc',m.localPath||m.filename));
  if(bytes.length!==m.bytes||createHash('sha256').update(bytes).digest('hex')!==m.sha256)throw Error('Local source changed: '+m.id);
  const base='/api/materials/'+m.id,opened=await (await request(base+'/upload',{method:'POST'})).json(),uploadId=encodeURIComponent(opened.uploadId),parts=[];
  try{
@@ -36,10 +36,10 @@ for(const m of MATERIALS){
  const head=await request('/api/materials/'+m.id,{method:'HEAD'});
  if(Number(head.headers.get('Content-Length'))!==m.bytes||head.headers.get('ETag')!=='"'+m.sha256+'"')throw Error('Readback metadata mismatch: '+m.id);
  const response=await request('/api/materials/'+m.id,{headers:{Range:'bytes=0-31'}}),prefix=Buffer.from(await response.arrayBuffer());
- const original=await readFile(resolve(import.meta.dirname,'../../Kho-tai-lieu-mon-hoc',m.filename));
+ const original=await readFile(resolve(import.meta.dirname,'../../Kho-tai-lieu-mon-hoc',m.localPath||m.filename));
  if(response.status!==206||!prefix.equals(original.subarray(0,32)))throw Error('Range readback mismatch: '+m.id);
  verified.push({id:m.id,bytes:m.bytes,sha256:m.sha256,rangeVerified:true});
 }
 const after=await (await request('/api/materials')).json();if(after.items.some(x=>!x.available))throw Error('Some originals are unavailable.');
 const receipt={verifiedAt:new Date().toISOString(),courses:10,materials:verified.length,bytes:verified.reduce((n,m)=>n+m.bytes,0),items:verified};
-await writeFile(resolve(import.meta.dirname,'../../zin-study-studio-materials-publication.json'),JSON.stringify(receipt,null,2)+'\n');console.log(JSON.stringify({verified:true,courses:10,materials:verified.length,bytes:receipt.bytes}));
+await writeFile(resolve(import.meta.dirname,'../../Websites/Archives/Publication-records/lecture-materials-2026-11-19.json'),JSON.stringify(receipt,null,2)+'\n');console.log(JSON.stringify({verified:true,courses:10,materials:verified.length,bytes:receipt.bytes}));

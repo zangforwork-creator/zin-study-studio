@@ -24,7 +24,20 @@
           "pages": 833,
           "filename": "Consumer Behavior - Building Marketing Strategy - David L. Mothersbaugh, Del I. Hawkins, Susan Bardi Kleiser.pdf",
           "sha256": "cd079cb9c064cac8f95989d3ceb2d1105220c6d5d041e956958208c8e1643103",
-          "edition": "14th edition, copyright 2020"
+          "edition": "14th edition, copyright 2020",
+          "localPath": "Consumer Behavior/Consumer Behavior - Building Marketing Strategy - David L. Mothersbaugh, Del I. Hawkins, Susan Bardi Kleiser.pdf"
+        },
+        {
+          "id": "7f0b7d9e4aeea008",
+          "title": "Chapter 1 · uploaded lecture slides",
+          "authors": [
+            "Nguyen Thi Huyen"
+          ],
+          "pages": 62,
+          "filename": "Chapter 1 - Consumer behavior n marketing strategy.pdf",
+          "sha256": "7f0b7d9e4aeea008bdda4c1762db39c7c2b88a0a6904d37f199934a35f87ae0e",
+          "edition": "Uploaded lecture · connected 19 Nov 2026",
+          "localPath": "Consumer Behavior/Slides/Chapter 1 - Consumer behavior n marketing strategy.pdf"
         }
       ],
       "cover": {
@@ -50,7 +63,20 @@
           "pages": 562,
           "filename": "Digital Marketing - Dave Chaffey, Fiona Ellis-Chadwick.pdf",
           "sha256": "f41c3c8ba1e4d97a82360c28e0316967e758ec605347fcd8ea4ad233f62de25a",
-          "edition": null
+          "edition": null,
+          "localPath": "Digital MKT/Digital Marketing - Dave Chaffey, Fiona Ellis-Chadwick.pdf"
+        },
+        {
+          "id": "945a936debb47f82",
+          "title": "Chapter 1 · uploaded lecture slides",
+          "authors": [
+            "Nguyen Thi Huyen"
+          ],
+          "pages": 43,
+          "filename": "Chapter 1 - Introduction.pdf",
+          "sha256": "945a936debb47f820796cc8e01394ddd2b0b8cbc92ef3977aa319a4f2e0fd5a6",
+          "edition": "Uploaded lecture · connected 19 Nov 2026",
+          "localPath": "Digital MKT/Slides/Chapter 1 - Introduction.pdf"
         }
       ],
       "cover": {
